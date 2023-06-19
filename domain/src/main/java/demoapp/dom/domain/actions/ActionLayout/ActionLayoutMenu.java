@@ -18,8 +18,8 @@
  */
 package demoapp.dom.domain.actions.ActionLayout;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -47,7 +47,7 @@ import demoapp.dom.domain.actions.ActionLayout.sequence.ActionLayoutSequencePage
 
 @DomainService(nature=NatureOfService.VIEW)
 @Named("demo.ActionLayoutMenu")
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 //tag::menu-item-described-as[]
 public class ActionLayoutMenu {

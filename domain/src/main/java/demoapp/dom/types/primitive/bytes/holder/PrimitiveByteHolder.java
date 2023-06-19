@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive.bytes.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.PrimitiveByteHolder")
 //tag::class[]

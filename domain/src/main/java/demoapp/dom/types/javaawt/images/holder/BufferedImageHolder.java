@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javaawt.images.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import java.awt.image.BufferedImage;
 

@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javalang.floats.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import java.lang.Float;
 

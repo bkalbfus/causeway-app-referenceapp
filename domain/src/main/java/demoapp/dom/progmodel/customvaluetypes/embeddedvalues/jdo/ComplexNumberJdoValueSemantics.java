@@ -18,7 +18,7 @@
  */
 package demoapp.dom.progmodel.customvaluetypes.embeddedvalues.jdo;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;

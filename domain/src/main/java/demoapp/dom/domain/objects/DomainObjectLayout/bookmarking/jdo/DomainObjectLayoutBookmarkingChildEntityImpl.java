@@ -18,13 +18,13 @@
  */
 package demoapp.dom.domain.objects.DomainObjectLayout.bookmarking.jdo;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.ManyToOne;
 
 import org.springframework.context.annotation.Profile;
 

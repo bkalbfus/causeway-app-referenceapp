@@ -18,11 +18,18 @@
  */
 package demoapp.dom.domain.actions.ActionLayout.redirectPolicy.jpa;
 
-import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.ActionLayoutRedirectPolicyEntity;
+import jakarta.inject.Named;
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.AttributeOverrides;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import org.springframework.context.annotation.Profile;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
@@ -30,13 +37,12 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.value.Blob;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
-
 import org.apache.causeway.persistence.jpa.applib.types.BlobJpaEmbeddable;
 
-import org.springframework.context.annotation.Profile;
-
-import javax.inject.Named;
-import javax.persistence.*;
+import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.ActionLayoutRedirectPolicyEntity;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Profile("demo-jpa")
 @Entity
@@ -54,7 +60,7 @@ public class ActionLayoutRedirectPolicyEntityImpl extends ActionLayoutRedirectPo
     // ...
 //end::class[]
 
-    public ActionLayoutRedirectPolicyEntityImpl(String value) {
+    public ActionLayoutRedirectPolicyEntityImpl(final String value) {
         setName(value);
     }
 

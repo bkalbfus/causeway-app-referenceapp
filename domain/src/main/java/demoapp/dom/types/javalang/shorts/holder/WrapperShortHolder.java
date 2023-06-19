@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javalang.shorts.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import java.lang.Short;
 

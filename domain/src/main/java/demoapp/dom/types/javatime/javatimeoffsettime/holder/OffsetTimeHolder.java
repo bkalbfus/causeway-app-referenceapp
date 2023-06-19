@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import java.time.OffsetTime;
 

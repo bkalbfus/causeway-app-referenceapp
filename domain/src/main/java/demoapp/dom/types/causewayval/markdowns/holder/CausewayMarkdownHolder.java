@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.causewayval.markdowns.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 

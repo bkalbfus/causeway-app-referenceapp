@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive.ints.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.PrimitiveIntHolder")
 //tag::class[]

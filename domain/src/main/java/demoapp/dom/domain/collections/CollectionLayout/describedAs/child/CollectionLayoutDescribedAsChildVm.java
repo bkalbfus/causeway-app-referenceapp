@@ -24,8 +24,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.inject.Named;
-import javax.xml.bind.annotation.*;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.*;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;

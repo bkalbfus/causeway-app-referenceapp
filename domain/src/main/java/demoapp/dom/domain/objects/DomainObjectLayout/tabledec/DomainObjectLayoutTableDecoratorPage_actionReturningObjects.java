@@ -2,7 +2,7 @@ package demoapp.dom.domain.objects.DomainObjectLayout.tabledec;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;

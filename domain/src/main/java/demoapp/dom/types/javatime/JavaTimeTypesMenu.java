@@ -19,13 +19,7 @@
  */
 package demoapp.dom.types.javatime;
 
-import demoapp.dom.types.javatime.javatimelocaldate.LocalDates;
-import demoapp.dom.types.javatime.javatimelocaldatetime.LocalDateTimes;
-import demoapp.dom.types.javatime.javatimelocaltime.LocalTimes;
-import demoapp.dom.types.javatime.javatimeoffsetdatetime.OffsetDateTimes;
-import demoapp.dom.types.javatime.javatimezoneddatetime.ZonedDateTimes;
-
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -35,6 +29,12 @@ import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
+import demoapp.dom.types.javatime.javatimelocaldate.LocalDates;
+import demoapp.dom.types.javatime.javatimelocaldatetime.LocalDateTimes;
+import demoapp.dom.types.javatime.javatimelocaltime.LocalTimes;
+import demoapp.dom.types.javatime.javatimeoffsetdatetime.OffsetDateTimes;
+import demoapp.dom.types.javatime.javatimezoneddatetime.ZonedDateTimes;
+
 @Named("demo.JavaTimeTypesMenu")
 @DomainService(
         nature=NatureOfService.VIEW
@@ -42,7 +42,7 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 @DomainObjectLayout(
         named="JavaTimeTypes"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class JavaTimeTypesMenu {
 
     @Action(semantics = SemanticsOf.SAFE)

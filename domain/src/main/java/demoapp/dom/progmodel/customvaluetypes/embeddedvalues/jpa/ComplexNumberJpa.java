@@ -27,7 +27,7 @@ import lombok.AccessLevel;
 
 @Profile("demo-jpa")
 //tag::class[]
-@javax.persistence.Embeddable                                       // <.>
+@jakarta.persistence.Embeddable                                       // <.>
 @Value                                                              // <.>
 @lombok.Getter                                                      // <.>
 @lombok.Setter(AccessLevel.PRIVATE)                                 // <.>
@@ -36,10 +36,10 @@ import lombok.AccessLevel;
 public class ComplexNumberJpa
         implements ComplexNumber {
 
-    @javax.persistence.Column(nullable = false)
+    @jakarta.persistence.Column(nullable = false)
     private double re;                                              // <.>
 
-    @javax.persistence.Column(nullable = false)
+    @jakarta.persistence.Column(nullable = false)
     private double im;                                              // <5>
 }
 //end::class[]

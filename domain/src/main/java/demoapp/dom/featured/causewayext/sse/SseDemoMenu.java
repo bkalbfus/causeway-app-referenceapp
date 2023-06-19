@@ -18,8 +18,8 @@
  */
 package demoapp.dom.featured.causewayext.sse;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -37,7 +37,7 @@ import org.apache.causeway.applib.value.Markup;
 @DomainObjectLayout(
         named="Async Actions"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class SseDemoMenu {
 
     @Inject private FactoryService factoryService;
