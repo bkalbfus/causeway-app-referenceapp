@@ -21,17 +21,18 @@ package demoapp.dom.featured.causewayext.cal.persistence;
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
+import org.apache.causeway.extensions.fullcalendar.applib.CalendarEventable;
+import org.apache.causeway.extensions.fullcalendar.applib.value.CalendarEvent;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.featured.causewayext.cal.holder.CausewayCalendarEventHolder2;
 
-import org.apache.causeway.extensions.fullcalendar.applib.value.CalendarEvent;
-
 @Named("demo.CausewayCalendarEventEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class CausewayCalendarEventEntity
 implements
+    CalendarEventable,
     HasAsciiDocDescription,
     CausewayCalendarEventHolder2,
     ValueHolder<CalendarEvent> {
@@ -39,6 +40,16 @@ implements
     @Override
     public CalendarEvent value() {
         return getReadOnlyProperty();
+    }
+
+    @Override
+    public String getCalendarName() {
+        return "Sample";
+    }
+
+    @Override
+    public CalendarEvent toCalendarEvent() {
+        return value();
     }
 
 }
