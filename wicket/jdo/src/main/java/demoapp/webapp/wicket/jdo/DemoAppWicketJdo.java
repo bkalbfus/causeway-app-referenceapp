@@ -30,13 +30,13 @@ import org.apache.causeway.extensions.commandlog.applib.CausewayModuleExtCommand
 import org.apache.causeway.extensions.pdfjs.wkt.ui.CausewayModuleExtPdfjsWicketUi;
 import org.apache.causeway.extensions.sse.wicket.CausewayModuleExtSseWicket;
 import org.apache.causeway.valuetypes.asciidoc.metamodel.CausewayModuleValAsciidocMetaModel;
-import org.apache.causeway.valuetypes.asciidoc.persistence.jdo.dn.CausewayModuleValAsciidocPersistenceJdoDn;
+import org.apache.causeway.valuetypes.asciidoc.persistence.jdo.CausewayModuleValAsciidocPersistenceJdo;
 import org.apache.causeway.valuetypes.asciidoc.ui.wkt.CausewayModuleValAsciidocUiWkt;
 import org.apache.causeway.valuetypes.markdown.metamodel.CausewayModuleValMarkdownMetaModel;
-import org.apache.causeway.valuetypes.markdown.persistence.jdo.dn.CausewayModuleValMarkdownPersistenceJdoDn;
+import org.apache.causeway.valuetypes.markdown.persistence.jdo.CausewayModuleValMarkdownPersistenceJdo;
 import org.apache.causeway.valuetypes.markdown.ui.wkt.CausewayModuleValMarkdownUiWkt;
 import org.apache.causeway.valuetypes.vega.metamodel.CausewayModuleValVegaMetaModel;
-import org.apache.causeway.valuetypes.vega.persistence.jdo.dn.CausewayModuleValVegaPersistenceJdoDn;
+import org.apache.causeway.valuetypes.vega.persistence.jdo.dn.CausewayModuleValVegaPersistenceJdo;
 import org.apache.causeway.valuetypes.vega.ui.wkt.CausewayModuleValVegaUiWkt;
 import org.apache.causeway.viewer.wicket.applib.CausewayModuleViewerWicketApplibMixins;
 import org.apache.causeway.viewer.wicket.viewer.CausewayModuleViewerWicketViewer;
@@ -70,9 +70,9 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     DemoAppWicketCommon.class,
 
     // Persistence (JDO/DN5)
-    CausewayModuleValAsciidocPersistenceJdoDn.class,
-    CausewayModuleValMarkdownPersistenceJdoDn.class,
-    CausewayModuleValVegaPersistenceJdoDn.class,
+    CausewayModuleValAsciidocPersistenceJdo.class,
+    CausewayModuleValMarkdownPersistenceJdo.class,
+    CausewayModuleValVegaPersistenceJdo.class,
 
     //XrayEnable.class // for debugging only
     //WicketViewerXrayEnable.class // for debugging only
