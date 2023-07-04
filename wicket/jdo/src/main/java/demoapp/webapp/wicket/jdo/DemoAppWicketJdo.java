@@ -30,10 +30,10 @@ import org.apache.causeway.extensions.commandlog.applib.CausewayModuleExtCommand
 import org.apache.causeway.extensions.pdfjs.wkt.ui.CausewayModuleExtPdfjsWicketUi;
 import org.apache.causeway.extensions.sse.wicket.CausewayModuleExtSseWicket;
 import org.apache.causeway.valuetypes.asciidoc.metamodel.CausewayModuleValAsciidocMetaModel;
-import org.apache.causeway.valuetypes.asciidoc.persistence.jdo.dn.CausewayModuleValAsciidocPersistenceJdoDn;
+import org.apache.causeway.valuetypes.asciidoc.persistence.jdo.CausewayModuleValAsciidocPersistenceJdo;
 import org.apache.causeway.valuetypes.asciidoc.ui.wkt.CausewayModuleValAsciidocUiWkt;
 import org.apache.causeway.valuetypes.markdown.metamodel.CausewayModuleValMarkdownMetaModel;
-import org.apache.causeway.valuetypes.markdown.persistence.jdo.dn.CausewayModuleValMarkdownPersistenceJdoDn;
+import org.apache.causeway.valuetypes.markdown.persistence.jdo.CausewayModuleValMarkdownPersistenceJdo;
 import org.apache.causeway.valuetypes.markdown.ui.wkt.CausewayModuleValMarkdownUiWkt;
 import org.apache.causeway.valuetypes.vega.metamodel.CausewayModuleValVegaMetaModel;
 import org.apache.causeway.valuetypes.vega.persistence.jdo.dn.CausewayModuleValVegaPersistenceJdoDn;
@@ -70,8 +70,8 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     DemoAppWicketCommon.class,
 
     // Persistence (JDO/DN5)
-    CausewayModuleValAsciidocPersistenceJdoDn.class,
-    CausewayModuleValMarkdownPersistenceJdoDn.class,
+    CausewayModuleValAsciidocPersistenceJdo.class,
+    CausewayModuleValMarkdownPersistenceJdo.class,
     CausewayModuleValVegaPersistenceJdoDn.class,
 
     //XrayEnable.class // for debugging only
