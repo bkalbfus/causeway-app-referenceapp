@@ -36,7 +36,7 @@ import org.apache.causeway.valuetypes.markdown.metamodel.CausewayModuleValMarkdo
 import org.apache.causeway.valuetypes.markdown.persistence.jdo.CausewayModuleValMarkdownPersistenceJdo;
 import org.apache.causeway.valuetypes.markdown.ui.wkt.CausewayModuleValMarkdownUiWkt;
 import org.apache.causeway.valuetypes.vega.metamodel.CausewayModuleValVegaMetaModel;
-import org.apache.causeway.valuetypes.vega.persistence.jdo.dn.CausewayModuleValVegaPersistenceJdoDn;
+import org.apache.causeway.valuetypes.vega.persistence.jdo.dn.CausewayModuleValVegaPersistenceJdo;
 import org.apache.causeway.valuetypes.vega.ui.wkt.CausewayModuleValVegaUiWkt;
 import org.apache.causeway.viewer.wicket.applib.CausewayModuleViewerWicketApplibMixins;
 import org.apache.causeway.viewer.wicket.viewer.CausewayModuleViewerWicketViewer;
@@ -72,7 +72,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     // Persistence (JDO/DN5)
     CausewayModuleValAsciidocPersistenceJdo.class,
     CausewayModuleValMarkdownPersistenceJdo.class,
-    CausewayModuleValVegaPersistenceJdoDn.class,
+    CausewayModuleValVegaPersistenceJdo.class,
 
     //XrayEnable.class // for debugging only
     //WicketViewerXrayEnable.class // for debugging only
