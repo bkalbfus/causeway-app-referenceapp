@@ -286,6 +286,21 @@
 			</modules>
 		</profile>
 
+		<profile>
+			<id>nightly</id>
+			<activation>
+				<property>
+					<name>!skip.nightly</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>nightly-builds</id>
+					<url>https://raw.githubusercontent.com/apache-causeway-committers/causeway-nightly/master/mvn-snapshots</url>
+				</repository>
+			</repositories>
+		</profile>
+
 	</profiles>
 
 </project>
