@@ -101,7 +101,7 @@
 			<id>deploy-to-docker-io</id>
 			<activation>
 				<property>
-					<name>!skip-docker</name>
+					<name>docker</name>
 				</property>
 			</activation>
 			<properties>

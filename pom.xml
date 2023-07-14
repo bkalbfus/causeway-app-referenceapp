@@ -216,10 +216,10 @@
 
 	<profiles>
 		<profile>
-			<id>module-examples-demo-testing</id>
+			<id>testing</id>
 			<activation>
 				<property>
-					<name>module-examples-demo-testing</name>
+					<name>testing</name>
 				</property>
 			</activation>
 			<modules>
@@ -229,10 +229,10 @@
 			</modules>
 		</profile>
 		<profile>
-			<id>module-examples-demo-wicket</id>
+			<id>wicket</id>
 			<activation>
 				<property>
-					<name>module-examples-demo-wicket</name>
+					<name>wicket</name>
 				</property>
 			</activation>
 			<modules>
@@ -244,10 +244,38 @@
 			</modules>
 		</profile>
 		<profile>
-			<id>module-examples-demo-graphql</id>
+			<id>wicket-jpa</id>
 			<activation>
 				<property>
-					<name>module-examples-demo-graphql</name>
+					<name>wicket-jpa</name>
+				</property>
+			</activation>
+			<modules>
+				<module>domain</module>
+				<module>web</module>
+				<module>wicket/common</module>
+				<module>wicket/jpa</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>wicket-jdo</id>
+			<activation>
+				<property>
+					<name>wicket-jdo</name>
+				</property>
+			</activation>
+			<modules>
+				<module>domain</module>
+				<module>web</module>
+				<module>wicket/common</module>
+				<module>wicket/jdo</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>graphql</id>
+			<activation>
+				<property>
+					<name>graphql</name>
 				</property>
 			</activation>
 			<modules>
