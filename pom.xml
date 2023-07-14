@@ -160,16 +160,119 @@
 
 			<dependency>
 				<groupId>org.apache.causeway.extensions</groupId>
-				<artifactId>causeway-extensions</artifactId>
-				<version>${project.version}</version>
+				<artifactId>causeway-extensions-commandlog</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-excel</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-executionlog</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-executionoutbox</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-executionrepublisher</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-audittrail</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-secman</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-sessionlog</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-cors</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-exceldownload</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-fullcalendar</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-pdfjs</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions-sse</artifactId>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.valuetypes</groupId>
-				<artifactId>causeway-valuetypes</artifactId>
-				<version>${project.version}</version>
+				<artifactId>causeway-valuetypes-asciidoc</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.valuetypes</groupId>
+				<artifactId>causeway-valuetypes-jodatime</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.valuetypes</groupId>
+				<artifactId>causeway-valuetypes-markdown</artifactId>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.valuetypes</groupId>
+				<artifactId>causeway-valuetypes-vega</artifactId>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
