@@ -59,7 +59,7 @@ The action to subtract is similar.
 === Value Semantics Provider
 
 The framework also needs to know the structure of the value type.
-This is done by providing an implementation of a link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/value/semantics/ValueSemanticsProvider.html[ValueSemanticsProvider].
+This is done by providing an implementation of a link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/value/semantics/ValueSemanticsProvider.html[ValueSemanticsProvider].
 
 * the `ValueSemanticsProvider` implementation is:
 +
@@ -70,11 +70,11 @@ include::ComplexNumberValueSemantics.java[tags=class]
 ----
 <.> declares a "default" mixin that the framework uses to present an action prompt to set the parts of the value type.
 This is discussed in more detail below.
-<.> inherits from link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/value/semantics/ValueSemanticsAbstract.html[ValueSemanticsAbstract], a convenience adapter.
+<.> inherits from link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/value/semantics/ValueSemanticsAbstract.html[ValueSemanticsAbstract], a convenience adapter.
 
-* the `compose()` and `decompose()` methods are used to serialize the object using the structures defined by the link:https://causeway.apache.org/refguide/2.0.0-RC1/schema/about.html[XSD schemas].
+* the `compose()` and `decompose()` methods are used to serialize the object using the structures defined by the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/schema/about.html[XSD schemas].
 +
-Using this, the framework can render the composite value as JSON (as used by the REST API), or to XML, as used by SPIs such as link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/services/publishing/spi/CommandSubscriber.html#section-top[CommandSubscriber] (see link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/services/command/Command.html[Command] and link:https://causeway.apache.org/refguide/2.0.0-RC1/schema/cmd.html[CommandDto]).
+Using this, the framework can render the composite value as JSON (as used by the REST API), or to XML, as used by SPIs such as link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/services/publishing/spi/CommandSubscriber.html#section-top[CommandSubscriber] (see link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/services/command/Command.html[Command] and link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/schema/cmd.html[CommandDto]).
 +
 [source,java,indent=0]
 ----

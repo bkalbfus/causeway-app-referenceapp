@@ -1,6 +1,6 @@
 :Notice: Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at. http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR  CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-The link:https://causeway.apache.org/vw/2.0.0-RC1/about.html[Wicket viewer] renders the generic UI for entities and view models using a series of Wicket ``Component``s, with each such `Component` created by a `ComponentFactory`.
+The link:https://causeway.apache.org/vw/${CAUSEWAY_VERSION}/about.html[Wicket viewer] renders the generic UI for entities and view models using a series of Wicket ``Component``s, with each such `Component` created by a `ComponentFactory`.
 
 You can customise the UI by providing alternate implementations of `ComponentFactory`, for any component on the page, including the top-level component for the entire domain object.
 
@@ -22,7 +22,7 @@ The domain objects (not involving custom UI code) consist of `FeaturedMenu`, whi
 ----
 include::../FeaturedMenu.java[tags=whereInTheWorldAction]
 ----
-<.> uses a custom annotation with link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/Parameter.html#mustsatisfy[@Parameter#mustSatisfy] to enforce a range constraint.
+<.> uses a custom annotation with link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/Parameter.html#mustsatisfy[@Parameter#mustSatisfy] to enforce a range constraint.
 
 * The `WhereInTheWorldPage` view model returned by the menu is:
 +
@@ -44,7 +44,7 @@ include::GeoapifyClient.java[tags=class]
 
 === Wicket components
 
-To provide a custom component, we need to provide a domain service implementing the link:https://causeway.apache.org/vw/2.0.0-RC1/extending/replacing-page-elements.html#how-to-replace-a-component[ComponentFactory] interface.
+To provide a custom component, we need to provide a domain service implementing the link:https://causeway.apache.org/vw/${CAUSEWAY_VERSION}/extending/replacing-page-elements.html#how-to-replace-a-component[ComponentFactory] interface.
 There are various subclasses available; as we want to replace the component for the entire entity, we can subclass from `EntityComponentFactoryAbstract`:
 
 

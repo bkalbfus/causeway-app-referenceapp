@@ -5,7 +5,7 @@ When a collection of entities are rendered by the viewer, the table will by defa
 Sometimes though the columns to be shown will depend upon the context in which the entity is being interacted.
 One common approach is to define a view model as a projection of the entity, and return a collection of that view model instead.
 However, if the user wants to access the entity they must first navigate to the view model, and from their navigate to the backing entity instance that it wraps.
-The purpose of the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/Property.html#projecting[@Property#projecting] attribute is to eliminate this extra hop.
+The purpose of the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/Property.html#projecting[@Property#projecting] attribute is to eliminate this extra hop.
 
 The idea is that the `projecting` attribute is placed on the property of the view model that references the backing entity.
 With this hint, the viewer instead renders links to the entity rather than the view model.
@@ -60,4 +60,4 @@ As it isn't possible to access the projecting view model at all, there's no need
 
 == Related Services
 
-An alternative way to fine-tune the columns shown is to implement the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/services/tablecol/TableColumnOrderService.html[TableColumnOrderService] or link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/services/tablecol/TableColumnVisibilityService.html[TableColumnVisibilityService] SPIs.
+An alternative way to fine-tune the columns shown is to implement the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/services/tablecol/TableColumnOrderService.html[TableColumnOrderService] or link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/services/tablecol/TableColumnVisibilityService.html[TableColumnVisibilityService] SPIs.

@@ -2,7 +2,7 @@
 
 The framework has built-in support for modelling events on a calendar, using the `CalendarEvent` data type.
 This is a editable composite type which is rendered as a HTML card.
-It also integrates with the link:https://causeway.apache.org/vw/2.0.0-RC1/fullcalendar/about.html[FullCalendar] module; entities that implement the `CalendarEventable` interface (having a property of type `CalendarEvent`) will be rendered on a calendar.
+It also integrates with the link:https://causeway.apache.org/vw/${CAUSEWAY_VERSION}/fullcalendar/about.html[FullCalendar] module; entities that implement the `CalendarEventable` interface (having a property of type `CalendarEvent`) will be rendered on a calendar.
 
 These can be used either in entities or view models.
 

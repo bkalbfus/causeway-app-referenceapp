@@ -4,7 +4,7 @@ Sometimes an object may have a collection of related objects, but for whatever r
 
 One option is to simply annotate the collection with `@Programmatic` (or `@Domain.Exclude`, which amounts to the same thing); this means that the collection is _not_ part of the framework metamodel and so will not be rendered.
 
-An alternative approach is to annotate the collection as hidden, which can be done using either the  link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/CollectionLayout.html#hidden[@CollectionLayout#hidden] annotation, or a meta-annotation, or using the `Xxx.layout.xml` layout file.
+An alternative approach is to annotate the collection as hidden, which can be done using either the  link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/CollectionLayout.html#hidden[@CollectionLayout#hidden] annotation, or a meta-annotation, or using the `Xxx.layout.xml` layout file.
 
 == How this demo works
 

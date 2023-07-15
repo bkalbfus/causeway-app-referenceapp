@@ -54,7 +54,7 @@ public class MarkupVariableResolverService {
         val orm = determineOrmProfileFrom(environment);
 
         map.put("SOURCES_CAUSEWAY", "https://github.com/apache/causeway/blob/master/core/applib/src/main/java");
-        map.put("SOURCES_DEMO", "https://github.com/apache/causeway/tree/master/examples/demo/domain/src/main/java");
+        map.put("SOURCES_DEMO", "https://github.com/apache/causeway-app-referenceapp/tree/master/domain/src/main/java");
         map.put("ISSUES_DEMO", "https://issues.apache.org/jira/");
         map.put("CAUSEWAY_VERSION", determineCausewayVersion(configuration));
         map.put("ORM_TITLECASE", titleCase(orm));

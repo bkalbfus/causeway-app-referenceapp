@@ -8,12 +8,12 @@ Both entities and view models are bookmarked.
 To make this set of bookmarks more useful, the set of bookmarks can be organised into a tree, meaning that "child" objects are only added to the bookmark if their parent object is.
 A canonical example is order/order-item ... any items are grouped by their owning order.
 
-Domain classes control this feature using the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/DomainObjectLayout.html#bookmarking[@DomainObjectLayout#bookmarking] attribute:
+Domain classes control this feature using the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/DomainObjectLayout.html#bookmarking[@DomainObjectLayout#bookmarking] attribute:
 
-* link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/BookmarkPolicy.html#as_root[AS_ROOT] - this is the standard behaviour.
+* link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/BookmarkPolicy.html#as_root[AS_ROOT] - this is the standard behaviour.
 These objects are always bookmarked as they are visited.
-* link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/BookmarkPolicy.html#as_child[AS_CHILD] - only bookmark the object if its parent object is also bookmarked
-* https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/BookmarkPolicy.html#NEVER[NEVER] - do not bookmark.
+* link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/BookmarkPolicy.html#as_child[AS_CHILD] - only bookmark the object if its parent object is also bookmarked
+* https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/BookmarkPolicy.html#NEVER[NEVER] - do not bookmark.
 
 
 == How this demo works

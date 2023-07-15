@@ -52,7 +52,7 @@ public class HasAsciiDocDescription_sources {
         val sourceLocation = packageName.replace('.', '/');
         return AsciiDoc.valueOf(
                 markupVariableResolverService.resolveVariables(
-                        String.format("link:${SOURCES_DEMO}/%s[Sources] for this demo", sourceLocation)));
+                        String.format("link:${SOURCES_DEMO}/%s[Sources] for this page", sourceLocation)));
     }
 
     @Inject MarkupVariableResolverService markupVariableResolverService;
