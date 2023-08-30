@@ -28,7 +28,7 @@ import org.apache.causeway.applib.CausewayModuleApplibChangeAndExecutionLoggers;
 import org.apache.causeway.applib.CausewayModuleApplibMixins;
 import org.apache.causeway.core.config.presets.CausewayPresets;
 import org.apache.causeway.core.runtimeservices.CausewayModuleCoreRuntimeServices;
-import org.apache.causeway.extensions.docgen.CausewayModuleExtDocgen;
+import org.apache.causeway.extensions.docgen.help.CausewayModuleExtDocgenHelp;
 import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixturesApplib;
 
 @Configuration
@@ -36,7 +36,7 @@ import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixtures
     CausewayModuleApplibChangeAndExecutionLoggers.class,
     CausewayModuleApplibMixins.class,
     CausewayModuleCoreRuntimeServices.class,
-    CausewayModuleExtDocgen.class,
+    CausewayModuleExtDocgenHelp.class,
     CausewayModuleTestingFixturesApplib.class,
 })
 @PropertySources({
