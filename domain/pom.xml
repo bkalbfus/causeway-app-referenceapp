@@ -93,7 +93,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.causeway.extensions</groupId>
-			<artifactId>causeway-extensions-docgen</artifactId>
+			<artifactId>causeway-extensions-docgen-help</artifactId>
 		</dependency>
 
 

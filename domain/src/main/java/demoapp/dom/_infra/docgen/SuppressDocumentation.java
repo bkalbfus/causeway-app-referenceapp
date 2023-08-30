@@ -1,9 +1,9 @@
 package demoapp.dom._infra.docgen;
 
-import org.apache.causeway.extensions.docgen.menu.DocumentationMenu;
-
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
+
+import org.apache.causeway.extensions.docgen.help.menu.DocumentationMenu;
 
 @Service
 public class SuppressDocumentation {
