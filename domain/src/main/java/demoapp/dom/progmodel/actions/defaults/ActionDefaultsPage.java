@@ -42,20 +42,18 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
-import demoapp.dom.progmodel.actions.TvShow;
-
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.resources.AsciiDocReaderService;
 import demoapp.dom.progmodel.actions.TvCharacter;
-
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import demoapp.dom.progmodel.actions.TvShow;
 
 @Named("demo.ActionDefaults")
 @DomainObject(
-        nature=Nature.VIEW_MODEL, 
+        nature=Nature.VIEW_MODEL,
         editing=Editing.ENABLED
 )
 @DomainObjectLayout(cssClassFa="fa-heart")

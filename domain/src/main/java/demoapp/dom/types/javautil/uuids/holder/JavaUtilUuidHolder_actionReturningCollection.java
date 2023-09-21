@@ -19,14 +19,13 @@
 package demoapp.dom.types.javautil.uuids.holder;
 
 import java.util.Collection;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.util.UUID;
 
 import lombok.RequiredArgsConstructor;
 

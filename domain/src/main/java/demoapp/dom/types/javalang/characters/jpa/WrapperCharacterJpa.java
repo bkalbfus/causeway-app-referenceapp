@@ -36,8 +36,6 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.lang.Character;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

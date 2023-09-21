@@ -24,8 +24,6 @@ import java.time.LocalDate;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsProviderPercentagePage;
-
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
@@ -37,6 +35,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.val;
 
 import demoapp.dom.domain.properties.ValueSemantics.dateRenderAdjustDays.ValueSemanticsDateRenderAdjustDaysPage;
+import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsProviderPercentagePage;
 
 @Named("demo.ValueSemanticsMenu")
 @DomainService(

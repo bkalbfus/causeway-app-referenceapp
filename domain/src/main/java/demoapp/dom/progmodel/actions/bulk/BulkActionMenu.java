@@ -18,6 +18,9 @@
  */
 package demoapp.dom.progmodel.actions.bulk;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.annotation.Priority;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -31,9 +34,6 @@ import org.apache.causeway.applib.services.factory.FactoryService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import java.util.Arrays;
-import java.util.List;
 
 @Named("demo.BulkActionMenu")
 @DomainService(nature=NatureOfService.VIEW)

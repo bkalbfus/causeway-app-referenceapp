@@ -34,8 +34,6 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 
-import java.lang.Character;
-
 import lombok.Getter;
 import lombok.Setter;
 

@@ -19,6 +19,7 @@
 package demoapp.dom.types.javautil.uuids.holder;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
@@ -28,8 +29,6 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.util.UUID;
 
 import lombok.RequiredArgsConstructor;
 

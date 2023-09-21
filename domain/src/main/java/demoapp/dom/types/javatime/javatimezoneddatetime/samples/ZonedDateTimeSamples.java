@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.samples;
 
+import java.time.ZonedDateTime;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.time.ZonedDateTime;
 
 import demoapp.dom.types.Samples;
 

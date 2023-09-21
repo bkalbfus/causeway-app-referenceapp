@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.bytes.holder;
 
 import javax.inject.Named;
 
-import java.lang.Byte;
-
 @Named("demo.WrapperByteHolder")
 //tag::class[]
 public interface WrapperByteHolder {

@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.persistence;
 
+import java.time.OffsetTime;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.time.OffsetTime;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

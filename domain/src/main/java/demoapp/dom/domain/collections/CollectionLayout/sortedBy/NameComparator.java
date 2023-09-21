@@ -18,11 +18,11 @@
  */
 package demoapp.dom.domain.collections.CollectionLayout.sortedBy;
 
-import demoapp.dom.domain.collections.CollectionLayout.sortedBy.child.CollectionLayoutSortedByChildVm;
-
 import java.util.Comparator;
 
 import org.apache.causeway.applib.util.ObjectContracts;
+
+import demoapp.dom.domain.collections.CollectionLayout.sortedBy.child.CollectionLayoutSortedByChildVm;
 
 //tag::comparator[]
 public class NameComparator implements Comparator<CollectionLayoutSortedByChildVm> {

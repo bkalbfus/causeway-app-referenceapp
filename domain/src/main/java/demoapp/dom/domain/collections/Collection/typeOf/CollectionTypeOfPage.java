@@ -34,9 +34,10 @@ import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 
+import lombok.NoArgsConstructor;
+
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom.domain.collections.Collection.typeOf.child.CollectionTypeOfChildVm;
-import lombok.NoArgsConstructor;
 
 @Named("demo.CollectionTypeOfPage")
 @DomainObject(nature=Nature.VIEW_MODEL)

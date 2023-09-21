@@ -42,12 +42,11 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.resources.AsciiDocReaderService;
 import demoapp.dom.progmodel.actions.TvCharacter;
-
-import lombok.NoArgsConstructor;
 
 @Named("demo.ActionAutoCompletePage")
 @DomainObject(nature=Nature.VIEW_MODEL, editing=Editing.ENABLED)

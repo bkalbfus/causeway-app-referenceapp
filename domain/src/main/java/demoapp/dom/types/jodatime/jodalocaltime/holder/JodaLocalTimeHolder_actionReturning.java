@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.jodatime.jodalocaltime.holder;
 
+import org.joda.time.LocalTime;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import org.joda.time.LocalTime;
 
 import lombok.RequiredArgsConstructor;
 

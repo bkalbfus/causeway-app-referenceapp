@@ -39,10 +39,11 @@ import org.apache.causeway.extensions.sse.applib.annotations.ServerSentEvents;
 import org.apache.causeway.extensions.sse.applib.service.SseService;
 import org.apache.causeway.extensions.sse.applib.service.SseService.ExecutionBehavior;
 
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 @Named("demo.AsyncAction")
 @DomainObject(nature=Nature.VIEW_MODEL, editing=Editing.DISABLED)

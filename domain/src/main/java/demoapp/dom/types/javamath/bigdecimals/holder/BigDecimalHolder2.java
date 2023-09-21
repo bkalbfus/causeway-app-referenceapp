@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.holder;
 
+import java.math.BigDecimal;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.math.BigDecimal;
 
 //tag::class[]
 public interface BigDecimalHolder2 extends BigDecimalHolder {

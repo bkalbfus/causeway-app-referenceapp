@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.jdo;
 
+import java.sql.Timestamp;
+
 import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
@@ -33,8 +35,6 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
-
-import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;

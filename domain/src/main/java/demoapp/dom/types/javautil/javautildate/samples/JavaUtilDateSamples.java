@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javautil.javautildate.samples;
 
+import java.util.Date;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 import demoapp.dom.types.Samples;
 

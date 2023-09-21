@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javasql.javasqldate.persistence;
 
+import java.sql.Date;
+
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +27,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javasql.javasqldate.holder.JavaSqlDateHolder2;
-
-import java.sql.Date;
 
 @Named("demo.JavaSqlDateEntity") // shared permissions with concrete sub class
 @DomainObject

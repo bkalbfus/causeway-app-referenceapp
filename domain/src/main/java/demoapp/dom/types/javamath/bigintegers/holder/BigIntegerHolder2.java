@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javamath.bigintegers.holder;
 
+import java.math.BigInteger;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.math.BigInteger;
 
 //tag::class[]
 public interface BigIntegerHolder2 extends BigIntegerHolder {

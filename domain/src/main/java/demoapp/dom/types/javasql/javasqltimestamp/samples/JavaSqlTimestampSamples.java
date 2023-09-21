@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.samples;
 
+import java.sql.Timestamp;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.sql.Timestamp;
 
 import demoapp.dom.types.Samples;
 

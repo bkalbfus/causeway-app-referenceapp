@@ -22,8 +22,6 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
 
-import java.lang.Long;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

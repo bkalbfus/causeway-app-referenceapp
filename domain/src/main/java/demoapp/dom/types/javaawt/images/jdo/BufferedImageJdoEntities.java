@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javaawt.images.jdo;
 
+import java.awt.image.BufferedImage;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.awt.image.BufferedImage;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

@@ -18,9 +18,9 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.holder;
 
-import javax.inject.Named;
-
 import java.sql.Timestamp;
+
+import javax.inject.Named;
 
 @Named("demo.JavaSqlTimestampHolder")
 //tag::class[]

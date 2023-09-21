@@ -29,6 +29,9 @@ import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
+import lombok.RequiredArgsConstructor;
+import lombok.val;
+
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.collections.CollectionLayout.cssClass.CollectionLayoutCssClassPage;
 import demoapp.dom.domain.collections.CollectionLayout.cssClass.child.CollectionLayoutCssClassChildVm;
@@ -48,8 +51,6 @@ import demoapp.dom.domain.collections.CollectionLayout.sortedBy.CollectionLayout
 import demoapp.dom.domain.collections.CollectionLayout.sortedBy.child.CollectionLayoutSortedByChildVm;
 import demoapp.dom.domain.collections.CollectionLayout.tabledec.CollectionLayoutTableDecoratorPage;
 import demoapp.dom.domain.collections.CollectionLayout.tabledec.child.CollectionLayoutTableDecoratorChildVm;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.CollectionLayoutMenu")
 @DomainService(nature=NatureOfService.VIEW)

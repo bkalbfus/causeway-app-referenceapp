@@ -26,8 +26,6 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.bytes.holder.WrapperByteHolder2;
 
-import java.lang.Byte;
-
 @Named("demo.WrapperByteEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class WrapperByteEntity

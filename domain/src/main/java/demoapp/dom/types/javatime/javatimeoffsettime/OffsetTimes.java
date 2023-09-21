@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime;
 
+import java.time.OffsetTime;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -38,8 +39,6 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.time.OffsetTime;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolderRepository;

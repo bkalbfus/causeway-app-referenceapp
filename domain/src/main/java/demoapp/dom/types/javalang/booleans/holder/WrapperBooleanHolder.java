@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.booleans.holder;
 
 import javax.inject.Named;
 
-import java.lang.Boolean;
-
 @Named("demo.WrapperBooleanHolder")
 //tag::class[]
 public interface WrapperBooleanHolder {

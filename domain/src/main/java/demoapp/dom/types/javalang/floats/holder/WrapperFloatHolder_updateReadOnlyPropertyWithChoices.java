@@ -29,8 +29,6 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Float;
-
 import lombok.RequiredArgsConstructor;
 
 import demoapp.dom.types.Samples;

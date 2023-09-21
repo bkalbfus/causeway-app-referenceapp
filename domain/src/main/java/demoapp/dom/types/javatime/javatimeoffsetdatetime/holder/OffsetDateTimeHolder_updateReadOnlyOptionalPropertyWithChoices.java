@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsetdatetime.holder;
 
+import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,8 +31,6 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.time.OffsetDateTime;
 
 import lombok.RequiredArgsConstructor;
 

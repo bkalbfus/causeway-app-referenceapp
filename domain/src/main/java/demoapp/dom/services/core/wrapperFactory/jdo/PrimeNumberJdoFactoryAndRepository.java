@@ -25,9 +25,10 @@ import org.springframework.stereotype.Service;
 
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
+import lombok.RequiredArgsConstructor;
+
 import demoapp.dom.services.core.wrapperFactory.PrimeNumberFactory;
 import demoapp.dom.services.core.wrapperFactory.PrimeNumberRepository;
-import lombok.RequiredArgsConstructor;
 
 @Profile("demo-jdo")
 @Service

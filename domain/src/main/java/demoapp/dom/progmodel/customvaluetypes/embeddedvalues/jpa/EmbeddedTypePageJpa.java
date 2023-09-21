@@ -29,11 +29,12 @@ import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 
+import lombok.NoArgsConstructor;
+
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.ComplexNumber;
 import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.NumberConstantEntity;
-import lombok.NoArgsConstructor;
 
 //tag::class[]
 @Named("demo.EmbeddedTypePageJpa")

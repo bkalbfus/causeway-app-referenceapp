@@ -22,8 +22,9 @@ import org.springframework.context.annotation.Profile;
 
 import org.apache.causeway.applib.annotation.Value;
 
-import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.ComplexNumber;
 import lombok.AccessLevel;
+
+import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.ComplexNumber;
 
 @Profile("demo-jpa")
 //tag::class[]

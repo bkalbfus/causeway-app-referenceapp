@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsetdatetime.holder;
 
+import java.time.OffsetDateTime;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.time.OffsetDateTime;
 
 //tag::class[]
 public interface OffsetDateTimeHolder2 extends OffsetDateTimeHolder {

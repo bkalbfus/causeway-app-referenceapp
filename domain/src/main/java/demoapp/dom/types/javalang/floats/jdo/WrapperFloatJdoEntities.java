@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.floats.jdo;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.lang.Float;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
 
 @Profile("demo-jdo")

@@ -28,8 +28,9 @@ import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.CollectionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 
-import demoapp.dom.domain.objects.DomainObject.introspection.DomainObjectIntrospectionPage;
 import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.domain.objects.DomainObject.introspection.DomainObjectIntrospectionPage;
 
 @Profile("demo-jdo")
 @Collection()

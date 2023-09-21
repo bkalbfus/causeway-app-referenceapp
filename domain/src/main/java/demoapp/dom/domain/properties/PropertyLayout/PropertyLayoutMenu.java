@@ -28,6 +28,9 @@ import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
+import lombok.RequiredArgsConstructor;
+import lombok.val;
+
 import demoapp.dom.domain.properties.PropertyLayout.cssClass.PropertyLayoutCssClassPage;
 import demoapp.dom.domain.properties.PropertyLayout.describedAs.PropertyLayoutDescribedAsPage;
 import demoapp.dom.domain.properties.PropertyLayout.hidden.PropertyLayoutHiddenPage;
@@ -37,8 +40,6 @@ import demoapp.dom.domain.properties.PropertyLayout.named.PropertyLayoutNamedPag
 import demoapp.dom.domain.properties.PropertyLayout.navigable.FileNodeVm;
 import demoapp.dom.domain.properties.PropertyLayout.repainting.PropertyLayoutRepaintingPage;
 import demoapp.dom.domain.properties.PropertyLayout.typicalLength.PropertyLayoutTypicalLengthPage;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.PropertyLayoutMenu")
 @DomainService(

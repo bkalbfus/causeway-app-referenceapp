@@ -26,8 +26,6 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.characters.holder.WrapperCharacterHolder2;
 
-import java.lang.Character;
-
 @Named("demo.WrapperCharacterEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class WrapperCharacterEntity

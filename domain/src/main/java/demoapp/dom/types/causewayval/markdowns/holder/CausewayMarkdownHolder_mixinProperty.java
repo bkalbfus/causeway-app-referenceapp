@@ -21,7 +21,6 @@ package demoapp.dom.types.causewayval.markdowns.holder;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import lombok.RequiredArgsConstructor;

@@ -29,9 +29,10 @@ import org.springframework.context.annotation.Profile;
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 
-import demoapp.dom.domain.actions.Action.commandPublishing.ActionCommandPublishingEntity;
 import lombok.Getter;
 import lombok.Setter;
+
+import demoapp.dom.domain.actions.Action.commandPublishing.ActionCommandPublishingEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

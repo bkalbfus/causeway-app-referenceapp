@@ -18,9 +18,9 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.holder;
 
-import javax.inject.Named;
-
 import java.math.BigDecimal;
+
+import javax.inject.Named;
 
 @Named("demo.BigDecimalHolder")
 //tag::class[]

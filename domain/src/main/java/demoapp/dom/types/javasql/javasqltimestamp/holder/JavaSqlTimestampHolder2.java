@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.holder;
 
+import java.sql.Timestamp;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.sql.Timestamp;
 
 //tag::class[]
 public interface JavaSqlTimestampHolder2 extends JavaSqlTimestampHolder {

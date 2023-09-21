@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.integers.holder;
 
 import javax.inject.Named;
 
-import java.lang.Integer;
-
 @Named("demo.WrapperIntegerHolder")
 //tag::class[]
 public interface WrapperIntegerHolder {

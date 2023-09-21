@@ -31,8 +31,9 @@ import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.message.MessageService;
 
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.NoArgsConstructor;
+
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 @Named("demo.MessageServiceDemoPage")
 @DomainObject(nature=Nature.VIEW_MODEL)

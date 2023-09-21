@@ -18,15 +18,19 @@
  */
 package demoapp.dom.progmodel.actions.validate;
 
-import demoapp.dom.progmodel.actions.TvCharacter;
-
-import lombok.RequiredArgsConstructor;
-
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.apache.causeway.applib.annotation.*;
+import org.apache.causeway.applib.annotation.Action;
+import org.apache.causeway.applib.annotation.MemberSupport;
+import org.apache.causeway.applib.annotation.Optionality;
+import org.apache.causeway.applib.annotation.Parameter;
+import org.apache.causeway.applib.annotation.SemanticsOf;
+
+import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.progmodel.actions.TvCharacter;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT)

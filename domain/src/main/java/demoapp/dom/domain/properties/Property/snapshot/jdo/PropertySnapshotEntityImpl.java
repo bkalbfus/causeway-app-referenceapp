@@ -30,9 +30,10 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Property;
 
-import demoapp.dom.domain.properties.Property.snapshot.PropertySnapshotEntity;
 import lombok.Getter;
 import lombok.Setter;
+
+import demoapp.dom.domain.properties.Property.snapshot.PropertySnapshotEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

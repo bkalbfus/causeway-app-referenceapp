@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqldate.holder;
 
+import java.sql.Date;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.sql.Date;
 
 import lombok.RequiredArgsConstructor;
 

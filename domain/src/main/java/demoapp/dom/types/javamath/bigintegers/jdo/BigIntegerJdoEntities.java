@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javamath.bigintegers.jdo;
 
+import java.math.BigInteger;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.math.BigInteger;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

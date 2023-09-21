@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.strings.holder;
 
 import javax.inject.Named;
 
-import java.lang.String;
-
 @Named("demo.JavaLangStringHolder")
 //tag::class[]
 public interface JavaLangStringHolder {

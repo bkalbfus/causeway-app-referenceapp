@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javautil.uuids.jdo;
 
+import java.util.UUID;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

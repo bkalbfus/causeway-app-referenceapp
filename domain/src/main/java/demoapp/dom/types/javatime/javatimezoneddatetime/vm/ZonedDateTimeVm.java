@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.vm;
 
+import java.time.ZonedDateTime;
+
 import javax.inject.Named;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -33,8 +35,6 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
-
-import java.time.ZonedDateTime;
 
 import lombok.Getter;
 import lombok.Setter;

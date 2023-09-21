@@ -18,14 +18,14 @@
  */
 package demoapp.dom.types.causeway.passwords.persistence;
 
-import lombok.RequiredArgsConstructor;
-
 import javax.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.services.message.MessageService;
+
+import lombok.RequiredArgsConstructor;
 
 // This class is NOT generated
 @Action

@@ -18,9 +18,9 @@
  */
 package demoapp.dom.types.javanet.urls.holder;
 
-import javax.inject.Named;
-
 import java.net.URL;
+
+import javax.inject.Named;
 
 @Named("demo.UrlHolder")
 //tag::class[]

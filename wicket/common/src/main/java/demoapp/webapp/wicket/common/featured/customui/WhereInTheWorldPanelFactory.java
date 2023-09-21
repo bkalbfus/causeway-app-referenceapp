@@ -30,8 +30,8 @@ import org.apache.causeway.viewer.commons.model.components.UiComponentType;
 import org.apache.causeway.viewer.wicket.model.models.UiObjectWkt;
 import org.apache.causeway.viewer.wicket.ui.components.entity.EntityComponentFactoryAbstract;
 
-import demoapp.dom.featured.customui.WhereInTheWorldPage;
 import demoapp.dom.featured.customui.GeoapifyClient;
+import demoapp.dom.featured.customui.WhereInTheWorldPage;
 
 //tag::class[]
 @org.springframework.stereotype.Component

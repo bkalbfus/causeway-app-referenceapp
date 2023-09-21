@@ -25,8 +25,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
-import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 
 //tag::class[]
 @Service

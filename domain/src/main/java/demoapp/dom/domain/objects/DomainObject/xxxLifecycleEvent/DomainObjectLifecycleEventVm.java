@@ -18,6 +18,8 @@
  */
 package demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent;
 
+import java.time.LocalDateTime;
+
 import javax.inject.Named;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -36,8 +38,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-
-import java.time.LocalDateTime;
 
 //tag::class[]
 @XmlRootElement(name = "demo.DomainObjectLifecycleEventVm")

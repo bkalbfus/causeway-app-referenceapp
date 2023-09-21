@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.jodatime.jodadatetime.jdo;
 
+import org.joda.time.DateTime;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import org.joda.time.DateTime;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

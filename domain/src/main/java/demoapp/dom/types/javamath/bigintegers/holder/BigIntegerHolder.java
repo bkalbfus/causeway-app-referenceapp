@@ -18,9 +18,9 @@
  */
 package demoapp.dom.types.javamath.bigintegers.holder;
 
-import javax.inject.Named;
-
 import java.math.BigInteger;
+
+import javax.inject.Named;
 
 @Named("demo.BigIntegerHolder")
 //tag::class[]

@@ -26,8 +26,6 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.booleans.holder.WrapperBooleanHolder2;
 
-import java.lang.Boolean;
-
 @Named("demo.WrapperBooleanEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class WrapperBooleanEntity

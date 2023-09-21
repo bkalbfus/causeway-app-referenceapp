@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqldate.jpa;
 
+import java.sql.Date;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.sql.Date;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.holder;
 
+import java.time.LocalDateTime;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.time.LocalDateTime;
 
 import lombok.RequiredArgsConstructor;
 

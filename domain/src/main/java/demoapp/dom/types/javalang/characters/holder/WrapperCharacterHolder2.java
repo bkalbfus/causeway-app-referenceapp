@@ -22,7 +22,6 @@ import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.lang.Character;
 
 //tag::class[]
 public interface WrapperCharacterHolder2 extends WrapperCharacterHolder {

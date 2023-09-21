@@ -32,8 +32,9 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.services.eventbus.EventBusService;
 
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.NoArgsConstructor;
+
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 //tag::class[]
 @Named("demo.EventBusServiceDemoPage")

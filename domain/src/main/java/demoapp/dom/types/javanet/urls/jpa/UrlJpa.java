@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javanet.urls.jpa;
 
+import java.net.URL;
+
 import javax.inject.Named;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -35,8 +37,6 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
-
-import java.net.URL;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

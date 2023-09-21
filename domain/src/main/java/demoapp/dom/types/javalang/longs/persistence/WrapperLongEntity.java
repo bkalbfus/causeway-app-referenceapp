@@ -26,8 +26,6 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.longs.holder.WrapperLongHolder2;
 
-import java.lang.Long;
-
 @Named("demo.WrapperLongEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class WrapperLongEntity

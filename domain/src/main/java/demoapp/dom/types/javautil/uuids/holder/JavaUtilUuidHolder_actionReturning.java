@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javautil.uuids.holder;
 
+import java.util.UUID;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.util.UUID;
 
 import lombok.RequiredArgsConstructor;
 

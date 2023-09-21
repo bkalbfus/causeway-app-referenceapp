@@ -19,12 +19,6 @@
  */
 package demoapp.dom.types.javatime;
 
-import demoapp.dom.types.javatime.javatimelocaldate.LocalDates;
-import demoapp.dom.types.javatime.javatimelocaldatetime.LocalDateTimes;
-import demoapp.dom.types.javatime.javatimelocaltime.LocalTimes;
-import demoapp.dom.types.javatime.javatimeoffsetdatetime.OffsetDateTimes;
-import demoapp.dom.types.javatime.javatimezoneddatetime.ZonedDateTimes;
-
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
@@ -34,6 +28,12 @@ import org.apache.causeway.applib.annotation.DomainService;
 import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
+
+import demoapp.dom.types.javatime.javatimelocaldate.LocalDates;
+import demoapp.dom.types.javatime.javatimelocaldatetime.LocalDateTimes;
+import demoapp.dom.types.javatime.javatimelocaltime.LocalTimes;
+import demoapp.dom.types.javatime.javatimeoffsetdatetime.OffsetDateTimes;
+import demoapp.dom.types.javatime.javatimezoneddatetime.ZonedDateTimes;
 
 @Named("demo.JavaTimeTypesMenu")
 @DomainService(

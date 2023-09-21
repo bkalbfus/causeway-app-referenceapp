@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.persistence;
 
+import java.time.ZonedDateTime;
+
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +27,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javatime.javatimezoneddatetime.holder.ZonedDateTimeHolder2;
-
-import java.time.ZonedDateTime;
 
 @Named("demo.ZonedDateTimeEntity") // shared permissions with concrete sub class
 @DomainObject

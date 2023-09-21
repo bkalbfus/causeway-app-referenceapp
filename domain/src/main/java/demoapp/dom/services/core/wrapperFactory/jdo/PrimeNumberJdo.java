@@ -31,9 +31,9 @@ import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Property;
 
-import demoapp.dom.services.core.wrapperFactory.PrimeNumber;
-
 import lombok.Getter;
+
+import demoapp.dom.services.core.wrapperFactory.PrimeNumber;
 
 @Profile("demo-jdo")
 //tag::class[]

@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javautil.javautildate.persistence;
 
+import java.util.Date;
+
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +27,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javautil.javautildate.holder.JavaUtilDateHolder2;
-
-import java.util.Date;
 
 @Named("demo.JavaUtilDateEntity") // shared permissions with concrete sub class
 @DomainObject

@@ -30,13 +30,12 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.factory.FactoryService;
 
-import demoapp.dom.services.core.wrapperFactory.WrapperFactoryDemoPage;
-
 import lombok.RequiredArgsConstructor;
 
 import demoapp.dom.services.core.errorreportingservice.ErrorReportingServiceDemoPage;
 import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage;
 import demoapp.dom.services.core.messageservice.MessageServiceDemoPage;
+import demoapp.dom.services.core.wrapperFactory.WrapperFactoryDemoPage;
 
 @Named("demo.ServicesMenu")
 @DomainService(nature=NatureOfService.VIEW)

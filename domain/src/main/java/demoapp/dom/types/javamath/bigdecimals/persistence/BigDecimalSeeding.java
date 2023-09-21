@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.persistence;
 
+import java.math.BigDecimal;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

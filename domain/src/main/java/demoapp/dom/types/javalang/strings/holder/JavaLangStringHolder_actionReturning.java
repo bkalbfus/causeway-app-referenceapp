@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.strings.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.String;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

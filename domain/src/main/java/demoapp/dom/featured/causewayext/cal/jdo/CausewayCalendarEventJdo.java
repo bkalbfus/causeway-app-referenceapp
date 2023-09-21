@@ -33,12 +33,12 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
-
 import org.apache.causeway.extensions.fullcalendar.applib.value.CalendarEvent;
 
-import demoapp.dom.featured.causewayext.cal.persistence.CausewayCalendarEventEntity;
 import lombok.Getter;
 import lombok.Setter;
+
+import demoapp.dom.featured.causewayext.cal.persistence.CausewayCalendarEventEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

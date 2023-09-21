@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.jdo;
 
+import java.time.OffsetTime;
+
 import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
@@ -33,8 +35,6 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
-
-import java.time.OffsetTime;
 
 import lombok.Getter;
 import lombok.Setter;

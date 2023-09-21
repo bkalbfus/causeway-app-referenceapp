@@ -31,10 +31,11 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import demoapp.dom.domain.objects.DomainObject.autoComplete.DomainObjectAutoCompleteEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import demoapp.dom.domain.objects.DomainObject.autoComplete.DomainObjectAutoCompleteEntity;
 
 @Profile("demo-jpa")
 @Entity

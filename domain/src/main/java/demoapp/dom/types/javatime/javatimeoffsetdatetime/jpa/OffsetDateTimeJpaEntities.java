@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsetdatetime.jpa;
 
+import java.time.OffsetDateTime;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.time.OffsetDateTime;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javaawt.images.persistence;
 
+import java.awt.image.BufferedImage;
+
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +27,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javaawt.images.holder.BufferedImageHolder2;
-
-import java.awt.image.BufferedImage;
 
 @Named("demo.BufferedImageEntity") // shared permissions with concrete sub class
 @DomainObject

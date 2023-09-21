@@ -18,13 +18,13 @@
  */
 package demoapp.dom.types.jodatime.jodadatetime.holder;
 
+import org.joda.time.DateTime;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import org.joda.time.DateTime;
 
 import lombok.RequiredArgsConstructor;
 

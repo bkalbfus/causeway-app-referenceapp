@@ -22,7 +22,6 @@ import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.lang.Double;
 
 //tag::class[]
 public interface WrapperDoubleHolder2 extends WrapperDoubleHolder {

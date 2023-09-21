@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.holder;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,8 +29,6 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.time.LocalDateTime;
 
 import lombok.RequiredArgsConstructor;
 

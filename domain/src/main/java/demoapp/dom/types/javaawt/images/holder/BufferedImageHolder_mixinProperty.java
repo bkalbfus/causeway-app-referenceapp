@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javaawt.images.holder;
 
+import java.awt.image.BufferedImage;
+
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-
-import java.awt.image.BufferedImage;
 
 import lombok.RequiredArgsConstructor;
 

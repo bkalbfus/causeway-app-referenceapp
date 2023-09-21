@@ -20,9 +20,9 @@ package demoapp.dom.types.jodatime.jodalocaltime.persistence;
 
 import javax.inject.Inject;
 
-import org.springframework.stereotype.Service;
-
 import org.joda.time.LocalTime;
+
+import org.springframework.stereotype.Service;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

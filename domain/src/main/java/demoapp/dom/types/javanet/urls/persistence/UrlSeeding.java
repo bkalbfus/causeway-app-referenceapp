@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javanet.urls.persistence;
 
+import java.net.URL;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.net.URL;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

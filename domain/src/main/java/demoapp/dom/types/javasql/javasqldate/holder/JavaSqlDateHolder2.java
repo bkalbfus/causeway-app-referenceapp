@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javasql.javasqldate.holder;
 
+import java.sql.Date;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.sql.Date;
 
 //tag::class[]
 public interface JavaSqlDateHolder2 extends JavaSqlDateHolder {

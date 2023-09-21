@@ -30,12 +30,13 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.factory.FactoryService;
 
+import lombok.RequiredArgsConstructor;
+import lombok.val;
+
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.collections.Collection.domainEvent.CollectionDomainEventPage;
 import demoapp.dom.domain.collections.Collection.typeOf.CollectionTypeOfPage;
 import demoapp.dom.domain.collections.Collection.typeOf.child.CollectionTypeOfChildVm;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.CollectionMenu")
 @DomainService(nature=NatureOfService.VIEW)

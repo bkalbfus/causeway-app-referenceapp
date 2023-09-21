@@ -19,14 +19,13 @@
 package demoapp.dom.types.javautil.javautildate.holder;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.util.Date;
 
 import lombok.RequiredArgsConstructor;
 

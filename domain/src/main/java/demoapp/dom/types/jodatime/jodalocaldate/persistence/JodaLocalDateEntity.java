@@ -20,13 +20,13 @@ package demoapp.dom.types.jodatime.jodalocaldate.persistence;
 
 import javax.inject.Named;
 
+import org.joda.time.LocalDate;
+
 import org.apache.causeway.applib.annotation.DomainObject;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.jodatime.jodalocaldate.holder.JodaLocalDateHolder2;
-
-import org.joda.time.LocalDate;
 
 @Named("demo.JodaLocalDateEntity") // shared permissions with concrete sub class
 @DomainObject

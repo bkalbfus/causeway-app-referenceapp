@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.persistence;
 
+import java.math.BigDecimal;
+
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +27,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javamath.bigdecimals.holder.BigDecimalHolder2;
-
-import java.math.BigDecimal;
 
 @Named("demo.BigDecimalEntity") // shared permissions with concrete sub class
 @DomainObject

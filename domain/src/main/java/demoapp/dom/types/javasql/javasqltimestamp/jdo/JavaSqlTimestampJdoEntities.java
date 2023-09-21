@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.jdo;
 
+import java.sql.Timestamp;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.sql.Timestamp;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

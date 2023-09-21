@@ -30,7 +30,6 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.applib.value.Password;
 
 import lombok.RequiredArgsConstructor;

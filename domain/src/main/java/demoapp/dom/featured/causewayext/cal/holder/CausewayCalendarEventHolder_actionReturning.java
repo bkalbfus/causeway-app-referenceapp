@@ -20,7 +20,6 @@ package demoapp.dom.featured.causewayext.cal.holder;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.extensions.fullcalendar.applib.value.CalendarEvent;
 
 import lombok.RequiredArgsConstructor;

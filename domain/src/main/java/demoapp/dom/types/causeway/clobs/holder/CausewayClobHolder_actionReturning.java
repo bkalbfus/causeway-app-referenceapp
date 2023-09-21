@@ -20,7 +20,6 @@ package demoapp.dom.types.causeway.clobs.holder;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.applib.value.Clob;
 
 import lombok.RequiredArgsConstructor;

@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.samples;
 
+import java.math.BigDecimal;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
 
 import demoapp.dom.types.Samples;
 

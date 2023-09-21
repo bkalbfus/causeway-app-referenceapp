@@ -18,10 +18,6 @@
  */
 package demoapp.dom.progmodel.actions.veto;
 
-import demoapp.dom.progmodel.actions.TvCharacter;
-
-import lombok.RequiredArgsConstructor;
-
 import java.util.List;
 import java.util.Set;
 
@@ -29,6 +25,10 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
+
+import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.progmodel.actions.TvCharacter;
 
 //tag::class[]
 @Action

@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.doubles.holder;
 
 import javax.inject.Named;
 
-import java.lang.Double;
-
 @Named("demo.WrapperDoubleHolder")
 //tag::class[]
 public interface WrapperDoubleHolder {

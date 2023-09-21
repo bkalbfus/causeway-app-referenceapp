@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javautil.javautildate.jpa;
 
+import java.util.Date;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

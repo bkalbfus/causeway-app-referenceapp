@@ -29,10 +29,9 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import demoapp.dom._infra.samples.DemoEnum;
-
 import lombok.RequiredArgsConstructor;
 
+import demoapp.dom._infra.samples.DemoEnum;
 import demoapp.dom.types.Samples;
 
 //tag::class[]

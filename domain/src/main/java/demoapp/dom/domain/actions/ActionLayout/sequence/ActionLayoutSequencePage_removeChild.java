@@ -25,8 +25,9 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import demoapp.dom.domain.actions.ActionLayout.sequence.child.ActionLayoutSequenceChildVm;
 import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.domain.actions.ActionLayout.sequence.child.ActionLayoutSequenceChildVm;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT)

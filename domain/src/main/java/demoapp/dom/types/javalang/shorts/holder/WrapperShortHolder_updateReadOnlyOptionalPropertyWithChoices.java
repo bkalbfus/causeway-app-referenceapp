@@ -31,8 +31,6 @@ import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Short;
-
 import lombok.RequiredArgsConstructor;
 
 import demoapp.dom.types.Samples;

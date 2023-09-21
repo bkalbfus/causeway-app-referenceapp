@@ -18,15 +18,17 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.holder;
 
+import java.math.BigDecimal;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.math.BigDecimal;
-
 import lombok.RequiredArgsConstructor;
+
+import demoapp.dom.types.javamath.bigdecimals.meta.Money;
 
 //tag::class[]
 @Action(
@@ -42,7 +44,10 @@ public class BigDecimalHolder_updateReadOnlyProperty {
 
     private final BigDecimalHolder holder;
 
-    @MemberSupport public BigDecimalHolder act(final BigDecimal newValue) {
+    @MemberSupport public BigDecimalHolder act(
+            @Money
+            final BigDecimal newValue
+    ) {
         holder.setReadOnlyProperty(newValue);
         return holder;
     }

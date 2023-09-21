@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.characters.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Character;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

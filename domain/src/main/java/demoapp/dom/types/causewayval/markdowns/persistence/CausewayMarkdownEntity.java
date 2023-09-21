@@ -21,12 +21,11 @@ package demoapp.dom.types.causewayval.markdowns.persistence;
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
+import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.causewayval.markdowns.holder.CausewayMarkdownHolder2;
-
-import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 @Named("demo.CausewayMarkdownEntity") // shared permissions with concrete sub class
 @DomainObject

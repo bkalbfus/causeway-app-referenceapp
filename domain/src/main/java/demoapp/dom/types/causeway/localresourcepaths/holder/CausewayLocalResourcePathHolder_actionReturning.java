@@ -20,7 +20,6 @@ package demoapp.dom.types.causeway.localresourcepaths.holder;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.applib.value.LocalResourcePath;
 
 import lombok.RequiredArgsConstructor;

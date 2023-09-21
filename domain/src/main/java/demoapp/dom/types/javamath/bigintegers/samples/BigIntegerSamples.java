@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javamath.bigintegers.samples;
 
+import java.math.BigInteger;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.math.BigInteger;
 
 import demoapp.dom.types.Samples;
 

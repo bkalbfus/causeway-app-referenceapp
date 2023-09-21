@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javamath.bigintegers.persistence;
 
+import java.math.BigInteger;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.math.BigInteger;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

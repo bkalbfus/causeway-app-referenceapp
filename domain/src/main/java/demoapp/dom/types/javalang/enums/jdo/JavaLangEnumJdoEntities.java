@@ -22,7 +22,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import demoapp.dom._infra.samples.DemoEnum;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
 
 @Profile("demo-jdo")

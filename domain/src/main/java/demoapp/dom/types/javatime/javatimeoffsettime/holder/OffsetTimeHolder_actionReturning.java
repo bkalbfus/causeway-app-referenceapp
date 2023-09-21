@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.holder;
 
+import java.time.OffsetTime;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.time.OffsetTime;
 
 import lombok.RequiredArgsConstructor;
 

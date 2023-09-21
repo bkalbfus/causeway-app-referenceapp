@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.jodatime.jodalocaldatetime.holder;
 
+import org.joda.time.LocalDateTime;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import org.joda.time.LocalDateTime;
 
 //tag::class[]
 public interface JodaLocalDateTimeHolder2 extends JodaLocalDateTimeHolder {

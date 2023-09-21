@@ -21,12 +21,11 @@ package demoapp.dom.types.causewayval.vegas.persistence;
 import javax.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
+import org.apache.causeway.valuetypes.vega.applib.value.Vega;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.causewayval.vegas.holder.CausewayVegaHolder2;
-
-import org.apache.causeway.valuetypes.vega.applib.value.Vega;
 
 @Named("demo.CausewayVegaEntity") // shared permissions with concrete sub class
 @DomainObject

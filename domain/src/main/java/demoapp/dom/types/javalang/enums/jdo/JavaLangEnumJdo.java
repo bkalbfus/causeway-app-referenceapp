@@ -34,11 +34,10 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 
-import demoapp.dom._infra.samples.DemoEnum;
-
 import lombok.Getter;
 import lombok.Setter;
 
+import demoapp.dom._infra.samples.DemoEnum;
 import demoapp.dom.types.javalang.enums.persistence.JavaLangEnumEntity;
 
 @Profile("demo-jdo")

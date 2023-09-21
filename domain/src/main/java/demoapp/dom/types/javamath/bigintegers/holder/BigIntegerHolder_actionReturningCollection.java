@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javamath.bigintegers.holder;
 
+import java.math.BigInteger;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
@@ -25,8 +26,6 @@ import javax.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.math.BigInteger;
 
 import lombok.RequiredArgsConstructor;
 
