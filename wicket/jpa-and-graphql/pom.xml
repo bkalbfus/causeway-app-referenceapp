@@ -121,7 +121,7 @@
 						<artifactId>jib-maven-plugin</artifactId>
 						<configuration>
 							<from>
-								<image>openjdk:18-jdk-slim-bullseye</image>
+								<image>openjdk:21-jdk-bookworm</image>
 							</from>
 							<container>
 								<jvmFlags>
