@@ -16,14 +16,14 @@
 
 	<parent>
 		<groupId>org.apache.causeway.examples.apps</groupId>
-		<artifactId>demo-parent</artifactId>
+		<artifactId>reference-app-parent</artifactId>
 		<version>2.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>demo-testing</artifactId>
+	<artifactId>reference-app-testing</artifactId>
 
-	<name>Demo - Testing</name>
+	<name>Reference App - Testing</name>
 
 	<packaging>pom</packaging>
 
@@ -41,12 +41,12 @@
 
 		<dependency>
 			<groupId>org.apache.causeway.examples.apps</groupId>
-			<artifactId>demo-domain</artifactId>
+			<artifactId>reference-app-domain</artifactId>
 		</dependency>
-		
+
 		<dependency>
 		    <groupId>org.apache.causeway.examples.apps</groupId>
-		    <artifactId>demo-web</artifactId>
+		    <artifactId>reference-app-web</artifactId>
 		</dependency>
 
 		<!-- CORS -->
@@ -55,9 +55,9 @@
 			<groupId>org.apache.causeway.extensions</groupId>
 			<artifactId>causeway-extensions-cors-impl</artifactId>
 		</dependency>
-		
+
 		<!-- EXTENSIONS -->
-		
+
 		<dependency>
 			<groupId>org.apache.causeway.valuetypes</groupId>
 			<artifactId>causeway-valuetypes-asciidoc-ui</artifactId>
@@ -96,9 +96,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
-		
+
 		<!-- TESTING UTILS -->
-		
+
 		<dependency>
         	<groupId>org.apache.causeway.testing</groupId>
         	<artifactId>causeway-testing-unittestsupport-applib</artifactId>
@@ -117,9 +117,9 @@
 		        </exclusion>
 		    </exclusions>
     	</dependency>
-		
+
 	</dependencies>
-	
+
 	<modules>
 		<module>jdo</module>
 		<module>jpa</module>
