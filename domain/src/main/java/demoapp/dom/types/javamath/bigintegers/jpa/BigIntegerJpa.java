@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javamath.bigintegers.jpa;
 
+import java.math.BigInteger;
+
 import jakarta.inject.Named;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,13 +38,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.math.BigInteger;
-
+import demoapp.dom.types.javamath.bigintegers.persistence.BigIntegerEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javamath.bigintegers.persistence.BigIntegerEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

@@ -18,9 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.holder;
 
-import jakarta.inject.Named;
 
 import java.time.ZonedDateTime;
+
+import jakarta.inject.Named;
 
 @Named("demo.ZonedDateTimeHolder")
 //tag::class[]

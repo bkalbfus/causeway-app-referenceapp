@@ -18,12 +18,13 @@
  */
 package demoapp.dom.types.javalang.integers.jdo;
 
-import jakarta.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -34,12 +35,9 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 
-import java.lang.Integer;
-
+import demoapp.dom.types.javalang.integers.persistence.WrapperIntegerEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.types.javalang.integers.persistence.WrapperIntegerEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

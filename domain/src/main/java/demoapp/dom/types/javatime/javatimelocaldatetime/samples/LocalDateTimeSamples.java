@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.samples;
 
+import java.time.LocalDateTime;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
 
 import demoapp.dom.types.Samples;
 

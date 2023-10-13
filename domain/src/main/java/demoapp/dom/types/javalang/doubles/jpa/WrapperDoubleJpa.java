@@ -36,13 +36,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.lang.Double;
-
+import demoapp.dom.types.javalang.doubles.persistence.WrapperDoubleEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javalang.doubles.persistence.WrapperDoubleEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

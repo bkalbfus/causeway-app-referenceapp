@@ -18,6 +18,9 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldate.persistence;
 
+
+import java.time.LocalDate;
+
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +28,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javatime.javatimelocaldate.holder.LocalDateHolder2;
-
-import java.time.LocalDate;
 
 @Named("demo.LocalDateEntity") // shared permissions with concrete sub class
 @DomainObject

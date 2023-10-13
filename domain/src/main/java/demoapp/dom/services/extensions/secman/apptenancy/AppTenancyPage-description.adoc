@@ -2,7 +2,7 @@
 
 Application Tenancy is the idea that certain information "belongs" to one party and should be either not visible or at least not modifiable by some other party.
 
-The SecMan extension provides a very flexible way of implementing this, through the link:https://causeway.apache.org/refguide/2.0.0-RC1/extensions/index/secman/applib/tenancy/spi/ApplicationTenancyEvaluator.html#section-top[ApplicationTenancyEvaluator] SPI.
+The SecMan extension provides a very flexible way of implementing this, through the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/extensions/index/secman/applib/tenancy/spi/ApplicationTenancyEvaluator.html#section-top[ApplicationTenancyEvaluator] SPI.
 This allows a domain service to decide whether to hide or to disable each object for the current user.
 
 [IMPORTANT]
@@ -34,7 +34,7 @@ include::ApplicationTenancyEvaluatorForDemo.java[tags=class]
 There can be multiple implementations; all will be checked.
 <.> whether this implementation handles the type of the domain object being considered.
 <.> set by the page object
-This demo application deals only with the `TenantedEntity` entity type.
+This app deals only with the `TenantedEntity` entity type.
 <.> whether the current user can view the domain object.
 <.> whether the current user can modify (invoke actions, edit the properties of) the domain object.
 

@@ -9,9 +9,8 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObject;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @DomainObject(mixinMethod = "action")                   // <.>

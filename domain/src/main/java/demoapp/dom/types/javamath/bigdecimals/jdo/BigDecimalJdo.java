@@ -18,12 +18,15 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.jdo;
 
-import jakarta.inject.Named;
+import java.math.BigDecimal;
+
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -34,12 +37,10 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 
-import java.math.BigDecimal;
-
+import demoapp.dom.types.javamath.bigdecimals.meta.Money;
+import demoapp.dom.types.javamath.bigdecimals.persistence.BigDecimalEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.types.javamath.bigdecimals.persistence.BigDecimalEntity;
 
 @Profile("demo-jdo")
 //tag::class[]
@@ -59,24 +60,28 @@ public class BigDecimalJdo                                          // <.>
 //tag::class[]
     @Title(prepend = "BigDecimal JDO entity: ")
     @PropertyLayout(fieldSetId = "read-only-properties", sequence = "1")
+    @Money
     @Column(allowsNull = "false")                                               // <.>
     @Getter @Setter
     private BigDecimal readOnlyProperty;
 
     @Property(editing = Editing.ENABLED)                                        // <.>
     @PropertyLayout(fieldSetId = "editable-properties", sequence = "1")
+    @Money
     @Column(allowsNull = "false")
     @Getter @Setter
     private BigDecimal readWriteProperty;
 
     @Property(optionality = Optionality.OPTIONAL)                               // <.>
     @PropertyLayout(fieldSetId = "optional-properties", sequence = "1")
+    @Money
     @Column(allowsNull = "true")                                                // <.>
     @Getter @Setter
     private BigDecimal readOnlyOptionalProperty;
 
     @Property(editing = Editing.ENABLED, optionality = Optionality.OPTIONAL)
     @PropertyLayout(fieldSetId = "optional-properties", sequence = "2")
+    @Money
     @Column(allowsNull = "true")
     @Getter @Setter
     private BigDecimal readWriteOptionalProperty;

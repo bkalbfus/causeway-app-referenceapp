@@ -18,24 +18,23 @@
  */
 package demoapp.dom.progmodel.customvaluetypes.customvalues;
 
-import lombok.NonNull;
-
 import java.util.regex.Pattern;
 
 import jakarta.inject.Named;
 
-import org.apache.causeway.applib.services.bookmark.IdStringifier;
-import org.apache.causeway.applib.value.semantics.Parser;
-import org.apache.causeway.commons.internal.base._Strings;
-import org.apache.causeway.schema.common.v2.ValueWithTypeDto;
-
 import org.springframework.stereotype.Component;
 
+import org.apache.causeway.applib.services.bookmark.IdStringifier;
 import org.apache.causeway.applib.value.semantics.DefaultsProvider;
+import org.apache.causeway.applib.value.semantics.Parser;
 import org.apache.causeway.applib.value.semantics.Renderer;
 import org.apache.causeway.applib.value.semantics.ValueDecomposition;
 import org.apache.causeway.applib.value.semantics.ValueSemanticsAbstract;
+import org.apache.causeway.commons.internal.base._Strings;
 import org.apache.causeway.schema.common.v2.ValueType;
+import org.apache.causeway.schema.common.v2.ValueWithTypeDto;
+
+import lombok.NonNull;
 
 //tag::class[]
 @Named("demo.EmailAddressValueSemantics")

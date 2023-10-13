@@ -23,13 +23,12 @@ import java.util.List;
 
 import jakarta.inject.Inject;
 
-import org.apache.causeway.applib.services.clock.ClockService;
-
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import org.apache.causeway.applib.services.bookmark.Bookmark;
 import org.apache.causeway.applib.services.bookmark.BookmarkService;
+import org.apache.causeway.applib.services.clock.ClockService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.val;

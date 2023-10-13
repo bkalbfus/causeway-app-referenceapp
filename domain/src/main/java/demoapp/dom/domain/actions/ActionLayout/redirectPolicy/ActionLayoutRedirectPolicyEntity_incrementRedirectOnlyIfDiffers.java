@@ -18,9 +18,13 @@
  */
 package demoapp.dom.domain.actions.ActionLayout.redirectPolicy;
 
-import lombok.RequiredArgsConstructor;
+import org.apache.causeway.applib.annotation.Action;
+import org.apache.causeway.applib.annotation.ActionLayout;
+import org.apache.causeway.applib.annotation.MemberSupport;
+import org.apache.causeway.applib.annotation.Redirect;
+import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import org.apache.causeway.applib.annotation.*;
+import lombok.RequiredArgsConstructor;
 
 
 //tag::class[]

@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javaawt.images.persistence;
 
+import java.awt.image.BufferedImage;
+
 import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.awt.image.BufferedImage;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;
@@ -32,7 +32,7 @@ public class BufferedImageSeeding
 extends SeedServiceAbstract {
 
     @Inject
-    public BufferedImageSeeding(ValueHolderRepository<BufferedImage, ? extends BufferedImageEntity> entities) {
+    public BufferedImageSeeding(final ValueHolderRepository<BufferedImage, ? extends BufferedImageEntity> entities) {
         super(entities);
     }
 

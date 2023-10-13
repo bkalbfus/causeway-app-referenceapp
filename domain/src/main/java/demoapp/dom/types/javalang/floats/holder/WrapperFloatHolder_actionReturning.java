@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.floats.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Float;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

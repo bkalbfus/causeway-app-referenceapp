@@ -37,12 +37,10 @@ import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
 import demoapp.dom._infra.samples.DemoEnum;
-
+import demoapp.dom.types.javalang.enums.persistence.JavaLangEnumEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javalang.enums.persistence.JavaLangEnumEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.holder;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,11 +32,9 @@ import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.math.BigDecimal;
-
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.types.Samples;
+import demoapp.dom.types.javamath.bigdecimals.meta.Money;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(
@@ -53,6 +52,7 @@ public class BigDecimalHolder_updateReadOnlyOptionalPropertyWithChoices {
 
     @MemberSupport public BigDecimalHolder act(
             @Parameter(optionality = Optionality.OPTIONAL)
+            @Money
             final BigDecimal newValue) {
         holder.setReadOnlyOptionalProperty(newValue);
         return holder;

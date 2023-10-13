@@ -21,12 +21,11 @@ package demoapp.dom.types.causeway.passwords.persistence;
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
+import org.apache.causeway.applib.value.Password;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.causeway.passwords.holder.CausewayPasswordHolder2;
-
-import org.apache.causeway.applib.value.Password;
 
 @Named("demo.CausewayPasswordEntity") // shared permissions with concrete sub class
 @DomainObject

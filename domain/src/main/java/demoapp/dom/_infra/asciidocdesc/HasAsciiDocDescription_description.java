@@ -29,9 +29,8 @@ import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.applib.events.domain.PropertyDomainEvent;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.resources.AsciiDocReaderService;
+import lombok.RequiredArgsConstructor;
 
 @Property(
         snapshot = Snapshot.EXCLUDED,

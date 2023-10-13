@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import jakarta.inject.Inject;
@@ -38,8 +39,6 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.sql.Timestamp;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolderRepository;

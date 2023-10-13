@@ -8,7 +8,7 @@ Common use cases are to replicate data to another system, or for gathering metri
 A typical SPI implementation could publish the event over the network, or perhaps store in a database.
 
 Entity change publishing can be enabled or disabled globally using a configuration property (see section below).
-This demo app has entity change publishing disabled by default, but can be re-enabled on a case by case basis using the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/DomainObject.html#entitychangepublishing[@DomainObject#entityChangePublishing] attribute.
+This app has entity change publishing disabled by default, but can be re-enabled on a case by case basis using the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/DomainObject.html#entitychangepublishing[@DomainObject#entityChangePublishing] attribute.
 This page references a domain object that uses this attribute.
 
 NOTE: Publishing of domain objects is only supported for domain entities, not view models.

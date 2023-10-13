@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javautil.uuids.samples;
 
+import java.util.UUID;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 import demoapp.dom.types.Samples;
 

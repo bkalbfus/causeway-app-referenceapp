@@ -38,7 +38,6 @@ import org.apache.causeway.applib.jaxb.JavaTimeXMLGregorianCalendarMarshalling;
 import org.apache.causeway.schema.chg.v2.ChangesDto;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

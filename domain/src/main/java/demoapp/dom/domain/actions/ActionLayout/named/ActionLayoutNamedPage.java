@@ -35,7 +35,6 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

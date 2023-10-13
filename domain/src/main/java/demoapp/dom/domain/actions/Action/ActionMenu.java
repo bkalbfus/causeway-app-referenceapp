@@ -28,9 +28,6 @@ import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.actions.Action.choicesFrom.ActionChoicesFromPage;
 import demoapp.dom.domain.actions.Action.commandPublishing.ActionCommandPublishingPage;
@@ -40,6 +37,8 @@ import demoapp.dom.domain.actions.Action.restrictTo.ActionRestrictToPage;
 import demoapp.dom.domain.actions.Action.semantics.ActionSemanticsPage;
 import demoapp.dom.domain.actions.Action.typeOf.ActionTypeOfPage;
 import demoapp.dom.domain.actions.Action.typeOf.child.ActionTypeOfChildVm;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 @Named("demo.ActionMenu")
 @DomainService(nature=NatureOfService.VIEW)

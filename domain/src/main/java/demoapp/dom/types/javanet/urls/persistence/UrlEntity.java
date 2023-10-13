@@ -18,6 +18,9 @@
  */
 package demoapp.dom.types.javanet.urls.persistence;
 
+
+import java.net.URL;
+
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +28,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javanet.urls.holder.UrlHolder2;
-
-import java.net.URL;
 
 @Named("demo.UrlEntity") // shared permissions with concrete sub class
 @DomainObject

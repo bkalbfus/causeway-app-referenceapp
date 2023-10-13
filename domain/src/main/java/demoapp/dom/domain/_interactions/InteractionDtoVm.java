@@ -38,7 +38,6 @@ import org.apache.causeway.core.runtimeservices.urlencoding.UrlEncodingServiceWi
 import org.apache.causeway.schema.ixn.v2.InteractionDto;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

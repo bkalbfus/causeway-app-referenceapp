@@ -18,8 +18,6 @@
  */
 package demoapp.dom;
 
-import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.jpa.ActionLayoutRedirectPolicyEntityImpl;
-
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -32,7 +30,7 @@ import demoapp.dom.domain.actions.Action.choicesFrom.jpa.ActionChoicesFromEntity
 import demoapp.dom.domain.actions.Action.commandPublishing.jpa.ActionCommandPublishingEntityImpl;
 import demoapp.dom.domain.actions.Action.executionPublishing.jpa.ActionExecutionPublishingEntityImpl;
 import demoapp.dom.domain.actions.ActionLayout.hidden.jpa.ActionLayoutHiddenEntityImpl;
-import demoapp.dom.progmodel.actions.bulk.jpa.BulkActionItemEntityImpl;
+import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.jpa.ActionLayoutRedirectPolicyEntityImpl;
 import demoapp.dom.domain.objects.DomainObject.aliased.jpa.DomainObjectAliasedEntityImpl;
 import demoapp.dom.domain.objects.DomainObject.autoComplete.jpa.DomainObjectAutoCompleteEntityImpl;
 import demoapp.dom.domain.objects.DomainObject.bounded.jpa.DomainObjectBoundingEntityImpl;
@@ -53,13 +51,15 @@ import demoapp.dom.domain.objects.DomainObjectLayout.named.jpa.DomainObjectLayou
 import demoapp.dom.domain.objects.DomainObjectLayout.paged.jpa.DomainObjectLayoutPagedEntityImpl;
 import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.jpa.DomainObjectLayoutTableDecoratorEntityImpl;
 import demoapp.dom.domain.objects.DomainObjectLayout.xxxUiEvent.jpa.DomainObjectLayoutXxxUiEventEntityImpl;
-import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.jpa.NumberConstantJpa;
 import demoapp.dom.domain.properties.Property.commandPublishing.jpa.PropertyCommandPublishingEntityImpl;
 import demoapp.dom.domain.properties.Property.editing.jpa.PropertyEditingEntityImpl;
 import demoapp.dom.domain.properties.Property.executionPublishing.jpa.PropertyExecutionPublishingEntityImpl;
 import demoapp.dom.domain.properties.Property.projecting.jpa.PropertyProjectingChildEntityImpl;
 import demoapp.dom.domain.properties.Property.snapshot.jpa.PropertySnapshotEntityImpl;
 import demoapp.dom.domain.properties.PropertyLayout.hidden.jpa.PropertyLayoutHiddenEntityImpl;
+import demoapp.dom.featured.causewayext.cal.jpa.CausewayCalendarEventJpa;
+import demoapp.dom.progmodel.actions.bulk.jpa.BulkActionItemEntityImpl;
+import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.jpa.NumberConstantJpa;
 import demoapp.dom.services.core.eventbusservice.EventLogEntryJpa;
 import demoapp.dom.services.core.wrapperFactory.jpa.PrimeNumberJpa;
 import demoapp.dom.services.extensions.secman.apptenancy.jpa.TenantedJpa;
@@ -68,7 +68,6 @@ import demoapp.dom.types.causeway.clobs.jpa.CausewayClobJpa;
 import demoapp.dom.types.causeway.localresourcepaths.jpa.CausewayLocalResourcePathJpa;
 import demoapp.dom.types.causeway.markups.jpa.CausewayMarkupJpa;
 import demoapp.dom.types.causeway.passwords.jpa.CausewayPasswordJpa;
-import demoapp.dom.featured.causewayext.cal.jpa.CausewayCalendarEventJpa;
 import demoapp.dom.types.causewayval.asciidocs.jpa.CausewayAsciiDocJpa;
 import demoapp.dom.types.causewayval.markdowns.jpa.CausewayMarkdownJpa;
 import demoapp.dom.types.causewayval.vegas.jpa.CausewayVegaJpa;

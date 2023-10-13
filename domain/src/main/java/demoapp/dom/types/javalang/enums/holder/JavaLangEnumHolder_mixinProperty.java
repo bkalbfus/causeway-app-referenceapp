@@ -23,7 +23,6 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
 
 import demoapp.dom._infra.samples.DemoEnum;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

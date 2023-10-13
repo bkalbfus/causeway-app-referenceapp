@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.characters.holder;
 
 import jakarta.inject.Named;
 
-import java.lang.Character;
-
 @Named("demo.WrapperCharacterHolder")
 //tag::class[]
 public interface WrapperCharacterHolder {

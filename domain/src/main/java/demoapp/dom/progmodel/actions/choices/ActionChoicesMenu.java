@@ -29,10 +29,9 @@ import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.services.factory.FactoryService;
 
+import demoapp.dom.progmodel.actions.TvCharacterPopulator;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import demoapp.dom.progmodel.actions.TvCharacterPopulator;
 
 @Named("demo.ActionChoicesMenu")
 @DomainService(nature=NatureOfService.VIEW)

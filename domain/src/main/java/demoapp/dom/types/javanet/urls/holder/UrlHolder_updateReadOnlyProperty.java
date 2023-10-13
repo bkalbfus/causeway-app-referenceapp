@@ -18,13 +18,13 @@
  */
 package demoapp.dom.types.javanet.urls.holder;
 
+import java.net.URL;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.net.URL;
 
 import lombok.RequiredArgsConstructor;
 

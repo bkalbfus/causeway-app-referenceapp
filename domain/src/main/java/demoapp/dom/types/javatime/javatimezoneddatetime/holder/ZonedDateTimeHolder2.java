@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.holder;
 
+import java.time.ZonedDateTime;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.time.ZonedDateTime;
 
 //tag::class[]
 public interface ZonedDateTimeHolder2 extends ZonedDateTimeHolder {

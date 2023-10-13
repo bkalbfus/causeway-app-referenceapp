@@ -3,7 +3,7 @@
 Often the end-user of your application will be a frequent user and will know by sight the purpose of the various properties, collections and actions that are displayed.
 But, for less experienced users, or for new features, providing a description to provide brief additional information to the user may be of help.
 
-The description of a collection can be specified using either the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/CollectionLayout.html#describedas[@CollectionLayout#describedAs] annotation, or a meta-annotation, or using the `Xxx.layout.xml` layout file.
+The description of a collection can be specified using either the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/CollectionLayout.html#describedas[@CollectionLayout#describedAs] annotation, or a meta-annotation, or using the `Xxx.layout.xml` layout file.
 
 In either case the description of the collection is used as the tooltip of the label in the UI, providing more information to the end-user.
 

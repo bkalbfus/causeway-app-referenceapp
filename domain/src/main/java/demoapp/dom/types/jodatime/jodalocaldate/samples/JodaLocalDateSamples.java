@@ -20,9 +20,8 @@ package demoapp.dom.types.jodatime.jodalocaldate.samples;
 
 import java.util.stream.Stream;
 
-import org.springframework.stereotype.Service;
-
 import org.joda.time.LocalDate;
+import org.springframework.stereotype.Service;
 
 import demoapp.dom.types.Samples;
 

@@ -39,14 +39,12 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
-
 import org.apache.causeway.valuetypes.vega.applib.value.Vega;
 
+import demoapp.dom.types.causewayval.vegas.persistence.CausewayVegaEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.causewayval.vegas.persistence.CausewayVegaEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

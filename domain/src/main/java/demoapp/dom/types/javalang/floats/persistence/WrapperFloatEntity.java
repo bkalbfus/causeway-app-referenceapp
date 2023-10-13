@@ -26,8 +26,6 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.floats.holder.WrapperFloatHolder2;
 
-import java.lang.Float;
-
 @Named("demo.WrapperFloatEntity") // shared permissions with concrete sub class
 @DomainObject
 public abstract class WrapperFloatEntity

@@ -39,7 +39,6 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.extensions.fullcalendar.applib.value.CalendarEvent;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
@@ -47,7 +46,6 @@ import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.featured.causewayext.cal.persistence.CausewayCalendarEventEntity;
 import demoapp.dom.featured.causewayext.cal.vm.CausewayCalendarEventVm;
 import demoapp.dom.types.Samples;
-
 import lombok.NoArgsConstructor;
 
 @Named("demo.CausewayCalendarEvents")

@@ -18,9 +18,10 @@
  */
 package demoapp.dom.types.javanet.urls.holder;
 
-import jakarta.inject.Named;
 
 import java.net.URL;
+
+import jakarta.inject.Named;
 
 @Named("demo.UrlHolder")
 //tag::class[]

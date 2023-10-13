@@ -18,9 +18,10 @@
  */
 package demoapp.dom.types.javautil.uuids.holder;
 
-import jakarta.inject.Named;
 
 import java.util.UUID;
+
+import jakarta.inject.Named;
 
 @Named("demo.JavaUtilUuidHolder")
 //tag::class[]

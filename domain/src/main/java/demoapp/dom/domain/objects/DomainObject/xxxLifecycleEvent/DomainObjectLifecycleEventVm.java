@@ -18,6 +18,8 @@
  */
 package demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent;
 
+import java.time.LocalDateTime;
+
 import jakarta.inject.Named;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -31,13 +33,10 @@ import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.jaxb.JavaTimeJaxbAdapters.LocalDateTimeToStringAdapter;
 
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-
-import java.time.LocalDateTime;
 
 //tag::class[]
 @XmlRootElement(name = "demo.DomainObjectLifecycleEventVm")
@@ -48,7 +47,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class DomainObjectLifecycleEventVm implements HasAsciiDocDescription {
 
-    public DomainObjectLifecycleEventVm(LocalDateTime timestamp, String eventType, String bookmark) {
+    public DomainObjectLifecycleEventVm(final LocalDateTime timestamp, final String eventType, final String bookmark) {
         this.eventType = eventType;
         this.bookmark = bookmark;
         this.timestamp = timestamp;

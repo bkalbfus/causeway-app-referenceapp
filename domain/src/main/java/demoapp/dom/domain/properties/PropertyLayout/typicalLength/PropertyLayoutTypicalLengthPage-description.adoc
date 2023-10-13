@@ -2,11 +2,11 @@
 
 The `typicalLength` attribute is intended to indicate the size that a textfield should be rendered as a visual indicator of the expected length:
 
-* for properties, the typical length can be specified using the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/PropertyLayout.html#typicallength[@PropertyLayout#typicalLength] attribute, or using the link:https://causeway.apache.org/userguide/2.0.0-RC1/fun/ui.html#by-example[.layout.xml] layout file.
+* for properties, the typical length can be specified using the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/PropertyLayout.html#typicallength[@PropertyLayout#typicalLength] attribute, or using the link:https://causeway.apache.org/userguide/${CAUSEWAY_VERSION}/fun/ui.html#by-example[.layout.xml] layout file.
 
-* for parameters, the typical length can be specified using the link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/PropertyLayout.html#typicallength[@ParameterLayout#typicalLength] annotation.
+* for parameters, the typical length can be specified using the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/PropertyLayout.html#typicallength[@ParameterLayout#typicalLength] annotation.
 
-Note that link:https://causeway.apache.org/refguide/2.0.0-RC1/applib/index/annotation/PropertyLayout.html#maxlength[@PropertyLayout#maxLength] and `@PropertyLayout#typicalLength()` are not related - the first prevents the property from holding more than the specified number of characters, the latter is a layout hint relating to the size of the textfield.
+Note that link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/PropertyLayout.html#maxlength[@PropertyLayout#maxLength] and `@PropertyLayout#typicalLength()` are not related - the first prevents the property from holding more than the specified number of characters, the latter is a layout hint relating to the size of the textfield.
 
 [CAUTION]
 ====

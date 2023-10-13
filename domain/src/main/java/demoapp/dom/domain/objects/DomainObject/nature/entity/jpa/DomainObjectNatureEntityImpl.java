@@ -32,11 +32,10 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
+import demoapp.dom.domain.objects.DomainObject.nature.entity.DomainObjectNatureEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.domain.objects.DomainObject.nature.entity.DomainObjectNatureEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

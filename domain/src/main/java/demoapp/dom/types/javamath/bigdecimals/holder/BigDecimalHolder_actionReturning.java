@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.holder;
 
+import java.math.BigDecimal;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.math.BigDecimal;
 
 import lombok.RequiredArgsConstructor;
 

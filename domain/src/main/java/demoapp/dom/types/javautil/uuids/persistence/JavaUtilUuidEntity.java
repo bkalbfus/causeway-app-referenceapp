@@ -18,6 +18,9 @@
  */
 package demoapp.dom.types.javautil.uuids.persistence;
 
+
+import java.util.UUID;
+
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -25,8 +28,6 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javautil.uuids.holder.JavaUtilUuidHolder2;
-
-import java.util.UUID;
 
 @Named("demo.JavaUtilUuidEntity") // shared permissions with concrete sub class
 @DomainObject

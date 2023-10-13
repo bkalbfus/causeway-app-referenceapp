@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.samples;
 
+import java.time.OffsetTime;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.time.OffsetTime;
 
 import demoapp.dom.types.Samples;
 

@@ -18,11 +18,12 @@
  */
 package demoapp.dom.domain.properties.Property.projecting.jdo;
 
-import jakarta.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.springframework.context.annotation.Profile;
@@ -34,10 +35,9 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.applib.jaxb.PersistentEntityAdapter;
 
+import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingChildEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingChildEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

@@ -8,7 +8,7 @@ Home pages often also have the framework's link:https://causeway.apache.org/refg
 
 == How this demo works
 
-This demo application's home page is pretty simple, not much more than a couple of hard-coded text fields that you're reading right now.
+This app's home page is pretty simple, not much more than a couple of hard-coded text fields that you're reading right now.
 
 In terms of code, the framework indicates which view model is the home page using the link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib-ant/HomePage.html[@HomePage] annotation:
 

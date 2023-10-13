@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.jodatime.jodalocaldate.holder;
 
+import org.joda.time.LocalDate;
+
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-
-import org.joda.time.LocalDate;
 
 import lombok.RequiredArgsConstructor;
 

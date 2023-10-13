@@ -21,7 +21,6 @@ package demoapp.dom.types.causewayval.vegas.holder;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-
 import org.apache.causeway.valuetypes.vega.applib.value.Vega;
 
 import lombok.RequiredArgsConstructor;

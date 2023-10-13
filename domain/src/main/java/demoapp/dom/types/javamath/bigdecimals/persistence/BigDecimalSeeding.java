@@ -18,11 +18,11 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.persistence;
 
+import java.math.BigDecimal;
+
 import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;
@@ -32,7 +32,7 @@ public class BigDecimalSeeding
 extends SeedServiceAbstract {
 
     @Inject
-    public BigDecimalSeeding(ValueHolderRepository<BigDecimal, ? extends BigDecimalEntity> entities) {
+    public BigDecimalSeeding(final ValueHolderRepository<BigDecimal, ? extends BigDecimalEntity> entities) {
         super(entities);
     }
 

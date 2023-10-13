@@ -18,12 +18,13 @@
  */
 package demoapp.dom.types.causeway.passwords.jdo;
 
-import jakarta.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -33,13 +34,11 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
-
 import org.apache.causeway.applib.value.Password;
 
+import demoapp.dom.types.causeway.passwords.persistence.CausewayPasswordEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.types.causeway.passwords.persistence.CausewayPasswordEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

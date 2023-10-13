@@ -31,9 +31,8 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Introspection;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom.domain.objects.DomainObject.introspection.annotOpt.DomainObjectIntrospectionAnnotOptEntity;
+import lombok.NoArgsConstructor;
 
 @Profile("demo-jpa")
 @Entity

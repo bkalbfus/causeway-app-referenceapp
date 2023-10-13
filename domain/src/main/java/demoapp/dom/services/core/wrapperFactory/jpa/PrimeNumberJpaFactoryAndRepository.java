@@ -18,17 +18,16 @@
  */
 package demoapp.dom.services.core.wrapperFactory.jpa;
 
-import org.apache.causeway.applib.services.repository.RepositoryService;
+import java.util.List;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import org.apache.causeway.applib.services.repository.RepositoryService;
+
 import demoapp.dom.services.core.wrapperFactory.PrimeNumberFactory;
 import demoapp.dom.services.core.wrapperFactory.PrimeNumberRepository;
-
 import lombok.RequiredArgsConstructor;
-
-import java.util.List;
 
 @Profile("demo-jpa")
 @Service

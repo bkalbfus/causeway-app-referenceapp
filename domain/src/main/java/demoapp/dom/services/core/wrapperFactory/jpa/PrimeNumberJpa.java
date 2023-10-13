@@ -32,10 +32,9 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
+import demoapp.dom.services.core.wrapperFactory.PrimeNumber;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import demoapp.dom.services.core.wrapperFactory.PrimeNumber;
 
 @Profile("demo-jpa")
 //tag::class[]

@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.shorts.holder;
 
 import jakarta.inject.Named;
 
-import java.lang.Short;
-
 @Named("demo.WrapperShortHolder")
 //tag::class[]
 public interface WrapperShortHolder {

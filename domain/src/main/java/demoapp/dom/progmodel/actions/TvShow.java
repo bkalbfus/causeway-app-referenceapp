@@ -18,10 +18,10 @@
  */
 package demoapp.dom.progmodel.actions;
 
+import org.apache.causeway.applib.annotation.ObjectSupport;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-
-import org.apache.causeway.applib.annotation.ObjectSupport;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum TvShow {

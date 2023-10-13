@@ -18,8 +18,6 @@
  */
 package demoapp.dom.domain.actions.ActionLayout.sequence;
 
-import lombok.RequiredArgsConstructor;
-
 import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
@@ -27,6 +25,8 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.message.MessageService;
+
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT)

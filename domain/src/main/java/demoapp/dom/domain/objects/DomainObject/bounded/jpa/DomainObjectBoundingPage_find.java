@@ -6,9 +6,8 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.domain.objects.DomainObject.bounded.DomainObjectBoundingPage;
+import lombok.RequiredArgsConstructor;
 
 @Profile("demo-jpa")
 //tag::class[]

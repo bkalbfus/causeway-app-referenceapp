@@ -18,6 +18,9 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.jpa;
 
+
+import java.time.ZonedDateTime;
+
 import jakarta.inject.Named;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,13 +39,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.time.ZonedDateTime;
-
+import demoapp.dom.types.javatime.javatimezoneddatetime.persistence.ZonedDateTimeEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javatime.javatimezoneddatetime.persistence.ZonedDateTimeEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

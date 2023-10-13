@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javautil.uuids.persistence;
 
+
+import java.util.UUID;
+
 import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

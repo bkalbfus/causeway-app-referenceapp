@@ -34,11 +34,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
+import demoapp.dom.types.primitive.shorts.persistence.PrimitiveShortEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.primitive.shorts.persistence.PrimitiveShortEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

@@ -18,6 +18,7 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.holder;
 
+import java.time.OffsetTime;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
@@ -26,11 +27,8 @@ import jakarta.inject.Inject;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.time.OffsetTime;
-
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.types.Samples;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.SAFE)

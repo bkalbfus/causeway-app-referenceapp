@@ -18,6 +18,9 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.jpa;
 
+
+import java.time.LocalDateTime;
+
 import jakarta.inject.Named;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,13 +39,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.time.LocalDateTime;
-
+import demoapp.dom.types.javatime.javatimelocaldatetime.persistence.LocalDateTimeEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javatime.javatimelocaldatetime.persistence.LocalDateTimeEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

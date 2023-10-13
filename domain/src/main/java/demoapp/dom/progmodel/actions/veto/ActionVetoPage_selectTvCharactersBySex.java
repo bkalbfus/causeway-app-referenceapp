@@ -18,17 +18,19 @@
  */
 package demoapp.dom.progmodel.actions.veto;
 
-import demoapp.dom.progmodel.actions.TvCharacter;
-
-import lombok.RequiredArgsConstructor;
-import lombok.Value;
-import lombok.experimental.Accessors;
-
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.apache.causeway.applib.annotation.*;
+import org.apache.causeway.applib.annotation.Action;
+import org.apache.causeway.applib.annotation.MemberSupport;
+import org.apache.causeway.applib.annotation.Optionality;
+import org.apache.causeway.applib.annotation.Parameter;
+
+import demoapp.dom.progmodel.actions.TvCharacter;
+import lombok.RequiredArgsConstructor;
+import lombok.Value;
+import lombok.experimental.Accessors;
 
 //tag::class[]
 @Action

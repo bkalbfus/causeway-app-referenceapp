@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javautil.javautildate.holder;
 
+import java.util.Date;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.util.Date;
 
 import lombok.RequiredArgsConstructor;
 

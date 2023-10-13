@@ -23,10 +23,9 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.DomainObject;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import demoapp.dom._infra.samples.DemoEnum;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.javalang.enums.holder.JavaLangEnumHolder2;
-
-import demoapp.dom._infra.samples.DemoEnum;
 
 @Named("demo.JavaLangEnumEntity") // shared permissions with concrete sub class
 @DomainObject

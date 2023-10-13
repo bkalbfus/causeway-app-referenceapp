@@ -20,8 +20,6 @@ package demoapp.dom.types.javalang.floats.holder;
 
 import jakarta.inject.Named;
 
-import java.lang.Float;
-
 @Named("demo.WrapperFloatHolder")
 //tag::class[]
 public interface WrapperFloatHolder {

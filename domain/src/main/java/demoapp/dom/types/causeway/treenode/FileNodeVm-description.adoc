@@ -6,7 +6,7 @@ NOTE: This is an Apache Causeway specific data type.
 
 == How this demo works
 
-This demo app uses the filesystem of the host computer to illustrate the idea:
+This app uses the filesystem of the host computer to illustrate the idea:
 
 * This page you are viewing is a view model object, called `FileNodeVm`.
 It represents either a directory or a file within that filesystem.

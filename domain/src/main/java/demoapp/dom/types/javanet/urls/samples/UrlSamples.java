@@ -18,11 +18,10 @@
  */
 package demoapp.dom.types.javanet.urls.samples;
 
+import java.net.URL;
 import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
-
-import java.net.URL;
 
 import demoapp.dom.types.Samples;
 

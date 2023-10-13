@@ -18,10 +18,10 @@
  */
 package demoapp.dom._infra;
 
+import org.springframework.stereotype.Service;
+
 import org.apache.causeway.extensions.pdfjs.applib.config.Scale;
 import org.apache.causeway.extensions.pdfjs.applib.spi.PdfJsViewerAdvisor;
-
-import org.springframework.stereotype.Service;
 
 @Service
 public class PdfJsViewerAdvisorFallback implements PdfJsViewerAdvisor {

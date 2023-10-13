@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javanet.urls.jpa;
 
+import java.net.URL;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.net.URL;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

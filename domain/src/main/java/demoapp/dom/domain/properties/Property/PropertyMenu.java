@@ -32,25 +32,23 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.value.Blob;
 import org.apache.causeway.applib.value.Clob;
 
-import demoapp.dom.domain.properties.Property.editing.PropertyEditingPage;
-
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.domain.properties.Property.commandPublishing.PropertyCommandPublishingPage;
 import demoapp.dom.domain.properties.Property.domainEvent.PropertyDomainEventPage;
+import demoapp.dom.domain.properties.Property.editing.PropertyEditingPage;
 import demoapp.dom.domain.properties.Property.executionPublishing.PropertyExecutionPublishingPage;
 import demoapp.dom.domain.properties.Property.fileAccept.PropertyFileAcceptPage;
 import demoapp.dom.domain.properties.Property.maxLength.PropertyMaxLengthPage;
 import demoapp.dom.domain.properties.Property.mustSatisfy.PropertyMustSatisfyPage;
 import demoapp.dom.domain.properties.Property.optionality.PropertyOptionalityPage;
-import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingPage;
-import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingChildVm;
 import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingChildEntity;
+import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingChildVm;
+import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingPage;
 import demoapp.dom.domain.properties.Property.regexPattern.PropertyRegexPatternPage;
 import demoapp.dom.domain.properties.Property.snapshot.PropertySnapshotPage;
 import demoapp.dom.types.Samples;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 @Named("demo.PropertyMenu")
 @DomainService(

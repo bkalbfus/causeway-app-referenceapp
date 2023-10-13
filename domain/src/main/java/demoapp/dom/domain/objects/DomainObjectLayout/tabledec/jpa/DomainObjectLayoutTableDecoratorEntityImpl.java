@@ -33,11 +33,10 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.TableDecorator;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
+import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.DomainObjectLayoutTableDecoratorEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.DomainObjectLayoutTableDecoratorEntity;
 
 @Profile("demo-jpa")
 @Entity

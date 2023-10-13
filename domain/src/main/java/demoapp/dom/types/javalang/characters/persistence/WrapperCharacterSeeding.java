@@ -22,8 +22,6 @@ import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import java.lang.Character;
-
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;
 

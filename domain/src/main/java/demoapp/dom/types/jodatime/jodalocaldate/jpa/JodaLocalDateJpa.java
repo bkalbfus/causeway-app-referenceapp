@@ -26,6 +26,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import org.joda.time.LocalDate;
 import org.springframework.context.annotation.Profile;
 
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -36,13 +37,10 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import org.joda.time.LocalDate;
-
+import demoapp.dom.types.jodatime.jodalocaldate.persistence.JodaLocalDateEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.jodatime.jodalocaldate.persistence.JodaLocalDateEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

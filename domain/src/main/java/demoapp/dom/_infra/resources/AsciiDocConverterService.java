@@ -30,7 +30,6 @@ import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
 import org.asciidoctor.extension.IncludeProcessor;
 import org.asciidoctor.extension.PreprocessorReader;
-
 import org.springframework.stereotype.Service;
 
 import lombok.val;

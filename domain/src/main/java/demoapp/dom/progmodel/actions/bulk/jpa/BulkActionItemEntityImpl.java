@@ -33,11 +33,10 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.jaxb.PersistentEntityAdapter;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
+import demoapp.dom.progmodel.actions.bulk.BulkActionItemEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.progmodel.actions.bulk.BulkActionItemEntity;
 
 @Profile("demo-jpa")
 @Entity

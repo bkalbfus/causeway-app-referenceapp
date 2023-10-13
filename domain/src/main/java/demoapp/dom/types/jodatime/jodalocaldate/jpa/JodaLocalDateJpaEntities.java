@@ -18,10 +18,9 @@
  */
 package demoapp.dom.types.jodatime.jodalocaldate.jpa;
 
+import org.joda.time.LocalDate;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import org.joda.time.LocalDate;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 

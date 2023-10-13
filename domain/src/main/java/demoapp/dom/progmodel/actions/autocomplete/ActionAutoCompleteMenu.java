@@ -18,17 +18,20 @@
  */
 package demoapp.dom.progmodel.actions.autocomplete;
 
-import demoapp.dom.progmodel.actions.TvCharacterPopulator;
-
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 import jakarta.annotation.Priority;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
-import org.apache.causeway.applib.annotation.*;
+import org.apache.causeway.applib.annotation.Action;
+import org.apache.causeway.applib.annotation.ActionLayout;
+import org.apache.causeway.applib.annotation.DomainService;
+import org.apache.causeway.applib.annotation.NatureOfService;
+import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.services.factory.FactoryService;
+
+import demoapp.dom.progmodel.actions.TvCharacterPopulator;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 @Named("demo.ActionAutoCompleteMenu")
 @DomainService(nature=NatureOfService.VIEW)

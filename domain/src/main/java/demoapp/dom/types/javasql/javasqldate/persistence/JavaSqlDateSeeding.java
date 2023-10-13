@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javasql.javasqldate.persistence;
 
+
+import java.sql.Date;
+
 import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.sql.Date;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldate.persistence;
 
+
+import java.time.LocalDate;
+
 import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDate;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;
 import demoapp.dom._infra.values.ValueHolderRepository;

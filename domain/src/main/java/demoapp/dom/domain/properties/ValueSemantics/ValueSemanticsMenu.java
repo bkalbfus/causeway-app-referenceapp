@@ -24,8 +24,6 @@ import java.time.LocalDate;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
-import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsProviderPercentagePage;
-
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
@@ -34,6 +32,7 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
 import demoapp.dom.domain.properties.ValueSemantics.dateRenderAdjustDays.ValueSemanticsDateRenderAdjustDaysPage;
+import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsProviderPercentagePage;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 

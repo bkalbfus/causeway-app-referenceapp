@@ -18,9 +18,10 @@
  */
 package demoapp.dom.types.javautil.javautildate.holder;
 
-import jakarta.inject.Named;
 
 import java.util.Date;
+
+import jakarta.inject.Named;
 
 @Named("demo.JavaUtilDateHolder")
 //tag::class[]

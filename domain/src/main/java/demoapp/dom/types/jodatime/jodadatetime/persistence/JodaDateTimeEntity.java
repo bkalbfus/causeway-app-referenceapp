@@ -20,13 +20,13 @@ package demoapp.dom.types.jodatime.jodadatetime.persistence;
 
 import jakarta.inject.Named;
 
+import org.joda.time.DateTime;
+
 import org.apache.causeway.applib.annotation.DomainObject;
 
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolder;
 import demoapp.dom.types.jodatime.jodadatetime.holder.JodaDateTimeHolder2;
-
-import org.joda.time.DateTime;
 
 @Named("demo.JodaDateTimeEntity") // shared permissions with concrete sub class
 @DomainObject

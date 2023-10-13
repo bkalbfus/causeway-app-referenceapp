@@ -18,9 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqldate.holder;
 
-import jakarta.inject.Named;
 
 import java.sql.Date;
+
+import jakarta.inject.Named;
 
 @Named("demo.JavaSqlDateHolder")
 //tag::class[]

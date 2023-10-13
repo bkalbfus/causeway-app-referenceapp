@@ -28,10 +28,9 @@ import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.applib.events.domain.PropertyDomainEvent;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
+import demoapp.dom._infra.resources.MarkupVariableResolverService;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import demoapp.dom._infra.resources.MarkupVariableResolverService;
 
 @Property(
         snapshot = Snapshot.EXCLUDED,
@@ -52,7 +51,7 @@ public class HasAsciiDocDescription_sources {
         val sourceLocation = packageName.replace('.', '/');
         return AsciiDoc.valueOf(
                 markupVariableResolverService.resolveVariables(
-                        String.format("link:${SOURCES_DEMO}/%s[Sources] for this demo", sourceLocation)));
+                        String.format("link:${SOURCES_DEMO}/%s[Sources] for this page", sourceLocation)));
     }
 
     @Inject MarkupVariableResolverService markupVariableResolverService;

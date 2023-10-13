@@ -31,7 +31,6 @@ import org.apache.causeway.applib.services.repository.RepositoryService;
 
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom._infra.values.ValueHolderRepository;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

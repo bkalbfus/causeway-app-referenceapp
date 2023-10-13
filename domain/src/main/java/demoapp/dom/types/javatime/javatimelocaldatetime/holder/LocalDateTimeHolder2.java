@@ -18,11 +18,12 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.holder;
 
+import java.time.LocalDateTime;
+
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Where;
-import java.time.LocalDateTime;
 
 //tag::class[]
 public interface LocalDateTimeHolder2 extends LocalDateTimeHolder {

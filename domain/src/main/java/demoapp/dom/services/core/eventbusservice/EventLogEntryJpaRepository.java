@@ -28,9 +28,8 @@ import org.springframework.stereotype.Repository;
 
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
+import lombok.RequiredArgsConstructor;
 
 @Profile("demo-jpa")
 @Repository

@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.doubles.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Double;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

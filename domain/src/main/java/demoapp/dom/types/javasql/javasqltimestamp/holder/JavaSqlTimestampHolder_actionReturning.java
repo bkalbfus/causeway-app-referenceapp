@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.holder;
 
+import java.sql.Timestamp;
+
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import java.sql.Timestamp;
 
 import lombok.RequiredArgsConstructor;
 

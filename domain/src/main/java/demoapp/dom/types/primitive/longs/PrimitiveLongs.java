@@ -32,6 +32,7 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.DomainObject;
+import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.Nature;
@@ -50,6 +51,7 @@ import demoapp.dom.types.primitive.longs.vm.PrimitiveLongVm;
 @XmlAccessorType(XmlAccessType.FIELD)
 @Named("demo.PrimitiveLongs")
 @DomainObject(nature=Nature.VIEW_MODEL, editing=Editing.ENABLED)
+@DomainObjectLayout(describedAs = "Demonstrates the use of the long primitive data type in both entities and view models")
 //@Log4j2
 public class PrimitiveLongs implements HasAsciiDocDescription {
 

@@ -25,10 +25,9 @@ import jakarta.inject.Inject;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 
+import demoapp.dom.types.Samples;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import demoapp.dom.types.Samples;
 
 @Action
 @RequiredArgsConstructor

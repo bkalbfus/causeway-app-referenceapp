@@ -39,14 +39,12 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
-
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
+import demoapp.dom.types.causewayval.asciidocs.persistence.CausewayAsciiDocEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.causewayval.asciidocs.persistence.CausewayAsciiDocEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

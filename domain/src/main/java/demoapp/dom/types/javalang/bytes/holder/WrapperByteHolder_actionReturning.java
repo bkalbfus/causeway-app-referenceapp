@@ -21,8 +21,6 @@ package demoapp.dom.types.javalang.bytes.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import java.lang.Byte;
-
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]

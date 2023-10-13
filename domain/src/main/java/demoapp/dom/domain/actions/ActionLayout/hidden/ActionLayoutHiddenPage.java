@@ -29,9 +29,8 @@ import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import lombok.NoArgsConstructor;
 
 @Named("demo.ActionLayoutHiddenPage")
 @DomainObject(nature=Nature.VIEW_MODEL)

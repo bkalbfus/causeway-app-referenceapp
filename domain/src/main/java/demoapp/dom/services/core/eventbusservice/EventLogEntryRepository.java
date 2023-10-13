@@ -20,9 +20,8 @@ package demoapp.dom.services.core.eventbusservice;
 
 import java.util.List;
 
-import lombok.val;
-
 import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
+import lombok.val;
 
 //tag::class[]
 public interface EventLogEntryRepository<T extends EventLogEntry> {

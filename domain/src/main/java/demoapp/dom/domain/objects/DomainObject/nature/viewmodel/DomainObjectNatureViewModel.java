@@ -35,12 +35,11 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.jaxb.PersistentEntityAdapter;
 import org.apache.causeway.applib.services.title.TitleService;
 
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import demoapp.dom.domain.objects.DomainObject.nature.entity.DomainObjectNatureEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
-import demoapp.dom.domain.objects.DomainObject.nature.entity.DomainObjectNatureEntity;
 
 //tag::class[]
 @XmlRootElement(name = "root")                              // <.>

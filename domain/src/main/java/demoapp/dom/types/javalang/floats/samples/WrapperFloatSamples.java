@@ -22,8 +22,6 @@ import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
 
-import java.lang.Float;
-
 import demoapp.dom.types.Samples;
 
 @Service

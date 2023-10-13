@@ -20,7 +20,6 @@ package demoapp.dom.types.causewayval.markdowns.holder;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import lombok.RequiredArgsConstructor;

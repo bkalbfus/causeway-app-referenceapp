@@ -18,9 +18,9 @@
  */
 package demoapp.dom.types.javaawt.images.holder;
 
-import jakarta.inject.Named;
-
 import java.awt.image.BufferedImage;
+
+import jakarta.inject.Named;
 
 @Named("demo.BufferedImageHolder")
 //tag::class[]

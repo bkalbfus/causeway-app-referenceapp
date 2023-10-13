@@ -18,11 +18,12 @@
  */
 package demoapp.dom.domain.objects.DomainObject.bounded.jdo;
 
-import jakarta.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -30,10 +31,9 @@ import org.apache.causeway.applib.annotation.Bounding;
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 
+import demoapp.dom.domain.objects.DomainObject.bounded.DomainObjectBoundingEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.domain.objects.DomainObject.bounded.DomainObjectBoundingEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

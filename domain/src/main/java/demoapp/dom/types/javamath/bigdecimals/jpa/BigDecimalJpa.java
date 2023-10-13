@@ -18,6 +18,8 @@
  */
 package demoapp.dom.types.javamath.bigdecimals.jpa;
 
+import java.math.BigDecimal;
+
 import jakarta.inject.Named;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,13 +38,11 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 
-import java.math.BigDecimal;
-
+import demoapp.dom.types.javamath.bigdecimals.meta.Money;
+import demoapp.dom.types.javamath.bigdecimals.persistence.BigDecimalEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.javamath.bigdecimals.persistence.BigDecimalEntity;
 
 @Profile("demo-jpa")
 //tag::class[]
@@ -71,25 +71,29 @@ public class BigDecimalJpa
 
     @Title(prepend = "BigDecimal JPA entity: ")
     @PropertyLayout(fieldSetId = "read-only-properties", sequence = "1")
-    @Column(nullable = false)                                                   // <.>
+    @Money
+    @Column(nullable = false, precision = 14, scale = 2)                        // <.>
     @Getter @Setter
     private BigDecimal readOnlyProperty;
 
     @Property(editing = Editing.ENABLED)                                        // <.>
     @PropertyLayout(fieldSetId = "editable-properties", sequence = "1")
-    @Column(nullable = false)
+    @Money
+    @Column(nullable = false, precision = 14, scale = 2)
     @Getter @Setter
     private BigDecimal readWriteProperty;
 
     @Property(optionality = Optionality.OPTIONAL)                               // <.>
     @PropertyLayout(fieldSetId = "optional-properties", sequence = "1")
-    @Column(nullable = true)                                                    // <.>
+    @Money
+    @Column(nullable = true, precision = 14, scale = 2)                         // <.>
     @Getter @Setter
     private BigDecimal readOnlyOptionalProperty;
 
     @Property(editing = Editing.ENABLED, optionality = Optionality.OPTIONAL)
     @PropertyLayout(fieldSetId = "optional-properties", sequence = "2")
-    @Column(nullable = true)
+    @Money
+    @Column(nullable = true, precision = 14, scale = 2)
     @Getter @Setter
     private BigDecimal readWriteOptionalProperty;
 

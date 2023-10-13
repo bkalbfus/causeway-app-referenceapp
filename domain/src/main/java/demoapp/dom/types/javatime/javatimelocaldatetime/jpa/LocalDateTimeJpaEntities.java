@@ -18,10 +18,10 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldatetime.jpa;
 
+import java.time.LocalDateTime;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 
