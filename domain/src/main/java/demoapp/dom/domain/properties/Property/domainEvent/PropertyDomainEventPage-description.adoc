@@ -12,7 +12,7 @@ Domain service subscribers can influence this interaction, either by:
 The link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/Property.html#domainevent[@Property#domainEvent] element specifies the class to be emitted; this must be a subclass of the abstract link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/events/domain/PropertyDomainEvent.html[PropertyDomainEvent] class.
 
 If no `domainEvent` is specified on the property itself, then the domain event class can be specified at the class level using link:https://causeway.apache.org/refguide/${CAUSEWAY_VERSION}/applib/index/annotation/DomainObject.html#propertydomainevent[@DomainObject#propertyDomainEvent].
-And if not specified at the class level, then an instance of `o.a.c.applib.events.domain.PropertyDomainEvent.Default` is emitted as the fallback.
+And if not specified at the class level, then an instance of `o.a.i.applib.events.domain.PropertyDomainEvent.Default` is emitted as the fallback.
 
 == How this demo works
 
