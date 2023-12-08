@@ -85,6 +85,18 @@
 							</excludes>
 						</configuration>
 						<executions>
+                            <execution>
+                                <id>build-info</id>
+                                <goals>
+                                    <goal>build-info</goal>
+                                </goals>
+                                <configuration>
+                                    <additionalProperties>
+                                        <java.version>${java.version}</java.version>
+                                        <description>${project.description}</description>
+                                    </additionalProperties>
+                                </configuration>
+                            </execution>
 							<execution>
 								<goals>
 									<goal>repackage</goal>
