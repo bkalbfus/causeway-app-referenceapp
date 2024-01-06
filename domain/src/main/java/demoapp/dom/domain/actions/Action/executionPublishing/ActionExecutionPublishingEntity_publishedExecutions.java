@@ -23,7 +23,7 @@ public class ActionExecutionPublishingEntity_publishedExecutions {
         return executionLogEntryRepository.findRecentByTarget(bookmarkService.bookmarkForElseFail(entity));
     }
 
-    @Inject ExecutionLogEntryRepository<? extends ExecutionLogEntry> executionLogEntryRepository; // <.>
+    @Inject ExecutionLogEntryRepository executionLogEntryRepository; // <.>
     @Inject BookmarkService bookmarkService;
 }
 //end::class[]

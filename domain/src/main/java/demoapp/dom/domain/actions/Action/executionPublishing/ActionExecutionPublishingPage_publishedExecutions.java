@@ -14,6 +14,7 @@ import org.apache.causeway.extensions.executionlog.applib.dom.ExecutionLogEntryR
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]
+@SuppressWarnings("CdiManagedBeanInconsistencyInspection")
 @Collection()
 @RequiredArgsConstructor
 public class ActionExecutionPublishingPage_publishedExecutions {
@@ -33,7 +34,7 @@ public class ActionExecutionPublishingPage_publishedExecutions {
                 .collect(Collectors.toList());
     }
 
-    @Inject ExecutionLogEntryRepository<? extends ExecutionLogEntry> executionLogEntryRepository; // <.>
+    @Inject ExecutionLogEntryRepository executionLogEntryRepository; // <.>
     @Inject BookmarkService bookmarkService;
 }
 //end::class[]

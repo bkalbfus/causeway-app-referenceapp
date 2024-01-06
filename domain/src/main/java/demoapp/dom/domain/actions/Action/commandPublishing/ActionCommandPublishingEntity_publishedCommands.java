@@ -25,7 +25,7 @@ public class ActionCommandPublishingEntity_publishedCommands {
                 bookmarkService.bookmarkForElseFail(entity));
     }
 
-    @Inject CommandLogEntryRepository<? extends CommandLogEntry> commandLogEntryRepository; // <.>
+    @Inject CommandLogEntryRepository commandLogEntryRepository; // <.>
     @Inject BookmarkService bookmarkService;
 }
 //end::class[]

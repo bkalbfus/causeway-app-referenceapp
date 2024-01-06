@@ -13,6 +13,7 @@ import org.apache.causeway.extensions.executionlog.applib.dom.ExecutionLogEntryR
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]
+@SuppressWarnings("CdiManagedBeanInconsistencyInspection")
 @Collection()
 @RequiredArgsConstructor
 public class PropertyExecutionPublishingEntity_publishedExecutions {
@@ -24,7 +25,7 @@ public class PropertyExecutionPublishingEntity_publishedExecutions {
         return executionLogEntryRepository.findRecentByTarget(bookmarkService.bookmarkForElseFail(entity));
     }
 
-    @Inject ExecutionLogEntryRepository<? extends ExecutionLogEntry> executionLogEntryRepository;
+    @Inject ExecutionLogEntryRepository executionLogEntryRepository;
     @Inject BookmarkService bookmarkService;
 }
 //end::class[]
