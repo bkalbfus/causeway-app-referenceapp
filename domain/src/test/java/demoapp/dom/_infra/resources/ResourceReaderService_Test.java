@@ -39,7 +39,7 @@ class ResourceReaderService_Test {
     void setUp() {
         resourceReaderService = new ResourceReaderService();
         resourceReaderService.markupVariableResolverService =
-                new MarkupVariableResolverService(new CausewayConfiguration(null), new MockEnvironment().withProperty("spring.profiles.active", "demo-jpa"));
+                new MarkupVariableResolverService(CausewayConfiguration.builder().build(), new MockEnvironment().withProperty("spring.profiles.active", "demo-jpa"));
     }
 
     @Test

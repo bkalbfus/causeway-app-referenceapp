@@ -13,6 +13,7 @@ import org.apache.causeway.extensions.commandlog.applib.dom.CommandLogEntryRepos
 import lombok.RequiredArgsConstructor;
 
 //tag::class[]
+@SuppressWarnings("CdiManagedBeanInconsistencyInspection")
 @Collection()
 @RequiredArgsConstructor
 public class PropertyCommandPublishingEntity_publishedCommands {
@@ -25,7 +26,7 @@ public class PropertyCommandPublishingEntity_publishedCommands {
                 bookmarkService.bookmarkForElseFail(entity));
     }
 
-    @Inject CommandLogEntryRepository<? extends CommandLogEntry> commandLogEntryRepository; // <.>
+    @Inject CommandLogEntryRepository commandLogEntryRepository; // <.>
     @Inject BookmarkService bookmarkService;
 }
 //end::class[]
