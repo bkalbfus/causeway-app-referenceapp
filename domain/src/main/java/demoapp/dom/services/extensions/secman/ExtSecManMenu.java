@@ -24,16 +24,13 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
 import demoapp.dom.services.extensions.secman.apptenancy.AppTenancyPage;
 
 @Named("demo.ExtSecManMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @DomainObjectLayout(
         named="SecMan"
 )

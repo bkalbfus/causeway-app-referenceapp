@@ -25,7 +25,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.services.factory.FactoryService;
 
@@ -35,7 +34,7 @@ import lombok.val;
 import demoapp.dom.progmodel.actions.TvCharacterPopulator;
 
 @Named("demo.ActionValidateMenu")
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 public class ActionValidateMenu {

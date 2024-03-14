@@ -23,13 +23,10 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 
 @Named("demo.UiHintsMenu")
-@DomainService(
-        nature = NatureOfService.VIEW
-)
+@DomainService
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 public class UiHintsMenu {
 

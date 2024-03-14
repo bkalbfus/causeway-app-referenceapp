@@ -24,7 +24,6 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -38,9 +37,7 @@ import demoapp.dom.types.primitive.longs.PrimitiveLongs;
 import demoapp.dom.types.primitive.shorts.PrimitiveShorts;
 
 @Named("demo.PrimitiveTypesMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @DomainObjectLayout(
         named="PrimitiveTypes"
 )

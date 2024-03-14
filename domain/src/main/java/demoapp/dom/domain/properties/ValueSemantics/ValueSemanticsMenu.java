@@ -27,7 +27,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -38,9 +37,7 @@ import demoapp.dom.domain.properties.ValueSemantics.dateRenderAdjustDays.ValueSe
 import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsProviderPercentagePage;
 
 @Named("demo.ValueSemanticsMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 //@Log4j2

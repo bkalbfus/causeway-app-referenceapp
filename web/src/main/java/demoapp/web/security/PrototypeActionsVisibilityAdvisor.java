@@ -27,7 +27,6 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
 import org.apache.causeway.applib.annotation.DomainServiceLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.RestrictTo;
 import org.apache.causeway.applib.mixins.layout.Object_downloadLayout;
@@ -37,9 +36,7 @@ import org.apache.causeway.applib.mixins.rest.Object_openRestApi;
 import org.apache.causeway.core.metamodel.inspect.Object_inspectMetamodel;
 
 @Named("demo.PrototypeActionsVisibilityAdvisor")
-@DomainService(
-        nature = NatureOfService.VIEW
-)
+@DomainService
 @DomainServiceLayout(
         menuBar = DomainServiceLayout.MenuBar.TERTIARY
 )

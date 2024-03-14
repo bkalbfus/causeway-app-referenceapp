@@ -25,15 +25,12 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.services.factory.FactoryService;
 import org.apache.causeway.applib.value.Markup;
 
 @Named("demo.SseDemoMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @DomainObjectLayout(
         named="Async Actions"
 )

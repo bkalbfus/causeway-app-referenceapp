@@ -25,7 +25,6 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -34,9 +33,7 @@ import demoapp.dom.types.javalang.strings.JavaLangStrings;
 import demoapp.dom.types.javalang.voids.JavaLangVoids;
 
 @Named("demo.JavaLangTypesMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @DomainObjectLayout(
         named="JavaLangTypes"
 )

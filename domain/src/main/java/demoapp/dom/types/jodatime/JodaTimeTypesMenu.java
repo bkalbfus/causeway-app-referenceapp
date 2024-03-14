@@ -28,7 +28,6 @@ import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.DomainService;
 import org.apache.causeway.applib.annotation.MemberSupport;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -40,9 +39,7 @@ import demoapp.dom.types.jodatime.jodalocaldatetime.JodaLocalDateTimes;
 import demoapp.dom.types.jodatime.jodalocaltime.JodaLocalTimes;
 
 @Named("demo.JodaTimeTypesMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @DomainObjectLayout(
         named="JodaTimeTypes"
 )

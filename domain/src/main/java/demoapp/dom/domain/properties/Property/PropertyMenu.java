@@ -26,7 +26,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.value.Blob;
@@ -52,9 +51,7 @@ import demoapp.dom.domain.properties.Property.snapshot.PropertySnapshotPage;
 import demoapp.dom.types.Samples;
 
 @Named("demo.PropertyMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class PropertyMenu {

@@ -6,7 +6,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.applib.services.wrapper.WrapperFactory;
 import org.apache.causeway.applib.services.wrapper.control.AsyncControl;
@@ -16,9 +15,7 @@ import lombok.SneakyThrows;
 
 //tag::class[]
 @Named("demo.DemoEntityFactory")
-@DomainService(
-        nature = NatureOfService.VIEW                               // <.>
-)
+@DomainService                                                      // <.>
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class PrimeNumberGenerator {
 

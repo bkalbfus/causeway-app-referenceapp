@@ -24,7 +24,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -45,7 +44,7 @@ import demoapp.dom.domain.actions.ActionLayout.promptStyle.ActionLayoutPromptSty
 import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.ActionLayoutRedirectPolicyPage;
 import demoapp.dom.domain.actions.ActionLayout.sequence.ActionLayoutSequencePage;
 
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @Named("demo.ActionLayoutMenu")
 @javax.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})

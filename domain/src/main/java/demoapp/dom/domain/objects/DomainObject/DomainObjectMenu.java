@@ -25,7 +25,6 @@ import javax.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -44,7 +43,7 @@ import demoapp.dom.domain.objects.DomainObject.xxxDomainEvent.DomainObjectXxxDom
 import demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent.DomainObjectXxxLifecycleEventPage;
 
 @Named("demo.DomainObjectMenu")
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class DomainObjectMenu {
