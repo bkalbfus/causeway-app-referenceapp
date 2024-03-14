@@ -25,7 +25,6 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
@@ -52,7 +51,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.val;
 
 @Named("demo.CollectionLayoutMenu")
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 //@Log4j2

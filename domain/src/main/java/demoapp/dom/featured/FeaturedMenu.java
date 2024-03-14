@@ -28,23 +28,21 @@ import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
 import org.apache.causeway.applib.annotation.MemberSupport;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.factory.FactoryService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 import demoapp.dom.featured.customui.GeoapifyClient;
 import demoapp.dom.featured.customui.WhereInTheWorldPage;
 import demoapp.dom.featured.customui.Zoom;
 import demoapp.dom.featured.layout.tooltip.DemoItem;
 import demoapp.dom.featured.layout.tooltip.TooltipPage;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.FeaturedMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 public class FeaturedMenu {

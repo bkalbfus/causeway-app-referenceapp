@@ -26,11 +26,13 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.value.Blob;
 import org.apache.causeway.applib.value.Clob;
+
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.domain.properties.Property.commandPublishing.PropertyCommandPublishingPage;
@@ -47,13 +49,9 @@ import demoapp.dom.domain.properties.Property.projecting.PropertyProjectingPage;
 import demoapp.dom.domain.properties.Property.regexPattern.PropertyRegexPatternPage;
 import demoapp.dom.domain.properties.Property.snapshot.PropertySnapshotPage;
 import demoapp.dom.types.Samples;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.PropertyMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class PropertyMenu {

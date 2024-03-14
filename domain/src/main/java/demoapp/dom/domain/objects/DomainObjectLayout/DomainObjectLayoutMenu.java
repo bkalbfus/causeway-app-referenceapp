@@ -26,7 +26,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.factory.FactoryService;
@@ -41,7 +40,7 @@ import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.DomainObjectLayout
 import demoapp.dom.domain.objects.DomainObjectLayout.xxxUiEvent.DomainObjectLayoutXxxUiEventPage;
 
 @Named("demo.DomainObjectLayoutMenu")
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @Priority(PriorityPrecedence.EARLY)
 //@Log4j2
 public class DomainObjectLayoutMenu {

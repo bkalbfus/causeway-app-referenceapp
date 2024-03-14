@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 import jakarta.validation.constraints.Digits;
 
 @Digits(integer = 12, fraction = 2)
-// @javax.persistence.Column(precision = 14, scale = 2) // JPA doesn't support meta-annotations
+// @jakarta.persistence.Column(precision = 14, scale = 2) // JPA doesn't support meta-annotations
 @javax.jdo.annotations.Column(scale = 2)                // JDO doesn't require length to be specified
 @Inherited
 @Target({

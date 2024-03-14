@@ -23,15 +23,12 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 
 import lombok.val;
 
 @Named("demo.MixinMenu")
-@DomainService(
-        nature = NatureOfService.VIEW
-)
+@DomainService
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class MixinMenu {
 

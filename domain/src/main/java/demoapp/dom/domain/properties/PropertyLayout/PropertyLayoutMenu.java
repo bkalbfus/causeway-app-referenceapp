@@ -24,9 +24,11 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
+
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 import demoapp.dom.domain.properties.PropertyLayout.cssClass.PropertyLayoutCssClassPage;
 import demoapp.dom.domain.properties.PropertyLayout.describedAs.PropertyLayoutDescribedAsPage;
@@ -37,13 +39,9 @@ import demoapp.dom.domain.properties.PropertyLayout.named.PropertyLayoutNamedPag
 import demoapp.dom.domain.properties.PropertyLayout.navigable.FileNodeVm;
 import demoapp.dom.domain.properties.PropertyLayout.repainting.PropertyLayoutRepaintingPage;
 import demoapp.dom.domain.properties.PropertyLayout.typicalLength.PropertyLayoutTypicalLengthPage;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.PropertyLayoutMenu")
-@DomainService(
-        nature=NatureOfService.VIEW
-)
+@DomainService
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 //@Log4j2

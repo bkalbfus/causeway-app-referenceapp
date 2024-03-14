@@ -24,9 +24,11 @@ import jakarta.inject.Named;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
-import org.apache.causeway.applib.annotation.NatureOfService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
+
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.actions.Action.choicesFrom.ActionChoicesFromPage;
@@ -37,11 +39,9 @@ import demoapp.dom.domain.actions.Action.restrictTo.ActionRestrictToPage;
 import demoapp.dom.domain.actions.Action.semantics.ActionSemanticsPage;
 import demoapp.dom.domain.actions.Action.typeOf.ActionTypeOfPage;
 import demoapp.dom.domain.actions.Action.typeOf.child.ActionTypeOfChildVm;
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 @Named("demo.ActionMenu")
-@DomainService(nature=NatureOfService.VIEW)
+@DomainService
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class ActionMenu {
