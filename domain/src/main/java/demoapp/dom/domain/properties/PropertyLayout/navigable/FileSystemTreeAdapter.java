@@ -19,7 +19,6 @@
 package demoapp.dom.domain.properties.PropertyLayout.navigable;
 
 import java.io.File;
-import java.util.Optional;
 import java.util.stream.Stream;
 
 import org.apache.causeway.applib.graph.tree.TreeAdapter;
@@ -28,16 +27,6 @@ import lombok.val;
 
 //tag::class[]
 public class FileSystemTreeAdapter implements TreeAdapter<FileNodeVm> {
-
-    @Override
-    public Optional<FileNodeVm> parentOf(FileNodeVm fileNode) {
-        if(fileNode.getType() == FileNodeType.FILE_SYSTEM_ROOT) {
-            return Optional.empty();
-        }
-        val parentFolderIfAny = fileNode.asFile().getParentFile();
-        return Optional.ofNullable(parentFolderIfAny)
-                .map(FileNodeVm::new);
-    }
 
     @Override
     public int childCountOf(FileNodeVm value) {

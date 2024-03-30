@@ -60,7 +60,7 @@ public class FileTreeNodeService {
         TreeNode<FileNodeVm> tree;
         val rootFile = FileSystems.getDefault().getRootDirectories().iterator().next().toFile();
         val rootNode = new FileNodeVm(rootFile);
-        tree = TreeNode.lazy(rootNode, FileSystemTreeAdapter.class);
+        tree = TreeNode.root(rootNode, FileSystemTreeAdapter.class);
         tree.expand(TreePath.of(0)); // expand the root node
         return tree;
     }
