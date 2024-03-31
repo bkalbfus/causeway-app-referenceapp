@@ -29,6 +29,7 @@ import org.springframework.stereotype.Service;
 
 import org.apache.causeway.applib.graph.tree.TreeNode;
 import org.apache.causeway.applib.graph.tree.TreePath;
+import org.apache.causeway.applib.services.factory.FactoryService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.val;
@@ -41,13 +42,14 @@ import lombok.val;
 public class FileTreeNodeService {
 
     final Provider<HttpSession> httpSessionProvider;
+    final FactoryService factoryService;
 
     public TreeNode<FileNodeVm> sessionTree() {
         val session = httpSessionProvider.get();
         val cacheKey = TreeNode.class.getName();
         var tree = (TreeNode<FileNodeVm>) session.getAttribute(cacheKey);
         if(tree == null) {
-            tree = newTree();
+            tree = newTree(factoryService);
             session.setAttribute(cacheKey, tree);
         }
         return tree;
@@ -56,11 +58,11 @@ public class FileTreeNodeService {
 //end::sessionTree[]
 
 //tag::newTree[]
-    private static TreeNode<FileNodeVm> newTree() {
+    private static TreeNode<FileNodeVm> newTree(FactoryService factoryService) {
         TreeNode<FileNodeVm> tree;
         val rootFile = FileSystems.getDefault().getRootDirectories().iterator().next().toFile();
         val rootNode = new FileNodeVm(rootFile);
-        tree = TreeNode.root(rootNode, FileSystemTreeAdapter.class);
+        tree = TreeNode.root(rootNode, FileSystemTreeAdapter.class, factoryService);
         tree.expand(TreePath.of(0)); // expand the root node
         return tree;
     }
