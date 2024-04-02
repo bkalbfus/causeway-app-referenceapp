@@ -21,7 +21,7 @@
     </parent>
 
 	<groupId>org.apache.causeway.examples.apps</groupId>
-	<artifactId>demo-parent</artifactId>
+	<artifactId>reference-app-parent</artifactId>
 
 	<name>Demo - Parent</name>
 

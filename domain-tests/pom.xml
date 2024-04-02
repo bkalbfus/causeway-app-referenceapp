@@ -16,7 +16,7 @@
 
 	<parent>
 		<groupId>org.apache.causeway.examples.apps</groupId>
-		<artifactId>demo-parent</artifactId>
+		<artifactId>reference-app-parent</artifactId>
 		<version>3.0.0-SNAPSHOT</version>
 	</parent>
 
@@ -70,14 +70,13 @@
 
 		<dependency>
 			<groupId>org.apache.causeway.valuetypes</groupId>
-			<artifactId>causeway-valuetypes-asciidoc-ui</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<artifactId>causeway-valuetypes-asciidoc-ui-wkt</artifactId>
 		</dependency> 
 
 		<!-- provides DomainObjectTesterFactory -->
 		<dependency>
 			<groupId>org.apache.causeway.regressiontests</groupId>
-			<artifactId>causeway-regressiontests-stable</artifactId>
+			<artifactId>causeway-regressiontests-base</artifactId>
 			<version>3.0.0-SNAPSHOT</version>
 		</dependency>
 		
