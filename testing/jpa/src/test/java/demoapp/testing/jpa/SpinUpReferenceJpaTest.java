@@ -16,14 +16,13 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.testing.jdo;
+package demoapp.testing.jpa;
 
 import org.approvaltests.Approvals;
 import org.approvaltests.core.Options;
 import org.approvaltests.reporters.DiffReporter;
 import org.approvaltests.reporters.UseReporter;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,12 +37,14 @@ import lombok.val;
 
 @SpringBootTest(
         classes = {
-                DemoDomainJdo_forTesting.class
+                ReferenceDomainJpa_forTesting.class
         },
         properties = {
+                //"spring.jpa.show-sql=true",
+                //"logging.level.org.springframework.orm.jpa=DEBUG"
         })
-@ActiveProfiles(profiles = "demo-jdo")
-class SpinUpDemoJdoTest {
+@ActiveProfiles(profiles = "demo-jpa")
+class SpinUpReferenceJpaTest {
 
     @Autowired MetaModelContext mmc;
 
@@ -53,7 +54,7 @@ class SpinUpDemoJdoTest {
         ApprovalUtils.registerFileExtensionForTextCompare(".yaml");
     }
 
-    @Test @Disabled("missing DomainObjectAliasedJdo, ...") //TODO demo domain is currently WIP
+    @Test
     @DisplayName("verifyAllSpecificationsDiscovered")
     @UseReporter(DiffReporter.class)
     void verify() {

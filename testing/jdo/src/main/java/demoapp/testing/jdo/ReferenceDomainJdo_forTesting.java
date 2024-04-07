@@ -16,22 +16,21 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.testing.jpa;
+package demoapp.testing.jdo;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import demoapp.web.DemoAppManifestJpa;
+import demoapp.web.ReferenceAppManifestJdo;
 
 @SpringBootConfiguration
-@Profile("demo-jpa")
+@Profile("demo-jdo")
 @EnableAutoConfiguration
 @Import({
-    DemoAppManifestJpa.class
+    ReferenceAppManifestJdo.class
 })
-public class DemoDomainJpa_forTesting {
-    
+public class ReferenceDomainJdo_forTesting {
 
 }

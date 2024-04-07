@@ -16,37 +16,28 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.dom.domain.tests.conf;
+package demoapp.dom;
 
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
 import org.apache.causeway.core.config.presets.CausewayPresets;
-import org.apache.causeway.core.runtimeservices.CausewayModuleCoreRuntimeServices;
+import org.apache.causeway.extensions.commandlog.jdo.CausewayModuleExtCommandLogPersistenceJdo;
 import org.apache.causeway.persistence.jdo.datanucleus.CausewayModulePersistenceJdoDatanucleus;
-import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixturesApplib;
 
-import demoapp.web.DemoAppManifestJdo;
-
-@SpringBootConfiguration
-@EnableAutoConfiguration
+@Configuration
+@Profile("demo-jdo")
 @Import({
-    CausewayModuleCoreRuntimeServices.class,
+    DemoModuleCommon.class,
     CausewayModulePersistenceJdoDatanucleus.class,
-    CausewayModuleTestingFixturesApplib.class,
-
-    // demo domain
-    DemoAppManifestJdo.class,
+    CausewayModuleExtCommandLogPersistenceJdo.class,
 })
 @PropertySources({
-    @PropertySource(CausewayPresets.NoTranslations),
-    @PropertySource(CausewayPresets.H2InMemory_withUniqueSchema),
+    @PropertySource(CausewayPresets.DatanucleusAutocreateNoValidate),
 })
-@Profile("demo-jdo")
-public class Configuration_usingJdo {
+public class ReferenceModuleJdo {
 
 }

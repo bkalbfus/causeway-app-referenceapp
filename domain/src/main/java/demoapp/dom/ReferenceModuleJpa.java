@@ -213,6 +213,6 @@ import demoapp.dom.types.primitive.shorts.jpa.PrimitiveShortJpa;
         NumberConstantJpa.class,
 
 })
-public class DemoModuleJpa {
+public class ReferenceModuleJpa {
 
 }

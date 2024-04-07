@@ -28,15 +28,15 @@ import org.apache.causeway.extensions.executionoutbox.jpa.CausewayModuleExtExecu
 import org.apache.causeway.extensions.secman.jpa.CausewayModuleExtSecmanPersistenceJpa;
 import org.apache.causeway.extensions.sessionlog.jpa.CausewayModuleExtSessionLogPersistenceJpa;
 
-import demoapp.dom.DemoModuleJpa;
+import demoapp.dom.ReferenceModuleJpa;
 
 /**
  * Makes the integral parts of the 'demo' web application.
  */
 @Configuration
 @Import({
-    DemoModuleJpa.class,
-    DemoAppManifestCommon.class,
+    ReferenceModuleJpa.class,
+    ReferenceAppManifestCommon.class,
 
     // Security Manager Extension (secman)
     CausewayModuleExtSecmanPersistenceJpa.class,
@@ -46,6 +46,6 @@ import demoapp.dom.DemoModuleJpa;
     CausewayModuleExtExecutionOutboxPersistenceJpa.class,
     CausewayModuleExtAuditTrailPersistenceJpa.class,
 })
-public class DemoAppManifestJpa {
+public class ReferenceAppManifestJpa {
 
 }

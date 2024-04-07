@@ -256,20 +256,6 @@
 				<module>wicket/jdo</module>
 			</modules>
 		</profile>
-		<profile>
-			<id>graphql</id>
-			<activation>
-				<property>
-					<name>graphql</name>
-				</property>
-			</activation>
-			<modules>
-				<module>domain</module>
-				<module>web</module>
-				<module>wicket/common</module>
-				<module>wicket/jpa-and-graphql</module>
-			</modules>
-		</profile>
 
 		<profile>
 			<id>nightly</id>

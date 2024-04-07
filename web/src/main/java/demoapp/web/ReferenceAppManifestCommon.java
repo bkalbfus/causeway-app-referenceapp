@@ -66,7 +66,7 @@ import demoapp.web.security.PrototypeActionsVisibilityAdvisor;
 
 })
 @Log4j2
-public class DemoAppManifestCommon {
+public class ReferenceAppManifestCommon {
 
     /**
      * If available from {@code System.getProperty("ContextPath")}

@@ -16,28 +16,39 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.dom;
+package demoapp.web;
+
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
 
-import org.apache.causeway.core.config.presets.CausewayPresets;
+import org.apache.causeway.extensions.audittrail.jdo.CausewayModuleExtAuditTrailPersistenceJdo;
 import org.apache.causeway.extensions.commandlog.jdo.CausewayModuleExtCommandLogPersistenceJdo;
-import org.apache.causeway.persistence.jdo.datanucleus.CausewayModulePersistenceJdoDatanucleus;
+import org.apache.causeway.extensions.executionlog.jdo.CausewayModuleExtExecutionLogPersistenceJdo;
+import org.apache.causeway.extensions.executionoutbox.jdo.CausewayModuleExtExecutionOutboxPersistenceJdo;
+import org.apache.causeway.extensions.secman.jdo.CausewayModuleExtSecmanPersistenceJdo;
+import org.apache.causeway.extensions.sessionlog.jdo.CausewayModuleExtSessionLogPersistenceJdo;
 
+import demoapp.dom.ReferenceModuleJdo;
+
+/**
+ * Makes the integral parts of the 'demo' web application.
+ */
 @Configuration
-@Profile("demo-jdo")
 @Import({
-    DemoModuleCommon.class,
-    CausewayModulePersistenceJdoDatanucleus.class,
+    ReferenceModuleJdo.class,
+    ReferenceAppManifestCommon.class,
+
+    // Security Manager Extension (secman)
+    CausewayModuleExtSecmanPersistenceJdo.class,
+    CausewayModuleExtSessionLogPersistenceJdo.class,
     CausewayModuleExtCommandLogPersistenceJdo.class,
+    CausewayModuleExtExecutionLogPersistenceJdo.class,
+    CausewayModuleExtExecutionOutboxPersistenceJdo.class,
+    CausewayModuleExtAuditTrailPersistenceJdo.class,
+
+
 })
-@PropertySources({
-    @PropertySource(CausewayPresets.DatanucleusAutocreateNoValidate),
-})
-public class DemoModuleJdo {
+public class ReferenceAppManifestJdo {
 
 }
