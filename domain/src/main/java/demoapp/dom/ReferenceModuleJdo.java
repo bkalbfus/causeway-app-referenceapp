@@ -31,7 +31,7 @@ import org.apache.causeway.persistence.jdo.datanucleus.CausewayModulePersistence
 @Configuration
 @Profile("demo-jdo")
 @Import({
-    DemoModuleCommon.class,
+    ReferenceModuleCommon.class,
     CausewayModulePersistenceJdoDatanucleus.class,
     CausewayModuleExtCommandLogPersistenceJdo.class,
 })

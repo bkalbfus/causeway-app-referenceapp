@@ -61,7 +61,7 @@ Since invoking a safe query-only action will often return the same result (at le
 
 To leverage this, the action must be invoked "through" the framework, in other words using the `WrapperFactory` service.
 
-To demonstrate this, the demo app declares the following action:
+To demonstrate this, the reference app declares the following action:
 
 [source,java,indent=0]
 ----

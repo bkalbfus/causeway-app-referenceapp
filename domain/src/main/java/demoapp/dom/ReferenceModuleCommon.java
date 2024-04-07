@@ -45,8 +45,8 @@ import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixtures
 })
 @ComponentScan(
         basePackageClasses= {
-                DemoModuleCommon.class
+                ReferenceModuleCommon.class
         })
-public class DemoModuleCommon {
+public class ReferenceModuleCommon {
 
 }

@@ -111,7 +111,7 @@ import demoapp.dom.types.primitive.shorts.jpa.PrimitiveShortJpa;
 @Configuration
 @Profile("demo-jpa")
 @Import({
-    DemoModuleCommon.class,
+    ReferenceModuleCommon.class,
     CausewayModulePersistenceJpaEclipselink.class,
     CausewayModuleExtCommandLogPersistenceJpa.class,
 })

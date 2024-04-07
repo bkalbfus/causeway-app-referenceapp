@@ -33,7 +33,7 @@ include::FileNodeVm.java[tags=navigable]
 <.> indicates that this property returns a reference to its "parent" within some hierarchy
 <.> there is no requirement for the property to be visible.
 
-In the case of this demo app, the parent also happens to be a `FileNodeVm`.
+In the case of this reference app, the parent also happens to be a `FileNodeVm`.
 However, in general, any type of the parent can be different from the type of the child.
 
 The returned parent is itself queried recursively, until eventually an object is returned that has no parent.
@@ -104,7 +104,7 @@ public interface TreeAdapter<T> {
 }
 ----
 
-In the case of the demo app, the implementation is `FileSystemTreeAdapter`, which navigate the host computer's filesystem:
+In the case of this reference app, the implementation is `FileSystemTreeAdapter`, which navigate the host computer's filesystem:
 
 [source,java,indent=0]
 ----

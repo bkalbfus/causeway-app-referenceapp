@@ -51,7 +51,7 @@ include::../../../_changes/EntityChangesSubscriberToCaptureChangesInMemory.java[
 ----
 <.> describes the set of changes
 
-* the list of recent changes is shown because this page implementing an `ExposeCapturedChanges` marker interface (part of the demo app, not the framework).
+* the list of recent changes is shown because this page implementing an `ExposeCapturedChanges` marker interface (part of this reference app, not the framework).
 A mixin then contributes the "recentChanges" collection:
 +
 [source,java,indent=0]
