@@ -24,3 +24,25 @@ The app is available as a Docker image.
   ```
 
 ... then navigate to http://localhost:8080
+
+
+## To build
+
+Prereqs:
+
+* mvnd 3.6.x
+* Java 11
+
+Building:
+
+* To build the JPA variant:
+
+  ```bash
+  mvnd -Dwicket-jdo install
+  ```
+* 
+* To build the JDO variant:
+
+  ```bash
+  mvnd -Dwicket-jdo install
+  ```
