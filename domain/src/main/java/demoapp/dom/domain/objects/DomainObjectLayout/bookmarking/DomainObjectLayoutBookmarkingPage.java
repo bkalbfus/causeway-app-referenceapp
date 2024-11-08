@@ -56,6 +56,5 @@ public class DomainObjectLayoutBookmarkingPage implements HasAsciiDocDescription
         return new DomainObjectLayoutBookmarkingNestedVm(this);
     }
 
-
 }
 //end::class[]

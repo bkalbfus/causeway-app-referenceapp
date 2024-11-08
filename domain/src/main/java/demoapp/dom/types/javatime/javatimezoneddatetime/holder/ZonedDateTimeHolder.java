@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.holder;
 
-
 import java.time.ZonedDateTime;
 
 import jakarta.inject.Named;

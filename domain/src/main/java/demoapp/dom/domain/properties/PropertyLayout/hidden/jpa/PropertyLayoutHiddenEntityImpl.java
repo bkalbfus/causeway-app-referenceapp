@@ -85,7 +85,6 @@ public class PropertyLayoutHiddenEntityImpl extends PropertyLayoutHidden {
     @Getter @Setter
     private String nameHiddenObjectForms;
 
-
 //tag::class[]
 }
 //end::class[]

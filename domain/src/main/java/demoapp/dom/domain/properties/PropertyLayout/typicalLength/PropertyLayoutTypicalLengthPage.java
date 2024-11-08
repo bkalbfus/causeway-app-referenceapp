@@ -74,6 +74,5 @@ public class PropertyLayoutTypicalLengthPage implements HasAsciiDocDescription {
     private String notes;
 //end::layout-file[]
 
-
 }
 //end::class[]

@@ -63,7 +63,6 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
         return "Action Choices";
     }
 
-
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
     public AsciiDoc getSingleChoiceDescription() {
@@ -85,7 +84,6 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "parameterMatchingDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -99,4 +97,3 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

@@ -50,5 +50,4 @@ public class JavaUtilTypesMenu {
         return new JavaUtilDates();
     }
 
-
 }

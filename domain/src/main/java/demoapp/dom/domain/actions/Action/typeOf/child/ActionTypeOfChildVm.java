@@ -85,6 +85,5 @@ public class ActionTypeOfChildVm implements HasAsciiDocDescription {
         return new StringBuilder(value).reverse().toString();
     }
 
-
 }
 //end::class[]

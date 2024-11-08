@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.jdo;
 
-
 import java.time.ZonedDateTime;
 
 import javax.jdo.annotations.Column;

@@ -37,7 +37,6 @@ public abstract class EventLogEntry {
     public abstract Acknowledge getAcknowledge();
     public abstract void setAcknowledge(Acknowledge acknowledge);
 
-
     // demonstrating 2 methods of changing a property ...
     // - inline edit
     // - via action

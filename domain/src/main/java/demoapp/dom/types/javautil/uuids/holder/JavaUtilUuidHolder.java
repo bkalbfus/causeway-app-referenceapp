@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javautil.uuids.holder;
 
-
 import java.util.UUID;
 
 import jakarta.inject.Named;

@@ -42,7 +42,6 @@ public class ScalarValueTypePage implements HasAsciiDocDescription {
         return "Scalar Value Types";
     }
 
-
 //tag::class[]
     @Property(editing = Editing.ENABLED)
     @Getter @Setter

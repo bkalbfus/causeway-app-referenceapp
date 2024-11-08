@@ -48,7 +48,6 @@ import demoapp.dom._infra.resources.AsciiDocReaderService;
 //@Log4j2
 public class JavaLangVoids implements HasAsciiDocDescription {
 
-
     @ObjectSupport public String title() {
         return "Void data type";
     }

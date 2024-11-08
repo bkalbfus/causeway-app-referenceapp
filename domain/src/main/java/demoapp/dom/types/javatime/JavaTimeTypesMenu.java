@@ -19,7 +19,6 @@
  */
 package demoapp.dom.types.javatime;
 
-
 import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
@@ -78,6 +77,5 @@ public class JavaTimeTypesMenu {
     public ZonedDateTimes zonedDateTimes(){
         return new ZonedDateTimes();
     }
-
 
 }

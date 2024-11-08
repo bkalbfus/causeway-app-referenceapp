@@ -24,7 +24,6 @@ import org.apache.causeway.applib.annotation.Property;
 
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Property()
 @RequiredArgsConstructor

@@ -90,7 +90,6 @@ public class PropertyEditingEntityImpl
 //end::initial-character[]
 //end::class[]
 
-
 //tag::class[]
 }
 //end::class[]

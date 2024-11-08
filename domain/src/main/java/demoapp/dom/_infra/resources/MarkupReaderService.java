@@ -27,7 +27,6 @@ import org.apache.causeway.applib.value.Markup;
 
 import lombok.val;
 
-
 @Service
 @Named("demo.MarkupReaderService")
 public class MarkupReaderService {

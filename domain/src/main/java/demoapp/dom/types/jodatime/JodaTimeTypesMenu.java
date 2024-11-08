@@ -97,5 +97,4 @@ public class JodaTimeTypesMenu {
                 : "Joda is deprecated use java.time classes instead.";
     }
 
-
 }

@@ -66,7 +66,6 @@ public class ActionDefaultsPage implements HasAsciiDocDescription {
         return "Action Defaults";
     }
 
-
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
     public AsciiDoc getSingleDefaultDescription() {
@@ -97,7 +96,6 @@ public class ActionDefaultsPage implements HasAsciiDocDescription {
     @Getter @Setter
     private TvCharacter.Sex preselectCharacterSex2;
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -111,4 +109,3 @@ public class ActionDefaultsPage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

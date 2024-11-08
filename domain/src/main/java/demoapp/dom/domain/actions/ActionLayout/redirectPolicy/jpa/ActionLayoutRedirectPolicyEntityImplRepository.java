@@ -53,5 +53,4 @@ extends ValueHolderRepository<String, ActionLayoutRedirectPolicyEntityImpl> impl
         return entity;
     }
 
-
 }

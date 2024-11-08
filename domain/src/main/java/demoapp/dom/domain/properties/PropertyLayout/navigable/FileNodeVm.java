@@ -97,7 +97,6 @@ public class FileNodeVm implements HasAsciiDocDescription {
     @Getter @Setter
     private FileNodeType type;
 
-
     File asFile() {
         return new File(path);
     }

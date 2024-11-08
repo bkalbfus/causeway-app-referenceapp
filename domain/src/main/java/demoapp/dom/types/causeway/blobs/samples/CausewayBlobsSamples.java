@@ -63,5 +63,4 @@ public class CausewayBlobsSamples implements Samples<Blob> {
         throw new IllegalArgumentException(name);
     }
 
-
 }

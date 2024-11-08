@@ -67,7 +67,6 @@ public class InteractionDtoVm implements ViewModel, HasAsciiDocDescription {
         return buf.toString();
     }
 
-
     @Property
     @PropertyLayout(labelPosition = LabelPosition.NONE)
     @Getter @Setter

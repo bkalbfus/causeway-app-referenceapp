@@ -79,7 +79,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return this;
     }
 
-
     @Action(semantics=SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)
     @ActionLayout(
             named = "No Arguments With Confirm",
@@ -90,8 +89,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         messageService.informUser("clicked on noArgActionWithConfirm");
         return this;
     }
-
-
 
     @Action
     @ActionLayout(
@@ -119,7 +116,6 @@ public class TooltipPage implements HasAsciiDocDescription {
     @MemberSupport public String validateBiArgAction(final String firstArg, final String secondArg) {
         return "always fail for demonstration";
     }
-
 
     @Action(semantics=SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)
     @ActionLayout(
@@ -149,7 +145,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "always fail for demonstration";
     }
 
-
 //tag::disabledAction[]
     @Action
     @ActionLayout(
@@ -163,8 +158,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "Disabled for demonstration.";                       // <.>
     }
 //end::disabledAction[]
-
-
 
     @Action
     @ActionLayout(
@@ -180,17 +173,13 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "Disabled for demonstration.";
     }
 
-
-
     @Property(editing=Editing.ENABLED)
     @PropertyLayout(describedAs="This is a property with a tooltip.")
     @Getter @Setter private String stringProperty;
 
-
     @Property
     @PropertyLayout(describedAs="This is a readonly property with a tooltip.")
     @Getter private String readonlyStringProperty = "readonly";
-
 
 //tag::disabledProperty[]
     @Property(
@@ -202,7 +191,6 @@ public class TooltipPage implements HasAsciiDocDescription {
     )
     @Getter @Setter private String editingDisabledStringProperty = "editing disabled";
 //end::disabledProperty[]
-
 
     // -- COLLECTION
 
@@ -240,6 +228,5 @@ public class TooltipPage implements HasAsciiDocDescription {
     }
 
     // ---
-
 
 }

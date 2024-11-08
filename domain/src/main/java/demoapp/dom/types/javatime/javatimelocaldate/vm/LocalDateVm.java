@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldate.vm;
 
-
 import java.time.LocalDate;
 
 import jakarta.inject.Named;

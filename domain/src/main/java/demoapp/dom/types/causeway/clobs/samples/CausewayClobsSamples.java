@@ -55,5 +55,4 @@ public class CausewayClobsSamples implements Samples<Clob> {
         throw new IllegalArgumentException(name);
     }
 
-
 }

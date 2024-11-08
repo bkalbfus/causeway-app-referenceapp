@@ -99,5 +99,4 @@ public class PropertySnapshotPage implements HasAsciiDocDescription {
     private String notes;
 //end::no-annotation[]
 
-
 }

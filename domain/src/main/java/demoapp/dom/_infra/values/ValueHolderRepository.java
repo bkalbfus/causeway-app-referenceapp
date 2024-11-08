@@ -80,7 +80,6 @@ public abstract class ValueHolderRepository<T, E extends ValueHolder<T>> {
         return repositoryService.persistAndFlush(detachedEntity);
     }
 
-
     // -- SEEDING SUPPORT
 
     @Inject protected Samples<T> samples;
@@ -93,7 +92,5 @@ public abstract class ValueHolderRepository<T, E extends ValueHolder<T>> {
                 .peek(repositoryService::persist)
                 .forEach(onSamplePersisted);
     }
-
-
 
 }

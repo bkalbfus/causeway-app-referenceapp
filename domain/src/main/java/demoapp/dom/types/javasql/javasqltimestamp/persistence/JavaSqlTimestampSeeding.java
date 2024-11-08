@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.persistence;
 
-
 import java.sql.Timestamp;
 
 import jakarta.inject.Inject;

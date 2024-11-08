@@ -43,7 +43,6 @@ import demoapp.dom.domain.properties.ValueSemantics.percentage.ValueSemanticsPro
 //@Log4j2
 public class ValueSemanticsMenu {
 
-
 //tag::create-page[]
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(cssClassFa="fa-step-forward", describedAs = "Inclusive and exclusive date ranges")

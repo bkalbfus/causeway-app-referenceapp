@@ -62,7 +62,6 @@ public class PropertySnapshotEntityImpl
     private String name;
 //end::name[]
 
-
 //tag::class[]
 }
 //end::class[]

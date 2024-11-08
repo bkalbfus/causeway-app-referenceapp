@@ -74,6 +74,5 @@ public class PropertyLayoutNamedPage implements HasAsciiDocDescription {
     private String propertyUsingLayout;
 //end::layout-file[]
 
-
 }
 //end::class[]

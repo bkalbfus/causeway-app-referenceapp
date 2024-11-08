@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimezoneddatetime.persistence;
 
-
 import java.time.ZonedDateTime;
 
 import jakarta.inject.Named;

@@ -43,5 +43,4 @@ public class JavaNetTypesMenu {
         return new Url();
     }
 
-
 }

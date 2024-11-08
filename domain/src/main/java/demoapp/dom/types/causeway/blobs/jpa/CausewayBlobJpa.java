@@ -131,7 +131,6 @@ public class CausewayBlobJpa
         this.readOnlyOptionalProperty = BlobJpaEmbeddable.fromBlob(readOnlyOptionalProperty);
     }
 
-
     @AttributeOverrides({
             @AttributeOverride(name="name",    column=@Column(name="readWriteOptionalProperty_name")),
             @AttributeOverride(name="mimeType",column=@Column(name="readWriteOptionalProperty_mimeType")),

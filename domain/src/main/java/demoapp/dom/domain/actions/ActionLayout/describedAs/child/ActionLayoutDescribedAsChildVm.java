@@ -59,7 +59,5 @@ public class ActionLayoutDescribedAsChildVm implements HasAsciiDocDescription {
     @Getter @Setter
     private String value;
 
-
-
 }
 //end::class[]

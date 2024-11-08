@@ -58,7 +58,6 @@ public class GeoapifyClient implements Serializable {
         this.apiKey = appConfiguration.getGeoapify().getApiKey();
     }
 
-
 //tag::class[]
     @Value
     public class GeocodeResponse {

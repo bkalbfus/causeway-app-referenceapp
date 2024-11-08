@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javamath.bigintegers.persistence;
 
-
 import java.math.BigInteger;
 
 import jakarta.inject.Inject;

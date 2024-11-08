@@ -35,6 +35,4 @@ extends SeedServiceAbstract {
         super(entities);
     }
 
-
-
 }

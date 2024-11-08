@@ -27,7 +27,6 @@ import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import lombok.val;
 
-
 @Service
 @Named("demo.MarkdownReaderService")
 public class MarkdownReaderService {
@@ -51,7 +50,6 @@ public class MarkdownReaderService {
         val markdown = resourceReaderService.readResource(aClass, markdownResourceName);
         return Markdown.valueOf(markdown);
     }
-
 
     @Inject
     ResourceReaderService resourceReaderService;

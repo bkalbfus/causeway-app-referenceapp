@@ -56,8 +56,6 @@ public class CollectionLayoutSortedByPage implements HasAsciiDocDescription {
         return "@CollectionLayout#sortedBy";
     }
 
-
-
 //tag::children[]
     @Collection()
     @CollectionLayout(

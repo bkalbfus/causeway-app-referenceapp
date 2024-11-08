@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqldate.jpa;
 
-
 import java.sql.Date;
 
 import jakarta.inject.Named;

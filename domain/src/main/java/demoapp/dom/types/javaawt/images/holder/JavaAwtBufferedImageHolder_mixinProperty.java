@@ -26,7 +26,6 @@ import org.apache.causeway.applib.annotation.Where;
 
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Property()
 @PropertyLayout(hidden = Where.ALL_TABLES, fieldSetId = "contributed", sequence = "1")

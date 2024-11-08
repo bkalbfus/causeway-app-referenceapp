@@ -57,5 +57,4 @@ public class UiHintsMenu {
         return "Not yet implemented";
     }
 
-
 }

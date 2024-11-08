@@ -42,7 +42,6 @@ public class MarkupVariableResolverService {
 
     private final Map<String, String> constants;
 
-
     @Inject
     public MarkupVariableResolverService(final CausewayConfiguration configuration, final Environment environment) {
         constants = computeConstants(configuration, environment);
@@ -82,9 +81,6 @@ public class MarkupVariableResolverService {
     private static String titleCase(String str) {
         return str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase(Locale.ROOT);
     }
-
-
-
 
     /**
      * For the given {@code input} replaces '${var-name}' with the variable's value.

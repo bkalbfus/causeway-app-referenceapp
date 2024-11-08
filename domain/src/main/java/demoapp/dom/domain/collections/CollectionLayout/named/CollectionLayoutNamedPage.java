@@ -76,7 +76,5 @@ public class CollectionLayoutNamedPage implements HasAsciiDocDescription {
     private List<CollectionLayoutNamedChildVm> moreChildren = new ArrayList<>();
 //end::more-children[]
 
-
-
 }
 //end::class[]

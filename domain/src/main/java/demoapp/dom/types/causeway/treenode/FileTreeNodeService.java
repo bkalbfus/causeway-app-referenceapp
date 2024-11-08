@@ -68,7 +68,6 @@ public class FileTreeNodeService {
     }
 //end::newTree[]
 
-
 //tag::sessionTree[]
     // ...
 }

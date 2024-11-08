@@ -104,7 +104,6 @@ public class ComplexNumberJdoValueSemantics
     }
 //end::getParser[]
 
-
 //tag::class[]
 }
 //end::class[]

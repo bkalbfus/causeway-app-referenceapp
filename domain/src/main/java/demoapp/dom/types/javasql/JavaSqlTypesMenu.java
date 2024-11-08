@@ -51,6 +51,4 @@ public class JavaSqlTypesMenu {
         return new JavaSqlTimestamps();
     }
 
-
-
 }

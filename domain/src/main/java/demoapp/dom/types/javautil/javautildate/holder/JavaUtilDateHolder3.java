@@ -60,6 +60,5 @@ public interface JavaUtilDateHolder3 extends JavaUtilDateHolder2 {
         return getReadOnlyProperty();
     }
 
-
 }
 //end::class[]

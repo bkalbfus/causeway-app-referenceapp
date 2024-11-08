@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimelocaltime.jdo;
 
-
 import java.time.LocalTime;
 
 import javax.jdo.annotations.Column;

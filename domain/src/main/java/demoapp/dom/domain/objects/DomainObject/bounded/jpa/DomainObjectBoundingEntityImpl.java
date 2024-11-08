@@ -67,7 +67,6 @@ public class DomainObjectBoundingEntityImpl extends DomainObjectBoundingEntity {
     @Getter @Setter
     private String name;
 
-
 //tag::class[]
 }
 //end::class[]

@@ -82,8 +82,6 @@ public class AsciiDocConverterService {
         return asciidoctor;
     }
 
-
-
     String adocToHtml(final Class<?> contextClass, final String adoc) {
         try {
             context.set(contextClass);
@@ -92,7 +90,5 @@ public class AsciiDocConverterService {
             context.remove();
         }
     }
-
-
 
 }

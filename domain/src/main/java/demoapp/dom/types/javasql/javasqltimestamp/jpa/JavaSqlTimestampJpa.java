@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.jpa;
 
-
 import java.sql.Timestamp;
 
 import jakarta.inject.Named;

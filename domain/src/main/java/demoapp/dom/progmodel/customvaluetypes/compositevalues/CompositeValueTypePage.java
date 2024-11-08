@@ -43,7 +43,6 @@ public class CompositeValueTypePage implements HasAsciiDocDescription {
         return "Composite Value Types";
     }
 
-
 //tag::class[]
     @Property
     @Getter @Setter

@@ -112,7 +112,6 @@ public class CausewayClobJpa
         this.readWriteProperty = ClobJpaEmbeddable.fromClob(readWriteProperty);
     }
 
-
     @AttributeOverrides({
             @AttributeOverride(name="name",    column=@Column(name="readOnlyOptionalProperty_name")),
             @AttributeOverride(name="mimeType",column=@Column(name="readOnlyOptionalProperty_mimeType")),

@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javautil.javautildate.jdo;
 
-
 import java.util.Date;
 
 import javax.jdo.annotations.Column;

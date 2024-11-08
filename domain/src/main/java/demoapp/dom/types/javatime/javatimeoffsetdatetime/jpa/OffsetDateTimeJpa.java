@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsetdatetime.jpa;
 
-
 import java.time.OffsetDateTime;
 
 import jakarta.inject.Named;

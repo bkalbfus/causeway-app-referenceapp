@@ -79,5 +79,4 @@ public class CausewayTypesMenu {
         return new FileNodeVm();
     }
 
-
 }

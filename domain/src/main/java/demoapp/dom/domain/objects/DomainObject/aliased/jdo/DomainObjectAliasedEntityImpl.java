@@ -59,7 +59,6 @@ public class DomainObjectAliasedEntityImpl extends DomainObjectAliasedEntity {
     @Getter @Setter
     private String name;
 
-
 //tag::class[]
 }
 //end::class[]

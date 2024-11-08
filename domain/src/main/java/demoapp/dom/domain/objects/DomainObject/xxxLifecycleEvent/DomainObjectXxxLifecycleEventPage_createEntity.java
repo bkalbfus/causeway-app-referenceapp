@@ -29,7 +29,6 @@ import demoapp.dom.types.Samples;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 
-
 //tag::class[]
 @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
 @RequiredArgsConstructor

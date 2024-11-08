@@ -55,7 +55,6 @@ extends PanelAbstract<ManagedObject, UiObjectWkt>  {
     // ...
 //end::class[]
 
-
     @Override
     public UiHintContainer getUiHintContainer() {
         // disables hinting by this component

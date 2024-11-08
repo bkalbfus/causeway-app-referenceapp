@@ -134,8 +134,6 @@ public class PropertyLayoutLabelPositionPage implements HasAsciiDocDescription {
     private String propertyLabelPositionRight;
 //end::annotated-right[]
 
-
-
 //tag::layout-left[]
     @Property(optionality = Optionality.OPTIONAL)
     @PropertyLayout()

@@ -89,6 +89,5 @@ public class CollectionLayoutSequencePage implements HasAsciiDocDescription {
     private List<CollectionLayoutSequenceChildVm> yetMoreChildren = new ArrayList<>();
 //end::yet-more-children[]
 
-
 }
 //end::class[]

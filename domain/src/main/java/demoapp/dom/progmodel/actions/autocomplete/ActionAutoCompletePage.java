@@ -60,7 +60,6 @@ public class ActionAutoCompletePage implements HasAsciiDocDescription {
         return "Action Auto-complete";
     }
 
-
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
     public AsciiDoc getSingleAutoCompleteDescription() {
@@ -82,7 +81,6 @@ public class ActionAutoCompletePage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "parameterMatchingDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -96,4 +94,3 @@ public class ActionAutoCompletePage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

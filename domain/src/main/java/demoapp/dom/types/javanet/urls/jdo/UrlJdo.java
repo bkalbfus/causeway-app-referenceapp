@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javanet.urls.jdo;
 
-
 import java.net.URL;
 
 import javax.jdo.annotations.Column;

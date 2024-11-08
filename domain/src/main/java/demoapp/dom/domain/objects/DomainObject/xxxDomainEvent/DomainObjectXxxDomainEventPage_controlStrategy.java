@@ -26,7 +26,6 @@ import org.apache.causeway.applib.events.domain.PropertyDomainEvent;
 
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Property(
     domainEvent = DomainObjectXxxDomainEventPage_controlStrategy.DomainEvent.class              // <.>

@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javautil.javautildate.jpa;
 
-
 import java.util.Date;
 
 import jakarta.inject.Named;

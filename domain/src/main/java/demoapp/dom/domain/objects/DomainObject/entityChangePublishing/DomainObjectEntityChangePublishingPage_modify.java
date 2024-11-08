@@ -75,7 +75,6 @@ public class DomainObjectEntityChangePublishingPage_modify {
         return publishingEntities.all();
     }
 
-
     final static AtomicInteger renumber = new AtomicInteger(0);
 
     @Inject ValueHolderRepository<String, ? extends DomainObjectEntityChangePublishingEntity> publishingEntities;

@@ -78,7 +78,6 @@ import lombok.Setter;
     private String nullableProperty;
 //end::nullable[]
 
-
 //tag::class[]
 }
 //end::class[]

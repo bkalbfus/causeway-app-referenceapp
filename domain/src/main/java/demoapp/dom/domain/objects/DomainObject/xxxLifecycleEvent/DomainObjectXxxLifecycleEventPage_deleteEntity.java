@@ -27,7 +27,6 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import demoapp.dom._infra.values.ValueHolderRepository;
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)
 @RequiredArgsConstructor

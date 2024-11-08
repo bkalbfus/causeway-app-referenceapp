@@ -67,7 +67,6 @@ public class DomainObjectAutoCompleteEntityImpl extends DomainObjectAutoComplete
     @Getter @Setter
     private String name;
 
-
 //tag::class[]
 }
 //end::class[]

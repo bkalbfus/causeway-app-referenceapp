@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqltimestamp.jdo;
 
-
 import java.sql.Timestamp;
 
 import javax.jdo.annotations.Column;

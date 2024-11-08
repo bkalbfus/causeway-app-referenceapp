@@ -74,7 +74,6 @@ public class ActionLayoutAssociateWithPage
         return "@ActionLayout#associateWith";
     }
 
-
 //tag::associate-with-property[]
     @Action
     @ActionLayout(

@@ -43,5 +43,4 @@ public class JavaAwtTypesMenu {
         return new BufferedImages();
     }
 
-
 }

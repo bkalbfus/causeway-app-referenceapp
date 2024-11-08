@@ -84,6 +84,5 @@ public class CollectionTypeOfChildVm implements HasAsciiDocDescription {
         return new StringBuilder(value).reverse().toString();
     }
 
-
 }
 //end::class[]

@@ -66,7 +66,6 @@ public class ActionValidatePage implements HasAsciiDocDescription {
         return "Action Validates";
     }
 
-
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
     public AsciiDoc getSingleValidateDescription() {
@@ -94,7 +93,6 @@ public class ActionValidatePage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "allArgsValidationDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -108,4 +106,3 @@ public class ActionValidatePage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

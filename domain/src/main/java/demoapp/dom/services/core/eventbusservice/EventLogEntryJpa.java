@@ -80,5 +80,4 @@ extends EventLogEntry {
         return this;
     }
 
-
 }

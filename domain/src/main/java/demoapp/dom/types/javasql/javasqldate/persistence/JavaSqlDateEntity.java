@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqldate.persistence;
 
-
 import java.sql.Date;
 
 import jakarta.inject.Named;

@@ -52,5 +52,4 @@ public class PrimeNumberJdoFactoryAndRepository
         all().forEach(repositoryService::remove);
     }
 
-
 }

@@ -30,7 +30,6 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import demoapp.dom.types.Samples;
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Action(
         semantics = SemanticsOf.SAFE

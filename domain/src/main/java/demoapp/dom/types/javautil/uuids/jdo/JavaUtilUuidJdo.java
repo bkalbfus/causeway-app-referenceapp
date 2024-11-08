@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javautil.uuids.jdo;
 
-
 import java.util.UUID;
 
 import javax.jdo.annotations.Column;

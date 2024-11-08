@@ -83,7 +83,6 @@ public class DomainObjectEditingEntityImpl
     }
 //end::class[]
 
-
 //tag::class[]
 }
 //end::class[]

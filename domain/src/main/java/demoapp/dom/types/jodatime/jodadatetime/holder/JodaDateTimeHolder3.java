@@ -60,6 +60,5 @@ public interface JodaDateTimeHolder3 extends JodaDateTimeHolder2 {
         return getReadOnlyProperty();
     }
 
-
 }
 //end::class[]

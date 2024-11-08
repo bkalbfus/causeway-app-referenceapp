@@ -44,7 +44,6 @@ import demoapp.dom.types.primitive.shorts.PrimitiveShorts;
 @jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class PrimitiveTypesMenu {
 
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(cssClassFa="fa-hashtag")
     public PrimitiveBytes bytes(){

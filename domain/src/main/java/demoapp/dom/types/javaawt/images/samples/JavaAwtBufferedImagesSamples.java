@@ -43,7 +43,6 @@ public class JavaAwtBufferedImagesSamples implements Samples<BufferedImage> {
                 .map(this::loadImage);
     }
 
-
     @SneakyThrows
     private BufferedImage loadImage(String name) {
         val bytes = _Bytes.of(_Resources.load(JavaAwtBufferedImagesSamples.class, name ));

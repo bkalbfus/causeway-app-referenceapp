@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimeoffsettime.jdo;
 
-
 import java.time.OffsetTime;
 
 import javax.jdo.annotations.Column;

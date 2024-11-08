@@ -92,7 +92,6 @@ public class ActionLayoutRedirectPolicyEntityImpl extends ActionLayoutRedirectPo
         this.blobJpaEmbeddable = BlobJpaEmbeddable.fromBlob(blob);
     }
 
-
 //tag::class[]
 }
 //end::class[]

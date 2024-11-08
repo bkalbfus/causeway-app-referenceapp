@@ -76,7 +76,6 @@ public class ActionLayoutDescribedAsPage
         return "@ActionLayout#describedAs";
     }
 
-
 //tag::below[]
     @Action
     @ActionLayout(
@@ -113,7 +112,6 @@ public class ActionLayoutDescribedAsPage
 //tag::panel[]
     }
 //end::panel[]
-
 
 //tag::panel-dropdown[]
     @Action
@@ -156,7 +154,6 @@ public class ActionLayoutDescribedAsPage
     public List<ActionLayoutDescribedAsChildVm> choices0RemoveChild() {
         return getChildren();
     }
-
 
 //tag::delete[]
     @Action(semantics = SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)

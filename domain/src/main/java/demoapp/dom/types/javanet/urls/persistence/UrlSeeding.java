@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javanet.urls.persistence;
 
-
 import java.net.URL;
 
 import jakarta.inject.Inject;

@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javatime.javatimelocaldate.persistence;
 
-
 import java.time.LocalDate;
 
 import jakarta.inject.Inject;

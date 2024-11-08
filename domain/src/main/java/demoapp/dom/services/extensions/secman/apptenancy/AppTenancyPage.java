@@ -100,7 +100,6 @@ public class AppTenancyPage implements HasAsciiDocDescription {
     }
 //end::disableRegex[]
 
-
     @Inject @XmlTransient
     ValueHolderRepository<String, ? extends TenantedEntity> tenantedEntities;
 

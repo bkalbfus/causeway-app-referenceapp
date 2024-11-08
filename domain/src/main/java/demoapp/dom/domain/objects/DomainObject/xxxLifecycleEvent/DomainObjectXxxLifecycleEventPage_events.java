@@ -27,7 +27,6 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Collection
 @RequiredArgsConstructor

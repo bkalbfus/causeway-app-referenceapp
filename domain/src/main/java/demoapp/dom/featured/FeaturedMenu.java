@@ -49,7 +49,6 @@ public class FeaturedMenu {
 
     final FactoryService factoryService;
 
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
             cssClassFa="fa-comment",
@@ -64,8 +63,6 @@ public class FeaturedMenu {
 
         return demo;
     }
-
-
 
 //tag::whereInTheWorldAction[]
     @Inject private GeoapifyClient geoapifyClient;

@@ -64,7 +64,6 @@ public class ActionVetoPage implements HasAsciiDocDescription {
         return "Action Veto (hide and disable)";
     }
 
-
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
     public AsciiDoc getHideActionDescription() {
@@ -89,7 +88,6 @@ public class ActionVetoPage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "vetoParamDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -103,4 +101,3 @@ public class ActionVetoPage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

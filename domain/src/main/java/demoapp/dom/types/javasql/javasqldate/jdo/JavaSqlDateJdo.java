@@ -18,7 +18,6 @@
  */
 package demoapp.dom.types.javasql.javasqldate.jdo;
 
-
 import java.sql.Date;
 
 import javax.jdo.annotations.Column;
