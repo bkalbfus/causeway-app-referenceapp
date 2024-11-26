@@ -38,11 +38,10 @@ import demoapp.dom.featured.customui.WhereInTheWorldPage;
 @Priority(PriorityPrecedence.EARLY)                                             // <.>
 public class WhereInTheWorldPanelFactory
         extends EntityComponentFactoryAbstract {
-    private static final long serialVersionUID = 1L;
 
     public WhereInTheWorldPanelFactory() {
         super(
-            UiComponentType.ENTITY                                              // <.>
+            UiComponentType.DOMAIN_OBJECT                                       // <.>
             , WhereInTheWorldPanel.class
         );
     }

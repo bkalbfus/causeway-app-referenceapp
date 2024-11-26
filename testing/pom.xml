@@ -109,7 +109,7 @@
 		        </exclusion>
 		        <exclusion>
 		            <groupId>org.jmock</groupId>
-		            <artifactId>jmock-junit4</artifactId>
+		            <artifactId>jmock-junit5</artifactId>
 		        </exclusion>
 		        <exclusion>
 		            <groupId>org.picocontainer</groupId>

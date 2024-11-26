@@ -323,7 +323,7 @@ div.sectionbody > div.ulist {
 
 tr.even.custom > td,
 tr.odd.custom > td,
-.entityPage.custom .iconAndTitle span
+.domainObjectPage.custom .iconAndTitle span
 {
     font-style: italic;
     color: orangered;
@@ -331,7 +331,7 @@ tr.odd.custom > td,
 
 tr.even.custom1 > td,
 tr.odd.custom1 > td,
-.entityPage.custom1 .iconAndTitle span
+.domainObjectPage.custom1 .iconAndTitle span
 {
     font-style: italic;
     color: #00bf00;
@@ -339,7 +339,7 @@ tr.odd.custom1 > td,
 
 tr.even.custom2 > td,
 tr.odd.custom2 > td,
-.entityPage.custom2 .iconAndTitle span
+.domainObjectPage.custom2 .iconAndTitle span
 {
     font-style: italic;
     color: blueviolet;
