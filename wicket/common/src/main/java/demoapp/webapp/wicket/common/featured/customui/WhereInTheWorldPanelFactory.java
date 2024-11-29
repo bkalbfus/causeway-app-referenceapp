@@ -28,7 +28,7 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.core.metamodel.object.ManagedObject;
 import org.apache.causeway.viewer.commons.model.components.UiComponentType;
 import org.apache.causeway.viewer.wicket.model.models.UiObjectWkt;
-import org.apache.causeway.viewer.wicket.ui.components.entity.EntityComponentFactoryAbstract;
+import org.apache.causeway.viewer.wicket.ui.components.object.ObjectComponentFactoryAbstract;
 
 import demoapp.dom.featured.customui.GeoapifyClient;
 import demoapp.dom.featured.customui.WhereInTheWorldPage;
@@ -37,7 +37,7 @@ import demoapp.dom.featured.customui.WhereInTheWorldPage;
 @org.springframework.stereotype.Component
 @Priority(PriorityPrecedence.EARLY)                                             // <.>
 public class WhereInTheWorldPanelFactory
-        extends EntityComponentFactoryAbstract {
+        extends ObjectComponentFactoryAbstract {
 
     public WhereInTheWorldPanelFactory() {
         super(
