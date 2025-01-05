@@ -16,37 +16,21 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.dom.domain.tests.conf;
+package demoapp.testing.jdo;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
 
-import org.apache.causeway.core.config.presets.CausewayPresets;
-import org.apache.causeway.core.runtimeservices.CausewayModuleCoreRuntimeServices;
-import org.apache.causeway.persistence.jdo.datanucleus.CausewayModulePersistenceJdoDatanucleus;
-import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixturesApplib;
-
-import demoapp.web.DemoAppManifestJdo;
+import demoapp.web.ReferenceAppManifestJdo;
 
 @SpringBootConfiguration
+@Profile("demo-jdo")
 @EnableAutoConfiguration
 @Import({
-    CausewayModuleCoreRuntimeServices.class,
-    CausewayModulePersistenceJdoDatanucleus.class,
-    CausewayModuleTestingFixturesApplib.class,
-
-    // demo domain
-    DemoAppManifestJdo.class,
+    ReferenceAppManifestJdo.class
 })
-@PropertySources({
-    @PropertySource(CausewayPresets.NoTranslations),
-    @PropertySource(CausewayPresets.H2InMemory_withUniqueSchema),
-})
-@Profile("demo-jdo")
-public class Configuration_usingJdo {
+public class ReferenceDomainJdo_forTesting {
 
 }

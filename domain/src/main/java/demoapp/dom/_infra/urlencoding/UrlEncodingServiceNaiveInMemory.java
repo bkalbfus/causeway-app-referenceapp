@@ -96,7 +96,7 @@ public class UrlEncodingServiceNaiveInMemory implements UrlEncodingService {
             val encodedString = map.get(base64Key);
             if(encodedString==null) {
                 throw new UnrecoverableException("Cache miss on view model recreation attempt. "
-                        + "(This cache is specific to the Demo App.)");
+                        + "(This cache is specific to the Reference App.)");
             }
             return urlEncodingService.decode(encodedString);
         }

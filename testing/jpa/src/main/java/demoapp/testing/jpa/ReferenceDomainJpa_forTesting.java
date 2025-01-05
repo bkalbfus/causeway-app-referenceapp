@@ -23,14 +23,14 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import demoapp.web.DemoAppManifestJpa;
+import demoapp.web.ReferenceAppManifestJpa;
 
 @SpringBootConfiguration
 @Profile("demo-jpa")
 @EnableAutoConfiguration
 @Import({
-    DemoAppManifestJpa.class
+        ReferenceAppManifestJpa.class
 })
-public class DemoDomainJpa_forTesting {
-    
+public class ReferenceDomainJpa_forTesting {
+
 }

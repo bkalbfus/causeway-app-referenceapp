@@ -38,11 +38,12 @@ import org.apache.causeway.valuetypes.markdown.ui.wkt.CausewayModuleValMarkdownU
 import org.apache.causeway.valuetypes.vega.metamodel.CausewayModuleValVegaMetaModel;
 import org.apache.causeway.valuetypes.vega.persistence.jpa.CausewayModuleValVegaPersistenceJpa;
 import org.apache.causeway.valuetypes.vega.ui.wkt.CausewayModuleValVegaUiWkt;
+import org.apache.causeway.viewer.graphql.viewer.CausewayModuleViewerGraphqlViewer;
 import org.apache.causeway.viewer.wicket.applib.CausewayModuleViewerWicketApplibMixins;
 import org.apache.causeway.viewer.wicket.viewer.CausewayModuleViewerWicketViewer;
 
-import demoapp.web.DemoAppManifestJpa;
-import demoapp.webapp.wicket.common.DemoAppWicketCommon;
+import demoapp.web.ReferenceAppManifestJpa;
+import demoapp.webapp.wicket.common.ReferenceAppWicketCommon;
 
 /**
  * Bootstrap the application.
@@ -50,7 +51,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
 @SpringBootApplication
 @Import({
     // App-Manifest (Configuration)
-    DemoAppManifestJpa.class,
+    ReferenceAppManifestJpa.class,
     //CausewayModuleSecurityBypass.class, // <-- bypass authentication
 
     // Metamodel
@@ -67,8 +68,11 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     CausewayModuleValVegaUiWkt.class,
     CausewayModuleExtPdfjsWicketUi.class,
 
+    // GraphQL
+    CausewayModuleViewerGraphqlViewer.class,
+
     // Custom Demo UI (Wicket Viewer)
-    DemoAppWicketCommon.class,
+    ReferenceAppWicketCommon.class,
 
     // Persistence/Converters (JPA)
     CausewayModuleValAsciidocPersistenceJpa.class,
@@ -79,7 +83,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     // WicketViewerXrayEnable.class // for debugging only
 })
 //@Log4j2
-public class DemoAppWicketJpa extends SpringBootServletInitializer {
+public class ReferenceAppWicketJpa extends SpringBootServletInitializer {
 
     /**
      *
@@ -104,7 +108,7 @@ public class DemoAppWicketJpa extends SpringBootServletInitializer {
 
     	CausewayModuleExtCommandLogApplib.honorSystemEnvironment();
 
-        SpringApplication.run(new Class[] { DemoAppWicketJpa.class }, args);
+        SpringApplication.run(new Class[] { ReferenceAppWicketJpa.class }, args);
 
     }
 

@@ -41,8 +41,8 @@ import org.apache.causeway.valuetypes.vega.ui.wkt.CausewayModuleValVegaUiWkt;
 import org.apache.causeway.viewer.wicket.applib.CausewayModuleViewerWicketApplibMixins;
 import org.apache.causeway.viewer.wicket.viewer.CausewayModuleViewerWicketViewer;
 
-import demoapp.web.DemoAppManifestJdo;
-import demoapp.webapp.wicket.common.DemoAppWicketCommon;
+import demoapp.web.ReferenceAppManifestJdo;
+import demoapp.webapp.wicket.common.ReferenceAppWicketCommon;
 
 /**
  * Bootstrap the application.
@@ -50,7 +50,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
 @SpringBootApplication
 @Import({
     // App-Manifest (Configuration)
-    DemoAppManifestJdo.class,
+    ReferenceAppManifestJdo.class,
 
     // Metamodel
     CausewayModuleValAsciidocMetaModel.class,
@@ -67,7 +67,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     CausewayModuleExtPdfjsWicketUi.class,
 
     // Custom Demo UI (Wicket Viewer)
-    DemoAppWicketCommon.class,
+    ReferenceAppWicketCommon.class,
 
     // Persistence (JDO/DN5)
     CausewayModuleValAsciidocPersistenceJdo.class,
@@ -78,7 +78,7 @@ import demoapp.webapp.wicket.common.DemoAppWicketCommon;
     //WicketViewerXrayEnable.class // for debugging only
 })
 //@Log4j2
-public class DemoAppWicketJdo extends SpringBootServletInitializer {
+public class ReferenceAppWicketJdo extends SpringBootServletInitializer {
 
     /**
      *
@@ -99,7 +99,7 @@ public class DemoAppWicketJdo extends SpringBootServletInitializer {
 
         CausewayModuleExtCommandLogApplib.honorSystemEnvironment();
 
-        SpringApplication.run(new Class[] { DemoAppWicketJdo.class }, args);
+        SpringApplication.run(new Class[] { ReferenceAppWicketJdo.class }, args);
 
     }
 

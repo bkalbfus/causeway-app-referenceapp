@@ -98,7 +98,7 @@ ObjectSpecifications:
   - demo.Tab(demoapp.dom.featured.layout.tabs.TabDemo)
   - demo.DemoItem(demoapp.dom.featured.layout.tooltip.DemoItem)
   - demo.Tooltip(demoapp.dom.featured.layout.tooltip.TooltipPage)
-  - demo.Homepage(demoapp.dom.homepage.DemoHomePage)
+  - demo.Homepage(demoapp.dom.homepage.ReferenceHomePage)
   - demo.DependentArgsDemoItem(demoapp.dom.progmodel.actions.TvCharacter)
   - demo.ActionAutoComplete(demoapp.dom.progmodel.actions.autocomplete.ActionAutoCompletePage)
   - demo.BulkActionPage(demoapp.dom.progmodel.actions.bulk.BulkActionPage)

@@ -35,6 +35,6 @@ import demoapp.webapp.wicket.common.featured.customui.WhereInTheWorldPanelFactor
     CausewayModuleExtFullCalendarWicketUi.class,
     CausewayModuleExtTabularExcel.class, // allows for collection download as excel
 })
-public class DemoAppWicketCommon {
+public class ReferenceAppWicketCommon {
 
 }

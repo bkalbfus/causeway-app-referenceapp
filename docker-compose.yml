@@ -20,7 +20,7 @@
 version: "3.3"
 services:
   primary:
-    image: "apache/causeway-app-demo-jdo:latest"
+    image: "apache/causeway-app-referenceapp-jdo:latest"
     environment:
       - PROTOTYPING=true
       - SPRING_PROFILES_ACTIVE=primary

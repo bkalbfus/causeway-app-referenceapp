@@ -38,7 +38,7 @@ Rather than styling each action individually, it's possible to use a configurati
 It works by specifying a set of `regex:cssClassFa` pairs; if the action's identifier matches the regex, then the fa icon is applied.
 This is a great way to ensure that actions with similar semantics have similar names; they will then pick up the same visual cues.
 
-The following is taken from this demo app:
+The following is taken from this reference app:
 
 
 [source,yaml]

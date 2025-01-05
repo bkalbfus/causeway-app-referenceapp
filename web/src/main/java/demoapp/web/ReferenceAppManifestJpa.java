@@ -21,32 +21,31 @@ package demoapp.web;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-import org.apache.causeway.extensions.audittrail.jdo.CausewayModuleExtAuditTrailPersistenceJdo;
-import org.apache.causeway.extensions.commandlog.jdo.CausewayModuleExtCommandLogPersistenceJdo;
-import org.apache.causeway.extensions.executionlog.jdo.CausewayModuleExtExecutionLogPersistenceJdo;
-import org.apache.causeway.extensions.executionoutbox.jdo.CausewayModuleExtExecutionOutboxPersistenceJdo;
-import org.apache.causeway.extensions.secman.jdo.CausewayModuleExtSecmanPersistenceJdo;
-import org.apache.causeway.extensions.sessionlog.jdo.CausewayModuleExtSessionLogPersistenceJdo;
+import org.apache.causeway.extensions.audittrail.jpa.CausewayModuleExtAuditTrailPersistenceJpa;
+import org.apache.causeway.extensions.commandlog.jpa.CausewayModuleExtCommandLogPersistenceJpa;
+import org.apache.causeway.extensions.executionlog.jpa.CausewayModuleExtExecutionLogPersistenceJpa;
+import org.apache.causeway.extensions.executionoutbox.jpa.CausewayModuleExtExecutionOutboxPersistenceJpa;
+import org.apache.causeway.extensions.secman.jpa.CausewayModuleExtSecmanPersistenceJpa;
+import org.apache.causeway.extensions.sessionlog.jpa.CausewayModuleExtSessionLogPersistenceJpa;
 
-import demoapp.dom.DemoModuleJdo;
+import demoapp.dom.ReferenceModuleJpa;
 
 /**
  * Makes the integral parts of the 'demo' web application.
  */
 @Configuration
 @Import({
-    DemoModuleJdo.class,
-    DemoAppManifestCommon.class,
+    ReferenceModuleJpa.class,
+    ReferenceAppManifestCommon.class,
 
     // Security Manager Extension (secman)
-    CausewayModuleExtSecmanPersistenceJdo.class,
-    CausewayModuleExtSessionLogPersistenceJdo.class,
-    CausewayModuleExtCommandLogPersistenceJdo.class,
-    CausewayModuleExtExecutionLogPersistenceJdo.class,
-    CausewayModuleExtExecutionOutboxPersistenceJdo.class,
-    CausewayModuleExtAuditTrailPersistenceJdo.class,
-
+    CausewayModuleExtSecmanPersistenceJpa.class,
+    CausewayModuleExtSessionLogPersistenceJpa.class,
+    CausewayModuleExtCommandLogPersistenceJpa.class,
+    CausewayModuleExtExecutionLogPersistenceJpa.class,
+    CausewayModuleExtExecutionOutboxPersistenceJpa.class,
+    CausewayModuleExtAuditTrailPersistenceJpa.class,
 })
-public class DemoAppManifestJdo {
+public class ReferenceAppManifestJpa {
 
 }

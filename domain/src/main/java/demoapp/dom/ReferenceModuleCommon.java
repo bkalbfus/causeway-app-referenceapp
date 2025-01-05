@@ -16,37 +16,37 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.dom.domain.tests.conf;
+package demoapp.dom;
 
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
+import org.apache.causeway.applib.CausewayModuleApplibChangeAndExecutionLoggers;
+import org.apache.causeway.applib.CausewayModuleApplibMixins;
 import org.apache.causeway.core.config.presets.CausewayPresets;
 import org.apache.causeway.core.runtimeservices.CausewayModuleCoreRuntimeServices;
-import org.apache.causeway.persistence.jpa.eclipselink.CausewayModulePersistenceJpaEclipselink;
+import org.apache.causeway.extensions.docgen.help.CausewayModuleExtDocgenHelp;
 import org.apache.causeway.testing.fixtures.applib.CausewayModuleTestingFixturesApplib;
 
-import demoapp.web.DemoAppManifestJpa;
-
-@SpringBootConfiguration
-@EnableAutoConfiguration
+@Configuration
 @Import({
+    CausewayModuleApplibChangeAndExecutionLoggers.class,
+    CausewayModuleApplibMixins.class,
     CausewayModuleCoreRuntimeServices.class,
-    CausewayModulePersistenceJpaEclipselink.class,
+    CausewayModuleExtDocgenHelp.class,
     CausewayModuleTestingFixturesApplib.class,
-
-    // demo domain
-    DemoAppManifestJpa.class,
 })
 @PropertySources({
     @PropertySource(CausewayPresets.NoTranslations),
-    @PropertySource(CausewayPresets.H2InMemory_withUniqueSchema),
+    @PropertySource(CausewayPresets.SilenceWicket),
 })
-@Profile("demo-jpa")
-public class Configuration_usingJpa {
+@ComponentScan(
+        basePackageClasses= {
+                ReferenceModuleCommon.class
+        })
+public class ReferenceModuleCommon {
 
 }

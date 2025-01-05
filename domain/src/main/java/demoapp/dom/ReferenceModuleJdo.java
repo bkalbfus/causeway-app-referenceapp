@@ -16,21 +16,28 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package demoapp.testing.jdo;
+package demoapp.dom;
 
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 
-import demoapp.web.DemoAppManifestJdo;
+import org.apache.causeway.core.config.presets.CausewayPresets;
+import org.apache.causeway.extensions.commandlog.jdo.CausewayModuleExtCommandLogPersistenceJdo;
+import org.apache.causeway.persistence.jdo.datanucleus.CausewayModulePersistenceJdoDatanucleus;
 
-@SpringBootConfiguration
+@Configuration
 @Profile("demo-jdo")
-@EnableAutoConfiguration
 @Import({
-    DemoAppManifestJdo.class
+    ReferenceModuleCommon.class,
+    CausewayModulePersistenceJdoDatanucleus.class,
+    CausewayModuleExtCommandLogPersistenceJdo.class,
 })
-public class DemoDomainJdo_forTesting {
+@PropertySources({
+    @PropertySource(CausewayPresets.DatanucleusAutocreateNoValidate),
+})
+public class ReferenceModuleJdo {
 
 }

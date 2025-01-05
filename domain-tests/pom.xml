@@ -10,23 +10,23 @@
 	OF ANY KIND, either express or implied. See the License for the specific
 	language governing permissions and limitations under the License. -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.apache.causeway.examples.apps</groupId>
-		<artifactId>reference-app-parent</artifactId>
-		<version>3.0.0-SNAPSHOT</version>
-	</parent>
+    <parent>
+        <groupId>org.apache.causeway.examples.apps</groupId>
+        <artifactId>reference-app-parent</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+    </parent>
 
-	<artifactId>demo-domain-tests</artifactId>
-	<name>Demo - Domain Tests</name>
+    <artifactId>reference-app-domain-tests</artifactId>
+	<name>Reference App - Domain Tests</name>
 	<description>Introduced to allow for JUnit integration tests with the demo-domain.</description>
 
-	<properties>
-		<!-- <maven.compiler.release>18</maven.compiler.release> -->
-	</properties>
+    <properties>
+        <!-- <maven.compiler.release>18</maven.compiler.release> -->
+    </properties>
 
     <build>
         <resources>
@@ -52,34 +52,35 @@
         </resources>
     </build>
 
-	<dependencies>
+    <dependencies>
 
-		<!-- DEMO DOMAIN -->
+        <!-- DEMO DOMAIN -->
 
 		<dependency>
 			<groupId>org.apache.causeway.examples.apps</groupId>
-			<artifactId>demo-domain</artifactId>
+			<artifactId>reference-app-domain</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.causeway.examples.apps</groupId>
-			<artifactId>demo-web</artifactId>
+			<artifactId>reference-app-web</artifactId>
 		</dependency>
 
 		<!-- DEMO DOMAIN ADDITIONAL DEPENDENCIES -->
 
 		<dependency>
 			<groupId>org.apache.causeway.valuetypes</groupId>
-			<artifactId>causeway-valuetypes-asciidoc-ui-wkt</artifactId>
-		</dependency> 
+			<artifactId>causeway-valuetypes-asciidoc-ui</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
 
 		<!-- provides DomainObjectTesterFactory -->
 		<dependency>
 			<groupId>org.apache.causeway.regressiontests</groupId>
-			<artifactId>causeway-regressiontests-base</artifactId>
+			<artifactId>causeway-regressiontests-stable</artifactId>
 			<version>3.0.0-SNAPSHOT</version>
 		</dependency>
-		
+
 	</dependencies>
 
 </project>

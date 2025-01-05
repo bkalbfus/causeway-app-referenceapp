@@ -4,7 +4,7 @@ This is an link:https://causeway.apache.org[Apache Causeway] application to demo
 
 On the left hand side of each page you'll find a working example of the feature, while on the right hand side you'll find a description of the feature with annotated code examples.
 
-Be aware, the demo app uses an in-memory database, so any changes made will be lost when the app is stopped.
+Be aware, this reference app uses an in-memory database, so any changes made will be lost when the app is stopped.
 
 == Page Layout
 

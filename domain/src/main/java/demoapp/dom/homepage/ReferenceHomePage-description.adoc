@@ -14,7 +14,7 @@ In terms of code, the framework indicates which view model is the home page usin
 
 [source,java]
 ----
-include::DemoHomePage.java[tags="class"]
+include::ReferenceHomePage.java[tags="class"]
 ----
 
 <.> declares this view-model class to be used as the viewer's homepage, there can be only one

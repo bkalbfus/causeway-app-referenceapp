@@ -67,7 +67,7 @@ import lombok.extern.log4j.Log4j2;
 
 })
 @Log4j2
-public class DemoAppManifestCommon {
+public class ReferenceAppManifestCommon {
 
     /**
      * If available from {@code System.getProperty("ContextPath")}

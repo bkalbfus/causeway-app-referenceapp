@@ -173,31 +173,31 @@
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
-				<artifactId>demo-domain</artifactId>
+				<artifactId>reference-app-domain</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
-				<artifactId>demo-web</artifactId>
+				<artifactId>reference-app-web</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
-				<artifactId>demo-wicket-common</artifactId>
+				<artifactId>reference-app-wicket-common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
-				<artifactId>demo-wicket-jpa</artifactId>
+				<artifactId>reference-app-wicket-jpa</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
-				<artifactId>demo-wicket-jdo</artifactId>
+				<artifactId>reference-app-wicket-jdo</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
@@ -242,18 +242,47 @@
 			</modules>
 		</profile>
 		<profile>
-			<id>module-examples-demo-graphql</id>
+			<id>wicket-jpa</id>
 			<activation>
 				<property>
-					<name>module-examples-demo-graphql</name>
+					<name>wicket-jpa</name>
 				</property>
 			</activation>
 			<modules>
 				<module>domain</module>
 				<module>web</module>
 				<module>wicket/common</module>
-				<module>wicket/jpa-and-graphql</module>
+				<module>wicket/jpa</module>
 			</modules>
+		</profile>
+		<profile>
+			<id>wicket-jdo</id>
+			<activation>
+				<property>
+					<name>wicket-jdo</name>
+				</property>
+			</activation>
+			<modules>
+				<module>domain</module>
+				<module>web</module>
+				<module>wicket/common</module>
+				<module>wicket/jdo</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>nightly</id>
+			<activation>
+				<property>
+					<name>!skip.nightly</name>
+				</property>
+			</activation>
+			<repositories>
+				<repository>
+					<id>nightly-builds</id>
+					<url>https://raw.githubusercontent.com/apache-causeway-committers/causeway-nightly/master/mvn-snapshots</url>
+				</repository>
+			</repositories>
 		</profile>
 
 	</profiles>

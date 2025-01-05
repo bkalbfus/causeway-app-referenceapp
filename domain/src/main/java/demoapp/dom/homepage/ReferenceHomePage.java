@@ -35,7 +35,7 @@ import demoapp.dom._infra.resources.AsciiDocReaderService;
 @Named("demo.Homepage")
 @DomainObject(nature=Nature.VIEW_MODEL)
 @HomePage                                                           // <.>
-public class DemoHomePage
+public class ReferenceHomePage
         implements HasAsciiDocDescription {                         // <.>
 
     @ObjectSupport public String title() {                          // <.>
