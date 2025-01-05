@@ -24,7 +24,7 @@
 	<artifactId>reference-app-parent</artifactId>
 	<version>3.0.0-SNAPSHOT</version> <!-- seems superfluous, but is required for the maven set plugin to work -->
 
-	<name>Demo - Parent</name>
+	<name>Reference App - Parent</name>
 
 	<packaging>pom</packaging>
 

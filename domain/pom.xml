@@ -20,8 +20,8 @@
 		<version>3.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>demo-domain</artifactId>
-	<name>Demo - Domain</name>
+	<artifactId>reference-app-domain</artifactId>
+	<name>Reference App - Domain</name>
 
 	<properties>
 	</properties>

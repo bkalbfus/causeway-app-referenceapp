@@ -21,9 +21,9 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>demo-web</artifactId>
+	<artifactId>reference-app-web</artifactId>
 
-	<name>Demo - Web</name>
+	<name>Reference App - Web</name>
 
 	<packaging>jar</packaging>
 
@@ -50,7 +50,7 @@
 
 		<dependency>
 			<groupId>org.apache.causeway.examples.apps</groupId>
-			<artifactId>demo-domain</artifactId>
+			<artifactId>reference-app-domain</artifactId>
 		</dependency>
 
 

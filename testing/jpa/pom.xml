@@ -16,14 +16,14 @@
 
 	<parent>
 		<groupId>org.apache.causeway.examples.apps</groupId>
-		<artifactId>demo-testing</artifactId>
+		<artifactId>reference-app-testing</artifactId>
 		<version>3.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	
-	<artifactId>demo-testing-jpa</artifactId>
 
-	<name>Demo - Testing (JPA)</name>
+	<artifactId>reference-app-testing-jpa</artifactId>
+
+	<name>Reference App - Testing (JPA)</name>
 
 	<packaging>jar</packaging>
 
@@ -34,7 +34,7 @@
 	<dependencies>
 
 		<!-- PERSISTENCE -->
-		
+
 		<dependency>
 			<groupId>org.apache.causeway.persistence</groupId>
 			<artifactId>causeway-persistence-jpa-eclipselink</artifactId>
