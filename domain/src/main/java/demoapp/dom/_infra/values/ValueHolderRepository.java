@@ -30,7 +30,7 @@ import org.apache.causeway.applib.services.repository.RepositoryService;
 
 import demoapp.dom.types.Samples;
 import lombok.AccessLevel;
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 

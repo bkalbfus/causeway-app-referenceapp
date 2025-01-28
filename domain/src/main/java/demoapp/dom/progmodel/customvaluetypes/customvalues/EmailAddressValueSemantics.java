@@ -34,7 +34,7 @@ import org.apache.causeway.commons.internal.base._Strings;
 import org.apache.causeway.schema.common.v2.ValueType;
 import org.apache.causeway.schema.common.v2.ValueWithTypeDto;
 
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 
 //tag::class[]
 @Named("demo.EmailAddressValueSemantics")
