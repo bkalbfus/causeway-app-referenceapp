@@ -61,7 +61,7 @@ public class ComplexNumberValueSemantics
 
     @Override
     public ComplexNumber compose(final ValueDecomposition decomposition) {
-        return decomposition.right()
+        return decomposition.compositeAsOptional()
                 .map(CommonDtoUtils::typedTupleAsMap)
                 .map(map-> ComplexNumber.of(
                         (Double)map.get("re"),
