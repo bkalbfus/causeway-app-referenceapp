@@ -43,7 +43,7 @@ extends AsciiDocValueSemantics {
         return renderHtml(adoc, plainAdoc->
             asciiDocConverterService
             .adocToHtml(
-                    context.getFeatureIdentifier().getLogicalType().correspondingClass(),
+                    context.featureIdentifier().logicalType().correspondingClass(),
                     plainAdoc.getAdoc()));
     }
 
