@@ -104,7 +104,8 @@ The name "default" in this context is in effect a reserved method name.
 ----
 include::ComplexNumber_default.java[tags=default-mixin]
 ----
-<.> should always specify the `INLINE_AS_IF_EDIT` prompt style, because the prompt may be "nested" within an outer action prompt (e.g. the `addComplexNumber` action of the page object iself)
+<.> action semantics is always `@Action(semantics = SemanticsOf.SAFE)`, regardless of what is actually declared here
+<.> prompt style is always `@ActionLayout(promptStyle = PromptStyle.INLINE_AS_IF_EDIT)`, regardless of what is actually declared here, because the prompt may be "nested" within an outer action prompt (e.g. the `addComplexNumber` action of the page object iself)
 
 Comparing composite value types to scalar value types, you'll notice that a composite type doesn't need to define a `Parser` implementation; instead the "default" mixin performs an equivalent role.
 
