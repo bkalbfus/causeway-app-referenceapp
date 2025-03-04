@@ -52,6 +52,10 @@
 			<groupId>org.apache.causeway.examples.apps</groupId>
 			<artifactId>reference-app-domain</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.causeway.examples.apps</groupId>
+			<artifactId>simpleapp</artifactId>
+		</dependency>
 
 
 

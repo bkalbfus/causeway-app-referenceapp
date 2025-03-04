@@ -118,7 +118,7 @@ causeway:
   # schema auto creation etc. ...
   persistence:
     schema:
-       autoCreateSchemas: causewayExtSecman,causewayExtCommandLog,causewayExtExecutionLog,causewayExtExecutionOutbox,causewayExtSessionLog,causewayExtAuditTrail,demo
+       autoCreateSchemas: causewayExtSecman,causewayExtCommandLog,causewayExtExecutionLog,causewayExtExecutionOutbox,causewayExtSessionLog,causewayExtAuditTrail,demo,simple
 
   extensions:
     secman:

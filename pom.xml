@@ -163,6 +163,11 @@
 				<artifactId>reference-app-domain</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.causeway.examples.apps</groupId>
+				<artifactId>simpleapp</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
@@ -209,6 +214,7 @@
 			</activation>
 			<modules>
 				<module>domain</module>
+				<module>simple</module>
 				<module>web</module>
 				<module>testing</module>
 			</modules>
@@ -222,6 +228,7 @@
 			</activation>
 			<modules>
 				<module>domain</module>
+				<module>simple</module>
 				<module>web</module>
 				<module>wicket/common</module>
 				<module>wicket/jdo</module>
@@ -237,6 +244,7 @@
 			</activation>
 			<modules>
 				<module>domain</module>
+				<module>simpleapp</module>
 				<module>web</module>
 				<module>wicket/common</module>
 				<module>wicket/jpa</module>
@@ -273,5 +281,4 @@
 		</profile>
 
 	</profiles>
-
 </project>

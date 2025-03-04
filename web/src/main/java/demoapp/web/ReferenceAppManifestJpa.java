@@ -29,12 +29,14 @@ import org.apache.causeway.extensions.secman.jpa.CausewayModuleExtSecmanPersiste
 import org.apache.causeway.extensions.sessionlog.jpa.CausewayModuleExtSessionLogPersistenceJpa;
 
 import demoapp.dom.ReferenceModuleJpa;
+import domainapp.modules.simple.SimpleModule;
 
 /**
  * Makes the integral parts of the 'demo' web application.
  */
 @Configuration
 @Import({
+	SimpleModule.class,
     ReferenceModuleJpa.class,
     ReferenceAppManifestCommon.class,
 
