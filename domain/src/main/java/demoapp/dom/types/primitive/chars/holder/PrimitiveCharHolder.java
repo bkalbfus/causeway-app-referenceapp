@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive.chars.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.PrimitiveCharHolder")
 //tag::class[]

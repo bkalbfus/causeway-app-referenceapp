@@ -21,8 +21,8 @@ package demoapp.dom.featured;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -43,12 +43,11 @@ import demoapp.dom.featured.layout.tooltip.TooltipPage;
 
 @Named("demo.FeaturedMenu")
 @DomainService
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 public class FeaturedMenu {
 
     final FactoryService factoryService;
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
@@ -64,8 +63,6 @@ public class FeaturedMenu {
 
         return demo;
     }
-
-
 
 //tag::whereInTheWorldAction[]
     @Inject private GeoapifyClient geoapifyClient;

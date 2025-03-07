@@ -3,15 +3,14 @@ package demoapp.dom.domain.objects.DomainObject.nature;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Collection;
-
-import lombok.RequiredArgsConstructor;
 
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.domain.objects.DomainObject.nature.entity.DomainObjectNatureEntity;
 import demoapp.dom.domain.objects.DomainObject.nature.viewmodel.DomainObjectNatureViewModel;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Collection()

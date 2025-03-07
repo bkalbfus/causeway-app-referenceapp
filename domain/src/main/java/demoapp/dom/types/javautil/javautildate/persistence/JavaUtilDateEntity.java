@@ -20,7 +20,7 @@ package demoapp.dom.types.javautil.javautildate.persistence;
 
 import java.util.Date;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 

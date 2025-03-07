@@ -31,7 +31,6 @@ public enum TvShow {
 
     private final String title;
 
-
     @ObjectSupport public String title() {
         return title;
     }

@@ -18,10 +18,9 @@
  */
 package demoapp.dom.types.jodatime.jodalocaldate.persistence;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.joda.time.LocalDate;
-
 import org.springframework.stereotype.Service;
 
 import demoapp.dom._infra.seed.SeedServiceAbstract;

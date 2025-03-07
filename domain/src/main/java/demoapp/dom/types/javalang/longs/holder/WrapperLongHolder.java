@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javalang.longs.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.WrapperLongHolder")
 //tag::class[]

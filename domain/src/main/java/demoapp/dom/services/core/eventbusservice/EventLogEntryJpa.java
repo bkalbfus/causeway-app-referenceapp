@@ -21,11 +21,11 @@ package demoapp.dom.services.core.eventbusservice;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.inject.Named;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.inject.Named;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import org.springframework.context.annotation.Profile;
 
@@ -35,11 +35,10 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.Property;
 
+import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
-
-import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 
 @Profile("demo-jpa")
 @Entity
@@ -64,12 +63,12 @@ extends EventLogEntry {
     @GeneratedValue
     private Long id;
 
-    @javax.persistence.Column(nullable = true)
+    @jakarta.persistence.Column(nullable = true)
     @Property(editing = Editing.DISABLED)
     @Getter(onMethod_ = {@Override}) @Setter(onMethod_ = {@Override})
     private String event;
 
-    @javax.persistence.Column(nullable = true)
+    @jakarta.persistence.Column(nullable = true)
     @Property(editing = Editing.ENABLED)
     @Getter(onMethod_ = {@Override}) @Setter(onMethod_ = {@Override})
     private Acknowledge acknowledge;
@@ -80,6 +79,5 @@ extends EventLogEntry {
         setAcknowledge(acknowledge);
         return this;
     }
-
 
 }

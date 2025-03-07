@@ -18,7 +18,7 @@
  */
 package demoapp.dom._infra.asciidocdesc;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.LabelPosition;
 import org.apache.causeway.applib.annotation.Property;
@@ -28,10 +28,9 @@ import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.applib.events.domain.PropertyDomainEvent;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
+import demoapp.dom._infra.resources.MarkupVariableResolverService;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import demoapp.dom._infra.resources.MarkupVariableResolverService;
 
 @Property(
         snapshot = Snapshot.EXCLUDED,

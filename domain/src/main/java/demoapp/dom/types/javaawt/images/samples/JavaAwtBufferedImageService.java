@@ -61,5 +61,4 @@ public class JavaAwtBufferedImageService {
         return new int[lines][width];
     }
 
-
 }

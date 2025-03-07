@@ -25,9 +25,9 @@ public class LogUtils {
 
     public static String emphasize(String string) {
         return new StringBuilder()
-                .append("\n====================================================\n")
+                .append("\n===\n")
                 .append(string)
-                .append("\n====================================================\n")
+                .append("\n===\n")
                 .toString();
     }
 

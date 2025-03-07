@@ -20,13 +20,13 @@ package demoapp.dom.services.extensions.secman.apptenancy;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -39,11 +39,10 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.services.extensions.secman.apptenancy.persistence.TenantedEntity;
+import lombok.NoArgsConstructor;
 
 //tag::class[]
 @Named("demo.AppTenancyPage")
@@ -100,7 +99,6 @@ public class AppTenancyPage implements HasAsciiDocDescription {
         return getDisableRegex();
     }
 //end::disableRegex[]
-
 
     @Inject @XmlTransient
     ValueHolderRepository<String, ? extends TenantedEntity> tenantedEntities;

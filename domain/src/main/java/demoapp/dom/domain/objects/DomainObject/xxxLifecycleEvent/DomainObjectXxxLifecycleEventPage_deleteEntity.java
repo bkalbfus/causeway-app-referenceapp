@@ -18,16 +18,14 @@
  */
 package demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
-
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)

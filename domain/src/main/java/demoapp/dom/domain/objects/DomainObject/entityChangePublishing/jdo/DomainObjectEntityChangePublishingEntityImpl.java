@@ -18,11 +18,12 @@
  */
 package demoapp.dom.domain.objects.DomainObject.entityChangePublishing.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -31,10 +32,9 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Publishing;
 import org.apache.causeway.applib.annotation.Title;
 
+import demoapp.dom.domain.objects.DomainObject.entityChangePublishing.DomainObjectEntityChangePublishingEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.domain.objects.DomainObject.entityChangePublishing.DomainObjectEntityChangePublishingEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javautil;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -35,7 +35,7 @@ import demoapp.dom.types.javautil.uuids.JavaUtilUuids;
 @DomainObjectLayout(
         named="JavaUtilTypes"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class JavaUtilTypesMenu {
 
     @Action(semantics = SemanticsOf.SAFE)
@@ -49,6 +49,5 @@ public class JavaUtilTypesMenu {
     public JavaUtilDates dates(){
         return new JavaUtilDates();
     }
-
 
 }

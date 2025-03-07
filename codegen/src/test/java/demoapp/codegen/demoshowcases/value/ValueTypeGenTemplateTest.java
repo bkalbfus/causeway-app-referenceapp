@@ -39,7 +39,7 @@ import org.apache.causeway.commons.internal.functions._Predicates;
 import org.apache.causeway.commons.io.FileUtils;
 import org.apache.causeway.commons.io.TextUtils;
 
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 import lombok.SneakyThrows;
 import lombok.val;
 import lombok.extern.log4j.Log4j2;
@@ -122,7 +122,6 @@ class ValueTypeGenTemplateTest {
                 .sorted(Comparator.naturalOrder()));
     }*/
 
-
     private void copyFiles(final Collection<File> generatedFiles, final File sourceRoot, final File destinationRoot) {
         generatedFiles.forEach(src->{
             val dest = new File(destinationRoot, FileUtils.realtiveFileName(sourceRoot, src));
@@ -142,7 +141,6 @@ class ValueTypeGenTemplateTest {
             }
         });
     }
-
 
     private void assertFileContentEquals(final Collection<File> filesA, final Collection<File> filesB) {
 

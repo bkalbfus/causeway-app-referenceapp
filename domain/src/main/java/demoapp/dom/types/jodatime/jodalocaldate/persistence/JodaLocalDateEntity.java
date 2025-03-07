@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.jodatime.jodalocaldate.persistence;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.joda.time.LocalDate;
 

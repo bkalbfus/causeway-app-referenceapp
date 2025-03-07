@@ -20,8 +20,8 @@ package demoapp.dom._infra.resources;
 
 import java.util.Map;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.Attributes;
@@ -30,7 +30,6 @@ import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
 import org.asciidoctor.extension.IncludeProcessor;
 import org.asciidoctor.extension.PreprocessorReader;
-
 import org.springframework.stereotype.Service;
 
 import lombok.val;
@@ -83,8 +82,6 @@ public class AsciiDocConverterService {
         return asciidoctor;
     }
 
-
-
     String adocToHtml(final Class<?> contextClass, final String adoc) {
         try {
             context.set(contextClass);
@@ -93,7 +90,5 @@ public class AsciiDocConverterService {
             context.remove();
         }
     }
-
-
 
 }

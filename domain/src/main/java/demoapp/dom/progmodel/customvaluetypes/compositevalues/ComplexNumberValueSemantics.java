@@ -18,17 +18,22 @@
  */
 package demoapp.dom.progmodel.customvaluetypes.compositevalues;
 
-import javax.inject.Named;
-
-import org.springframework.context.annotation.Import;
-import org.springframework.stereotype.Component;
+import java.util.Map;
+import java.util.Optional;
 
 import org.apache.causeway.applib.util.schema.CommonDtoUtils;
+import org.apache.causeway.applib.util.schema.CommonDtoUtils.TypedTupleBuilder;
 import org.apache.causeway.applib.value.semantics.DefaultsProvider;
 import org.apache.causeway.applib.value.semantics.Renderer;
 import org.apache.causeway.applib.value.semantics.ValueDecomposition;
 import org.apache.causeway.applib.value.semantics.ValueSemanticsAbstract;
+import org.apache.causeway.schema.common.v2.TypedTupleDto;
 import org.apache.causeway.schema.common.v2.ValueType;
+import org.springframework.context.annotation.Import;
+import org.springframework.stereotype.Component;
+import demoapp.dom.progmodel.customvaluetypes.compositevalues.ComplexNumber;
+
+import jakarta.inject.Named;
 
 //tag::class[]
 @Named("demo.ComplexNumberValueSemantics")
@@ -62,11 +67,12 @@ public class ComplexNumberValueSemantics
     @Override
     public ComplexNumber compose(final ValueDecomposition decomposition) {
         return decomposition.right()
-                .map(CommonDtoUtils::typedTupleAsMap)
-                .map(map-> ComplexNumber.of(
-                        (Double)map.get("re"),
-                        (Double)map.get("im")))
-                .orElse(null);
+    	   .map(CommonDtoUtils::typedTupleAsMap)
+    	   .map(map->ComplexNumber.of(
+    			   (Double)map.get("re"),
+    			   (Double)map.get("im")
+    			   ))
+    	   .orElse(null);
     }
 //end::compose[]
 

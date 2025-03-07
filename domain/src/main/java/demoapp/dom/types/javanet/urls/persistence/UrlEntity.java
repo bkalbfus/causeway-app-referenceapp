@@ -20,7 +20,7 @@ package demoapp.dom.types.javanet.urls.persistence;
 
 import java.net.URL;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 

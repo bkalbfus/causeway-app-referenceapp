@@ -24,16 +24,15 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
+import demoapp.dom.types.Samples;
 import lombok.AccessLevel;
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-
-import demoapp.dom.types.Samples;
 
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class ValueHolderRepository<T, E extends ValueHolder<T>> {
@@ -81,7 +80,6 @@ public abstract class ValueHolderRepository<T, E extends ValueHolder<T>> {
         return repositoryService.persistAndFlush(detachedEntity);
     }
 
-
     // -- SEEDING SUPPORT
 
     @Inject protected Samples<T> samples;
@@ -94,7 +92,5 @@ public abstract class ValueHolderRepository<T, E extends ValueHolder<T>> {
                 .peek(repositoryService::persist)
                 .forEach(onSamplePersisted);
     }
-
-
 
 }

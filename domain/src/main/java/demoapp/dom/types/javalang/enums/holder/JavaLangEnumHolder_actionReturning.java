@@ -21,9 +21,8 @@ package demoapp.dom.types.javalang.enums.holder;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.samples.DemoEnum;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.SAFE)

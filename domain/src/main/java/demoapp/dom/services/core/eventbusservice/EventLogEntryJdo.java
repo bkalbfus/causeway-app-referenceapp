@@ -21,11 +21,12 @@ package demoapp.dom.services.core.eventbusservice;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -35,11 +36,10 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.Property;
 
+import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
-
-import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
 
 @Profile("demo-jdo")
 @PersistenceCapable(identityType = IdentityType.DATASTORE, schema = "demo" )
@@ -73,6 +73,5 @@ extends EventLogEntry {
         setAcknowledge(acknowledge);
         return this;
     }
-
 
 }

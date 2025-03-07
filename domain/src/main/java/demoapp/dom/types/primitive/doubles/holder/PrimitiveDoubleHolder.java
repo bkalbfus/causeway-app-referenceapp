@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive.doubles.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.PrimitiveDoubleHolder")
 //tag::class[]

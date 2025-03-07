@@ -20,12 +20,12 @@ package demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent;
 
 import java.time.LocalDateTime;
 
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
@@ -33,11 +33,10 @@ import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.jaxb.JavaTimeJaxbAdapters.LocalDateTimeToStringAdapter;
 
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 //tag::class[]
 @XmlRootElement(name = "demo.DomainObjectLifecycleEventVm")
@@ -48,7 +47,7 @@ import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 @NoArgsConstructor
 public class DomainObjectLifecycleEventVm implements HasAsciiDocDescription {
 
-    public DomainObjectLifecycleEventVm(LocalDateTime timestamp, String eventType, String bookmark) {
+    public DomainObjectLifecycleEventVm(final LocalDateTime timestamp, final String eventType, final String bookmark) {
         this.eventType = eventType;
         this.bookmark = bookmark;
         this.timestamp = timestamp;

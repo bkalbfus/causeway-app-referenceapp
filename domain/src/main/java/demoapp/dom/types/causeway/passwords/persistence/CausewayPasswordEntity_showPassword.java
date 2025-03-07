@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.causeway.passwords.persistence;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;

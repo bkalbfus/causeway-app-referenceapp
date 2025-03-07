@@ -18,10 +18,11 @@
  */
 package demoapp.dom.progmodel.actions.bulk.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.springframework.context.annotation.Profile;
 
@@ -29,10 +30,9 @@ import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.jaxb.PersistentEntityAdapter;
 
+import demoapp.dom.progmodel.actions.bulk.BulkActionItemEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.progmodel.actions.bulk.BulkActionItemEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

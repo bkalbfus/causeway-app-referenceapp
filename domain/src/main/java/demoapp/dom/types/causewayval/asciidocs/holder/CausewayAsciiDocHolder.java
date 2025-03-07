@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.causewayval.asciidocs.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 

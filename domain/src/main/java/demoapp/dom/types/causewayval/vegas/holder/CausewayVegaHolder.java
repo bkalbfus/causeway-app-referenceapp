@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.causewayval.vegas.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.valuetypes.vega.applib.value.Vega;
 

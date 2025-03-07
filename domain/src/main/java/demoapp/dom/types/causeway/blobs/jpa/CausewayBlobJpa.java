@@ -18,16 +18,16 @@
  */
 package demoapp.dom.types.causeway.blobs.jpa;
 
-import javax.inject.Named;
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.inject.Named;
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.AttributeOverrides;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import org.springframework.context.annotation.Profile;
 
@@ -41,9 +41,8 @@ import org.apache.causeway.applib.value.Blob;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 import org.apache.causeway.persistence.jpa.applib.types.BlobJpaEmbeddable;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom.types.causeway.blobs.persistence.CausewayBlobEntity;
+import lombok.NoArgsConstructor;
 
 @Profile("demo-jpa")
 //tag::class[]
@@ -131,7 +130,6 @@ public class CausewayBlobJpa
     public void setReadOnlyOptionalProperty(final Blob readOnlyOptionalProperty) {
         this.readOnlyOptionalProperty = BlobJpaEmbeddable.fromBlob(readOnlyOptionalProperty);
     }
-
 
     @AttributeOverrides({
             @AttributeOverride(name="name",    column=@Column(name="readWriteOptionalProperty_name")),

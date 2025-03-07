@@ -20,7 +20,7 @@ package demoapp.dom.types.javatime.javatimeoffsetdatetime.persistence;
 
 import java.time.OffsetDateTime;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 

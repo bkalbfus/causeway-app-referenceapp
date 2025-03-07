@@ -18,17 +18,14 @@
  */
 package demoapp.dom.domain.actions.ActionLayout;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.DomainService;
 import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
-
-import lombok.RequiredArgsConstructor;
-import lombok.val;
 
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.actions.ActionLayout.associateWith.ActionLayoutAssociateWithPage;
@@ -43,10 +40,12 @@ import demoapp.dom.domain.actions.ActionLayout.position.ActionLayoutPositionPage
 import demoapp.dom.domain.actions.ActionLayout.promptStyle.ActionLayoutPromptStylePage;
 import demoapp.dom.domain.actions.ActionLayout.redirectPolicy.ActionLayoutRedirectPolicyPage;
 import demoapp.dom.domain.actions.ActionLayout.sequence.ActionLayoutSequencePage;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 @DomainService
 @Named("demo.ActionLayoutMenu")
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 //tag::menu-item-described-as[]
 public class ActionLayoutMenu {

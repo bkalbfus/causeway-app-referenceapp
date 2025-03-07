@@ -18,13 +18,13 @@
  */
 package demoapp.dom.types.javalang.voids;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.DomainObject;
@@ -47,7 +47,6 @@ import demoapp.dom._infra.resources.AsciiDocReaderService;
 @DomainObject(nature=Nature.VIEW_MODEL, editing=Editing.ENABLED)
 //@Log4j2
 public class JavaLangVoids implements HasAsciiDocDescription {
-
 
     @ObjectSupport public String title() {
         return "Void data type";

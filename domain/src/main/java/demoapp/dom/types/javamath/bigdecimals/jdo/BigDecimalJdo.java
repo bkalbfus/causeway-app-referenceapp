@@ -20,12 +20,13 @@ package demoapp.dom.types.javamath.bigdecimals.jdo;
 
 import java.math.BigDecimal;
 
-import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -36,11 +37,10 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import demoapp.dom.types.javamath.bigdecimals.meta.Money;
 import demoapp.dom.types.javamath.bigdecimals.persistence.BigDecimalEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 @Profile("demo-jdo")
 //tag::class[]

@@ -21,7 +21,6 @@ package demoapp.dom.types.jodatime.jodalocaltime.samples;
 import java.util.stream.Stream;
 
 import org.joda.time.LocalTime;
-
 import org.springframework.stereotype.Service;
 
 import demoapp.dom.types.Samples;

@@ -21,7 +21,7 @@ package demoapp.dom.types.javalang.enums.holder;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -31,10 +31,9 @@ import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.samples.DemoEnum;
 import demoapp.dom.types.Samples;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(

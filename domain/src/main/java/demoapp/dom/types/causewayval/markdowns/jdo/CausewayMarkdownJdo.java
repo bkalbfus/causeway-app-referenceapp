@@ -18,12 +18,13 @@
  */
 package demoapp.dom.types.causewayval.markdowns.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -36,10 +37,9 @@ import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
+import demoapp.dom.types.causewayval.markdowns.persistence.CausewayMarkdownEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.types.causewayval.markdowns.persistence.CausewayMarkdownEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

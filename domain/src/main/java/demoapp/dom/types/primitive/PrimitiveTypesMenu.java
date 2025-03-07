@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -41,9 +41,8 @@ import demoapp.dom.types.primitive.shorts.PrimitiveShorts;
 @DomainObjectLayout(
         named="PrimitiveTypes"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class PrimitiveTypesMenu {
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(cssClassFa="fa-hashtag")

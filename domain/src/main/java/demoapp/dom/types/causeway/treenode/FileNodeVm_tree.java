@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.causeway.treenode;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.graph.tree.TreeNode;

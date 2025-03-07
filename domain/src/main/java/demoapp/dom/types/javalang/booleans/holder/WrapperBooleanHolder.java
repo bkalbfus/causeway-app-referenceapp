@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javalang.booleans.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.WrapperBooleanHolder")
 //tag::class[]

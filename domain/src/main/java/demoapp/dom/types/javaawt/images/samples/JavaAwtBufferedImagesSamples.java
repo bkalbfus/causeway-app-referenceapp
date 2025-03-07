@@ -21,17 +21,16 @@ package demoapp.dom.types.javaawt.images.samples;
 import java.awt.image.BufferedImage;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
 import org.apache.causeway.commons.internal.base._Bytes;
 import org.apache.causeway.commons.internal.resources._Resources;
 
+import demoapp.dom.types.Samples;
 import lombok.SneakyThrows;
 import lombok.val;
-
-import demoapp.dom.types.Samples;
 
 @Service
 public class JavaAwtBufferedImagesSamples implements Samples<BufferedImage> {
@@ -43,7 +42,6 @@ public class JavaAwtBufferedImagesSamples implements Samples<BufferedImage> {
                 "project-lombok.png", "resteasy_logo_600x.gif", "spring-boot-logo.png")
                 .map(this::loadImage);
     }
-
 
     @SneakyThrows
     private BufferedImage loadImage(String name) {

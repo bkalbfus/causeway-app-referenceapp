@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.javalang.characters.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.WrapperCharacterHolder")
 //tag::class[]

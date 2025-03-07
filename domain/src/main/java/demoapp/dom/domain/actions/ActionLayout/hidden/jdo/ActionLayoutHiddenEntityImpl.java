@@ -18,21 +18,21 @@
  */
 package demoapp.dom.domain.actions.ActionLayout.hidden.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.Nature;
 
+import demoapp.dom.domain.actions.ActionLayout.hidden.ActionLayoutHiddenEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.domain.actions.ActionLayout.hidden.ActionLayoutHiddenEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

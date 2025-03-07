@@ -20,7 +20,6 @@ package demoapp.dom._infra.seed;
 
 import org.apache.causeway.testing.fixtures.applib.fixturescripts.FixtureScript;
 
-
 public interface SeedService {
 
     void seed(FixtureScript fixtureScriptSupplier, FixtureScript.ExecutionContext executionContext);

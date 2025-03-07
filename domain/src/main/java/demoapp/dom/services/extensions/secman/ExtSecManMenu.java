@@ -18,7 +18,7 @@
  */
 package demoapp.dom.services.extensions.secman;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -34,7 +34,7 @@ import demoapp.dom.services.extensions.secman.apptenancy.AppTenancyPage;
 @DomainObjectLayout(
         named="SecMan"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class ExtSecManMenu {
 
     @Action(semantics = SemanticsOf.SAFE)
@@ -45,6 +45,5 @@ public class ExtSecManMenu {
     public AppTenancyPage appTenancy(){
         return new AppTenancyPage();
     }
-
 
 }

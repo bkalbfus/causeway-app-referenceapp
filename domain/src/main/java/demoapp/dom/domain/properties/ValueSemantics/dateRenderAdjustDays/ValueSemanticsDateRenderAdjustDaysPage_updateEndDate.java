@@ -18,7 +18,6 @@
  */
 package demoapp.dom.domain.properties.ValueSemantics.dateRenderAdjustDays;
 
-
 import java.time.LocalDate;
 
 import org.apache.causeway.applib.annotation.Action;

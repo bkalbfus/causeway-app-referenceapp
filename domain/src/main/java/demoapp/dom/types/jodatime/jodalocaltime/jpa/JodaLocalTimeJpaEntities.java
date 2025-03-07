@@ -19,7 +19,6 @@
 package demoapp.dom.types.jodatime.jodalocaltime.jpa;
 
 import org.joda.time.LocalTime;
-
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

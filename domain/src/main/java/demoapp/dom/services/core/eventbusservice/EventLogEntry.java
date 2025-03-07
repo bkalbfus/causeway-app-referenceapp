@@ -18,7 +18,7 @@
  */
 package demoapp.dom.services.core.eventbusservice;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.ObjectSupport;
@@ -36,7 +36,6 @@ public abstract class EventLogEntry {
 
     public abstract Acknowledge getAcknowledge();
     public abstract void setAcknowledge(Acknowledge acknowledge);
-
 
     // demonstrating 2 methods of changing a property ...
     // - inline edit
