@@ -66,12 +66,13 @@ public class ComplexNumberValueSemantics
 
     @Override
     public ComplexNumber compose(final ValueDecomposition decomposition) {
-    	TypedTupleBuilder<Optional<TypedTupleDto>> right = CommonDtoUtils.typedTupleBuilder(decomposition.right());
-    	TypedTupleDto tupleDto = right.build();
-    	Map<String, Object> map = CommonDtoUtils.typedTupleAsMap(tupleDto);
-    	ComplexNumber cn = ComplexNumber.of((Double)map.get("re"), (Double) map.get("im"));
-
-        return cn;
+        return decomposition.right()
+    	   .map(CommonDtoUtils::typedTupleAsMap)
+    	   .map(map->ComplexNumber.of(
+    			   (Double)map.get("re"),
+    			   (Double)map.get("im")
+    			   ))
+    	   .orElse(null);
     }
 //end::compose[]
 
