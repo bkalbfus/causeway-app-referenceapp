@@ -20,8 +20,8 @@
 
 package demoapp.dom._infra.resources;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -43,7 +43,7 @@ extends AsciiDocValueSemantics {
         return renderHtml(adoc, plainAdoc->
             asciiDocConverterService
             .adocToHtml(
-                    context.getFeatureIdentifier().getLogicalType().getCorrespondingClass(),
+                    context.getFeatureIdentifier().logicalType().correspondingClass(),
                     plainAdoc.getAdoc()));
     }
 

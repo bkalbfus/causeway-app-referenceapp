@@ -25,7 +25,6 @@ import org.apache.causeway.applib.events.domain.ActionDomainEvent;
 
 import lombok.RequiredArgsConstructor;
 
-
 //tag::class[]
 @Action(domainEvent = ActionDomainEventPage_updateText.DomainEvent.class)   // <.>
 @ActionLayout(

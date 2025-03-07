@@ -38,6 +38,7 @@ import org.apache.causeway.valuetypes.markdown.ui.wkt.CausewayModuleValMarkdownU
 import org.apache.causeway.valuetypes.vega.metamodel.CausewayModuleValVegaMetaModel;
 import org.apache.causeway.valuetypes.vega.persistence.jpa.CausewayModuleValVegaPersistenceJpa;
 import org.apache.causeway.valuetypes.vega.ui.wkt.CausewayModuleValVegaUiWkt;
+import org.apache.causeway.viewer.graphql.viewer.CausewayModuleViewerGraphqlViewer;
 import org.apache.causeway.viewer.wicket.applib.CausewayModuleViewerWicketApplibMixins;
 import org.apache.causeway.viewer.wicket.viewer.CausewayModuleViewerWicketViewer;
 
@@ -66,6 +67,9 @@ import demoapp.webapp.wicket.common.ReferenceAppWicketCommon;
     CausewayModuleValMarkdownUiWkt.class,
     CausewayModuleValVegaUiWkt.class,
     CausewayModuleExtPdfjsWicketUi.class,
+
+    // GraphQL
+    CausewayModuleViewerGraphqlViewer.class,
 
     // Custom Demo UI (Wicket Viewer)
     ReferenceAppWicketCommon.class,

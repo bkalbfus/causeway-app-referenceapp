@@ -18,18 +18,16 @@
  */
 package demoapp.dom.domain.objects.DomainObject.xxxLifecycleEvent;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
 import demoapp.dom.types.Samples;
-
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.NON_IDEMPOTENT)

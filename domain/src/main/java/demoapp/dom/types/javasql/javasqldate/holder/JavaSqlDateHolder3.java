@@ -60,6 +60,5 @@ public interface JavaSqlDateHolder3 extends JavaSqlDateHolder2 {
         return getReadOnlyProperty();
     }
 
-
 }
 //end::class[]

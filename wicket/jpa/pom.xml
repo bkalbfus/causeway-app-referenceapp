@@ -17,7 +17,7 @@
 	<parent>
 		<groupId>org.apache.causeway.examples.apps</groupId>
 		<artifactId>reference-app-parent</artifactId>
-		<version>2.1.0</version>
+		<version>3.2.0</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
@@ -113,7 +113,7 @@
 			<id>deploy-to-docker-io</id>
 			<activation>
 				<property>
-					<name>docker</name>
+					<name>!skip-docker</name>
 				</property>
 			</activation>
 			<properties>
@@ -127,7 +127,7 @@
 						<artifactId>jib-maven-plugin</artifactId>
 						<configuration>
 							<from>
-								<image>openjdk:20-jdk-slim-bullseye</image>
+								<image>openjdk:21-jdk-bookworm</image>
 							</from>
 							<container>
 								<jvmFlags>

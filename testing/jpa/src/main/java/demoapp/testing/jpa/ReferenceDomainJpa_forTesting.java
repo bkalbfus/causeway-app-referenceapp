@@ -33,5 +33,4 @@ import demoapp.web.ReferenceAppManifestJpa;
 })
 public class ReferenceDomainJpa_forTesting {
 
-
 }

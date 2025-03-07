@@ -26,9 +26,8 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.progmodel.actions.TvCharacter;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action

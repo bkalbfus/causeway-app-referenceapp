@@ -21,8 +21,8 @@ package demoapp.dom.services.core.eventbusservice;
 import java.util.EventObject;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.Collection;
@@ -32,9 +32,8 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.services.eventbus.EventBusService;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import lombok.NoArgsConstructor;
 
 //tag::class[]
 @Named("demo.EventBusServiceDemoPage")

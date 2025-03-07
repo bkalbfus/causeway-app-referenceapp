@@ -18,11 +18,11 @@
  */
 package demoapp.dom.services.core.errorreportingservice;
 
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -32,9 +32,8 @@ import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import lombok.NoArgsConstructor;
 
 @Named("demo.ErrorReportingServiceDemoPage")
 @DomainObject(

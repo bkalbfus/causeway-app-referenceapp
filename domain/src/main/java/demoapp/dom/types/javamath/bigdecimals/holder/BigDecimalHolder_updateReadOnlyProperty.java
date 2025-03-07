@@ -26,9 +26,8 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.types.javamath.bigdecimals.meta.Money;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(

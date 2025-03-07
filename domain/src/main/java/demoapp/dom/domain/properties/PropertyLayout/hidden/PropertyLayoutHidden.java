@@ -44,7 +44,6 @@ public abstract class PropertyLayoutHidden
         return getName();
     }
 
-
 //tag::none[]
     @Property()                                     // <.>
     public abstract String getName();

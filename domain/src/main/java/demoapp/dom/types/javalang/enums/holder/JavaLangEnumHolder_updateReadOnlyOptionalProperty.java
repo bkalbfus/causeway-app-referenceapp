@@ -26,9 +26,8 @@ import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.PromptStyle;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.samples.DemoEnum;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(

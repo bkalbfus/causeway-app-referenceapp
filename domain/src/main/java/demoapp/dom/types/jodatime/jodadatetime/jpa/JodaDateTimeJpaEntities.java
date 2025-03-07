@@ -19,7 +19,6 @@
 package demoapp.dom.types.jodatime.jodadatetime.jpa;
 
 import org.joda.time.DateTime;
-
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

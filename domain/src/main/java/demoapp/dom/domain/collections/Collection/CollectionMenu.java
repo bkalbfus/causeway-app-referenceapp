@@ -18,9 +18,9 @@
  */
 package demoapp.dom.domain.collections.Collection;
 
-import javax.annotation.Priority;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.annotation.Priority;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -29,13 +29,12 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.factory.FactoryService;
 
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom.domain.collections.Collection.domainEvent.CollectionDomainEventPage;
 import demoapp.dom.domain.collections.Collection.typeOf.CollectionTypeOfPage;
 import demoapp.dom.domain.collections.Collection.typeOf.child.CollectionTypeOfChildVm;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
 
 @Named("demo.CollectionMenu")
 @DomainService

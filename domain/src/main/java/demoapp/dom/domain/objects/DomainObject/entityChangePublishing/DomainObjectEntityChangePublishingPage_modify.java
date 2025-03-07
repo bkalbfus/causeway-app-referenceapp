@@ -22,17 +22,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.samples.NameSamples;
 import demoapp.dom._infra.values.ValueHolderRepository;
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
@@ -75,7 +74,6 @@ public class DomainObjectEntityChangePublishingPage_modify {
     @MemberSupport public List<? extends DomainObjectEntityChangePublishingEntity> choices2Act() {
         return publishingEntities.all();
     }
-
 
     final static AtomicInteger renumber = new AtomicInteger(0);
 

@@ -18,8 +18,8 @@
  */
 package demoapp.webapp.wicket.common.featured.customui;
 
-import javax.annotation.Priority;
-import javax.inject.Inject;
+import jakarta.annotation.Priority;
+import jakarta.inject.Inject;
 
 import org.apache.wicket.Component;
 import org.apache.wicket.model.IModel;
@@ -28,7 +28,7 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 import org.apache.causeway.core.metamodel.object.ManagedObject;
 import org.apache.causeway.viewer.commons.model.components.UiComponentType;
 import org.apache.causeway.viewer.wicket.model.models.UiObjectWkt;
-import org.apache.causeway.viewer.wicket.ui.components.entity.EntityComponentFactoryAbstract;
+import org.apache.causeway.viewer.wicket.ui.components.object.ObjectComponentFactoryAbstract;
 
 import demoapp.dom.featured.customui.GeoapifyClient;
 import demoapp.dom.featured.customui.WhereInTheWorldPage;
@@ -37,12 +37,11 @@ import demoapp.dom.featured.customui.WhereInTheWorldPage;
 @org.springframework.stereotype.Component
 @Priority(PriorityPrecedence.EARLY)                                             // <.>
 public class WhereInTheWorldPanelFactory
-        extends EntityComponentFactoryAbstract {
-    private static final long serialVersionUID = 1L;
+        extends ObjectComponentFactoryAbstract {
 
     public WhereInTheWorldPanelFactory() {
         super(
-            UiComponentType.ENTITY                                              // <.>
+            UiComponentType.DOMAIN_OBJECT                                       // <.>
             , WhereInTheWorldPanel.class
         );
     }

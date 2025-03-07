@@ -21,13 +21,13 @@ package demoapp.dom.progmodel.actions.validate;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.CollectionLayout;
@@ -42,14 +42,13 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.resources.AsciiDocReaderService;
 import demoapp.dom.progmodel.actions.TvCharacter;
 import demoapp.dom.progmodel.actions.TvShow;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Named("demo.ActionValidatePage")
 @DomainObject(
@@ -66,7 +65,6 @@ public class ActionValidatePage implements HasAsciiDocDescription {
     @ObjectSupport public String title() {
         return "Action Validates";
     }
-
 
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
@@ -95,7 +93,6 @@ public class ActionValidatePage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "allArgsValidationDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -109,4 +106,3 @@ public class ActionValidatePage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

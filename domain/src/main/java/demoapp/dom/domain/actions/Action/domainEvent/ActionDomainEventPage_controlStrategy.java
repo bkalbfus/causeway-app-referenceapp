@@ -18,13 +18,12 @@
  */
 package demoapp.dom.domain.actions.Action.domainEvent;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 
 import lombok.RequiredArgsConstructor;
-
 
 //tag::class[]
 @Property()

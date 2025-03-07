@@ -18,7 +18,7 @@
  */
 package demoapp.web.security;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.springframework.context.event.EventListener;
 
@@ -40,7 +40,7 @@ import org.apache.causeway.core.metamodel.inspect.Object_inspectMetamodel;
 @DomainServiceLayout(
         menuBar = DomainServiceLayout.MenuBar.TERTIARY
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class PrototypeActionsVisibilityAdvisor {
 
     @EventListener(Object_downloadMetamodelXml.ActionDomainEvent.class)
@@ -68,14 +68,12 @@ public class PrototypeActionsVisibilityAdvisor {
         if(doNotShow) ev.hide();
     }
 
-
     private boolean doNotShow = false;
 
     @Action(restrictTo = RestrictTo.PROTOTYPING)
     @ActionLayout(cssClassFa = "eye-slash")
     public void doNotShowPrototypeActions() { doNotShow = true; }
     @MemberSupport public boolean hideDoNotShowPrototypeActions() { return doNotShow; }
-
 
     @Action(restrictTo = RestrictTo.PROTOTYPING)
     @ActionLayout(cssClassFa = "eye")

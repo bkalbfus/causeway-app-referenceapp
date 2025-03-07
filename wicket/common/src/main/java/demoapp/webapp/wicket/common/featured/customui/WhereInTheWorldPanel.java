@@ -55,7 +55,6 @@ extends PanelAbstract<ManagedObject, UiObjectWkt>  {
     // ...
 //end::class[]
 
-
     @Override
     public UiHintContainer getUiHintContainer() {
         // disables hinting by this component
@@ -67,7 +66,7 @@ extends PanelAbstract<ManagedObject, UiObjectWkt>  {
     public void onInitialize() {
         super.onInitialize();
 
-        val managedObject = getModel().getObject();;                       // <.>
+        val managedObject = getModel().getObject();                       // <.>
         val customUiVm = (WhereInTheWorldPage) managedObject.getPojo();    // <.>
 
         val latitude = new Label("latitude", customUiVm.getLatitude());    // <.>
@@ -98,14 +97,14 @@ extends PanelAbstract<ManagedObject, UiObjectWkt>  {
     private Component createPropertyComponent(final String propertyId) {
         val managedObject = getModel().getManagedObject();
         val spec = managedObject.getSpecification();                               // <.>
-        val property = spec.getPropertyElseFail(propertyId);                       // <.>
+        val property = spec.getPropertyElseFail(propertyId);                      // <.>
 
         val scalarModel =
                 getModel().getPropertyModel(                                       // <.>
                     property, ViewOrEditMode.VIEWING,
                     RenderingHint.REGULAR);
         return getComponentFactoryRegistry().createComponent(                      // <.>
-                propertyId, UiComponentType.SCALAR_NAME_AND_VALUE, scalarModel);
+                propertyId, UiComponentType.ATTRIBUTE_NAME_AND_VALUE, scalarModel);
     }
 //end::createPropertyComponent[]
 

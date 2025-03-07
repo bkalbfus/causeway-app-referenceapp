@@ -24,8 +24,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -41,7 +41,6 @@ import lombok.val;
 public class MarkupVariableResolverService {
 
     private final Map<String, String> constants;
-
 
     @Inject
     public MarkupVariableResolverService(final CausewayConfiguration configuration, final Environment environment) {
@@ -82,9 +81,6 @@ public class MarkupVariableResolverService {
     private static String titleCase(String str) {
         return str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase(Locale.ROOT);
     }
-
-
-
 
     /**
      * For the given {@code input} replaces '${var-name}' with the variable's value.

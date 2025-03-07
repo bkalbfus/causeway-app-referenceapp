@@ -18,8 +18,8 @@
  */
 package demoapp.dom.domain.properties.PropertyLayout;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -42,11 +42,10 @@ import demoapp.dom.domain.properties.PropertyLayout.typicalLength.PropertyLayout
 
 @Named("demo.PropertyLayoutMenu")
 @DomainService
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 @RequiredArgsConstructor(onConstructor_ = { @Inject })
 //@Log4j2
 public class PropertyLayoutMenu {
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
@@ -56,8 +55,6 @@ public class PropertyLayoutMenu {
     public PropertyLayoutCssClassPage cssClass(){
         return new PropertyLayoutCssClassPage();
     }
-
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
@@ -72,8 +69,6 @@ public class PropertyLayoutMenu {
         return page;
     }
 
-
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
             cssClassFa="fa-glasses",
@@ -83,8 +78,6 @@ public class PropertyLayoutMenu {
         return new PropertyLayoutHiddenPage();
     }
 
-
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
             cssClassFa="fa-tag",
@@ -93,8 +86,6 @@ public class PropertyLayoutMenu {
     public PropertyLayoutLabelPositionPage labelPosition(){
         return new PropertyLayoutLabelPositionPage();
     }
-
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
@@ -119,7 +110,6 @@ public class PropertyLayoutMenu {
         return vm;
     }
 
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
             cssClassFa="fa-signature",
@@ -128,8 +118,6 @@ public class PropertyLayoutMenu {
     public PropertyLayoutNamedPage named(){
         return new PropertyLayoutNamedPage();
     }
-
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
@@ -140,8 +128,6 @@ public class PropertyLayoutMenu {
         return new FileNodeVm();
     }
 
-
-
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(
             cssClassFa="fa-paint-brush",
@@ -151,8 +137,6 @@ public class PropertyLayoutMenu {
         val page = new PropertyLayoutRepaintingPage();
         return page;
     }
-
-
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(

@@ -18,14 +18,13 @@
  */
 package demoapp.dom.domain.actions.Action.domainEvent;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
 import lombok.RequiredArgsConstructor;
-
 
 //tag::class[]
 @Action(semantics = SemanticsOf.IDEMPOTENT)

@@ -18,8 +18,8 @@
  */
 package demoapp.dom.services.core.messageservice;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -31,9 +31,8 @@ import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.message.MessageService;
 
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
+import lombok.NoArgsConstructor;
 
 @Named("demo.MessageServiceDemoPage")
 @DomainObject(nature=Nature.VIEW_MODEL)

@@ -18,11 +18,12 @@
  */
 package demoapp.dom.domain.objects.DomainObjectLayout.tabledec.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -31,10 +32,9 @@ import org.apache.causeway.applib.annotation.DomainObjectLayout;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.TableDecorator;
 
+import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.DomainObjectLayoutTableDecoratorEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.domain.objects.DomainObjectLayout.tabledec.DomainObjectLayoutTableDecoratorEntity;
 
 @Profile("demo-jdo")
 @PersistenceCapable(

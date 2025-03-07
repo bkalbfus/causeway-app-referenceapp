@@ -19,7 +19,7 @@
  */
 package demoapp.dom.types.jodatime;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -43,7 +43,7 @@ import demoapp.dom.types.jodatime.jodalocaltime.JodaLocalTimes;
 @DomainObjectLayout(
         named="JodaTimeTypes"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class JodaTimeTypesMenu {
 
     @Action(semantics = SemanticsOf.SAFE)
@@ -96,6 +96,5 @@ public class JodaTimeTypesMenu {
                 ? null
                 : "Joda is deprecated use java.time classes instead.";
     }
-
 
 }

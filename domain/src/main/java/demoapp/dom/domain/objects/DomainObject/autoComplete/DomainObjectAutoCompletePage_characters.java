@@ -20,15 +20,14 @@ package demoapp.dom.domain.objects.DomainObject.autoComplete;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.CollectionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom._infra.values.ValueHolderRepository;
+import lombok.RequiredArgsConstructor;
 
 @Collection()
 @CollectionLayout(named = "TV Characters")

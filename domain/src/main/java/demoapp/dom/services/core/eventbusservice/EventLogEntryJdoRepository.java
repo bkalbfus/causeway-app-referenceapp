@@ -20,17 +20,16 @@ package demoapp.dom.services.core.eventbusservice;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.services.core.eventbusservice.EventBusServiceDemoPage.UiButtonEvent;
+import lombok.RequiredArgsConstructor;
 
 @Profile("demo-jdo")
 @Repository

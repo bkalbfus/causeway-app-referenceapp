@@ -18,7 +18,7 @@
  */
 package demoapp.dom.domain.objects.DomainObject.xxxDomainEvent;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.MemberSupport;
@@ -26,7 +26,6 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.events.domain.ActionDomainEvent;
 
 import lombok.RequiredArgsConstructor;
-
 
 //tag::class[]
 @Action(

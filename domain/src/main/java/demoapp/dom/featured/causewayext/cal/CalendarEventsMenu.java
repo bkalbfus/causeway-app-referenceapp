@@ -1,4 +1,3 @@
-
 /*
  *  Licensed to the Apache Software Foundation (ASF) under one
  *  or more contributor license agreements.  See the NOTICE file
@@ -19,7 +18,7 @@
  */
 package demoapp.dom.featured.causewayext.cal;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -31,7 +30,7 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 @Named("demo.CalendarEventsMenu")
 @DomainService
 @DomainObjectLayout(named="CausewayExtTypes")
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class CalendarEventsMenu {
 
     @Action(semantics = SemanticsOf.SAFE)

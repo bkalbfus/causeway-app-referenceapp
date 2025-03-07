@@ -3,14 +3,12 @@ package demoapp.dom.progmodel.customvaluetypes.compositevalues;
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
-import org.apache.causeway.applib.annotation.PromptStyle;
-import org.apache.causeway.applib.annotation.SemanticsOf;
 
 import lombok.RequiredArgsConstructor;
 
 //tag::default-mixin[]
-@Action(semantics = SemanticsOf.SAFE)
-@ActionLayout(promptStyle = PromptStyle.INLINE_AS_IF_EDIT)  // <.>
+@Action        // <.>
+@ActionLayout  // <.>
 @RequiredArgsConstructor
 public class ComplexNumber_default {
 

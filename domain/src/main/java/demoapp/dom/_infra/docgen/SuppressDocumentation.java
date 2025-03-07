@@ -9,7 +9,7 @@ import org.apache.causeway.extensions.docgen.help.menu.DocumentationMenu;
 public class SuppressDocumentation {
 
     @EventListener(DocumentationMenu.help.ActionDomainEvent.class)
-    public void on(DocumentationMenu.help.ActionDomainEvent ev) {
+    public void on(final DocumentationMenu.help.ActionDomainEvent ev) {
         ev.hide();
     }
 }

@@ -18,7 +18,7 @@
  */
 package demoapp.dom.types.primitive.floats.holder;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.PrimitiveFloatHolder")
 //tag::class[]

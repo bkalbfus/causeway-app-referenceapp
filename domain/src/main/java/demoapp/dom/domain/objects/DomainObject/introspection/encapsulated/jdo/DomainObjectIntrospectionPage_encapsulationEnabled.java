@@ -20,7 +20,7 @@ package demoapp.dom.domain.objects.DomainObject.introspection.encapsulated.jdo;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.springframework.context.annotation.Profile;
 
@@ -28,9 +28,8 @@ import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.CollectionLayout;
 import org.apache.causeway.applib.annotation.MemberSupport;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.domain.objects.DomainObject.introspection.DomainObjectIntrospectionPage;
+import lombok.RequiredArgsConstructor;
 
 @Profile("demo-jdo")
 @Collection()

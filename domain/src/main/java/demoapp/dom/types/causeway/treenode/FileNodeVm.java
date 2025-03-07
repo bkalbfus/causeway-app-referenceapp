@@ -21,8 +21,8 @@ package demoapp.dom.types.causeway.treenode;
 import java.io.File;
 import java.util.Optional;
 
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 import org.apache.causeway.applib.annotation.DomainObject;
 import org.apache.causeway.applib.annotation.LabelPosition;
@@ -31,12 +31,11 @@ import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 @Named("demo.TreeNodeVm")
 @XmlRootElement(name="TreeNodeVm")

@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 
 import org.apache.causeway.testing.fixtures.applib.fixturescripts.FixtureScript;
 
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 
 public class ValueHolderFixtureFactory {
 

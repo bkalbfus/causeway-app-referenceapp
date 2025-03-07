@@ -20,7 +20,7 @@ package demoapp.dom.types.javamath.bigintegers.holder;
 
 import java.math.BigInteger;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("demo.BigIntegerHolder")
 //tag::class[]

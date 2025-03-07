@@ -27,11 +27,10 @@ import org.apache.causeway.applib.annotation.MemberSupport;
 import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 
+import demoapp.dom.progmodel.actions.TvCharacter;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
 import lombok.experimental.Accessors;
-
-import demoapp.dom.progmodel.actions.TvCharacter;
 
 //tag::class[]
 @Action

@@ -18,13 +18,14 @@
  */
 package demoapp.dom.progmodel.customvaluetypes.embeddedvalues.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -33,11 +34,10 @@ import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.ObjectSupport;
 import org.apache.causeway.applib.annotation.Property;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.ComplexNumber;
 import demoapp.dom.progmodel.customvaluetypes.embeddedvalues.NumberConstantEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 @Profile("demo-jdo")
 //tag::class[]

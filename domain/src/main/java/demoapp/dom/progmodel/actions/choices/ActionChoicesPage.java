@@ -21,13 +21,13 @@ package demoapp.dom.progmodel.actions.choices;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Collection;
 import org.apache.causeway.applib.annotation.CollectionLayout;
@@ -41,12 +41,11 @@ import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.valuetypes.asciidoc.applib.value.AsciiDoc;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import demoapp.dom._infra.resources.AsciiDocReaderService;
 import demoapp.dom.progmodel.actions.TvCharacter;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Named("demo.ActionChoices")
 @DomainObject(
@@ -63,7 +62,6 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
     @ObjectSupport public String title() {
         return "Action Choices";
     }
-
 
     @Property
     @PropertyLayout(labelPosition=LabelPosition.NONE)
@@ -86,7 +84,6 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
         return asciiDocReaderService.readFor(this, "parameterMatchingDescription");
     }
 
-
     @Collection
     @CollectionLayout
     @Getter
@@ -100,4 +97,3 @@ public class ActionChoicesPage implements HasAsciiDocDescription {
     @Inject @XmlTransient AsciiDocReaderService asciiDocReaderService;
 
 }
-

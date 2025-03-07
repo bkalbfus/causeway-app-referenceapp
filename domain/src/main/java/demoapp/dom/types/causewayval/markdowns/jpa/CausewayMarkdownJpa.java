@@ -18,16 +18,16 @@
  */
 package demoapp.dom.types.causewayval.markdowns.jpa;
 
-import javax.inject.Named;
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import jakarta.inject.Named;
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
+import jakarta.persistence.Table;
 
 import org.springframework.context.annotation.Profile;
 
@@ -41,11 +41,10 @@ import org.apache.causeway.applib.annotation.Where;
 import org.apache.causeway.persistence.jpa.applib.integration.CausewayEntityListener;
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
+import demoapp.dom.types.causewayval.markdowns.persistence.CausewayMarkdownEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom.types.causewayval.markdowns.persistence.CausewayMarkdownEntity;
 
 @Profile("demo-jpa")
 //tag::class[]

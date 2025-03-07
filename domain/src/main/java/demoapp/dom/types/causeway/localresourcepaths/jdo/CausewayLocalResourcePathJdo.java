@@ -18,12 +18,13 @@
  */
 package demoapp.dom.types.causeway.localresourcepaths.jdo;
 
-import javax.inject.Named;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.DatastoreIdentity;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
+
+import jakarta.inject.Named;
 
 import org.springframework.context.annotation.Profile;
 
@@ -35,10 +36,9 @@ import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
 import org.apache.causeway.applib.value.LocalResourcePath;
 
+import demoapp.dom.types.causeway.localresourcepaths.persistence.CausewayLocalResourcePathEntity;
 import lombok.Getter;
 import lombok.Setter;
-
-import demoapp.dom.types.causeway.localresourcepaths.persistence.CausewayLocalResourcePathEntity;
 
 @Profile("demo-jdo")
 //tag::class[]

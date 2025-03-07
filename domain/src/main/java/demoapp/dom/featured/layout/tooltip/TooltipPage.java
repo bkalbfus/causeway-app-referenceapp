@@ -21,13 +21,13 @@ package demoapp.dom.featured.layout.tooltip;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -50,11 +50,10 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.message.MessageService;
 import org.apache.causeway.applib.value.Markup;
 
+import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import demoapp.dom._infra.asciidocdesc.HasAsciiDocDescription;
 
 @Named("demo.Tooltip")
 @DomainObject(nature=Nature.VIEW_MODEL)
@@ -80,7 +79,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return this;
     }
 
-
     @Action(semantics=SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)
     @ActionLayout(
             named = "No Arguments With Confirm",
@@ -91,8 +89,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         messageService.informUser("clicked on noArgActionWithConfirm");
         return this;
     }
-
-
 
     @Action
     @ActionLayout(
@@ -120,7 +116,6 @@ public class TooltipPage implements HasAsciiDocDescription {
     @MemberSupport public String validateBiArgAction(final String firstArg, final String secondArg) {
         return "always fail for demonstration";
     }
-
 
     @Action(semantics=SemanticsOf.IDEMPOTENT_ARE_YOU_SURE)
     @ActionLayout(
@@ -150,7 +145,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "always fail for demonstration";
     }
 
-
 //tag::disabledAction[]
     @Action
     @ActionLayout(
@@ -164,8 +158,6 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "Disabled for demonstration.";                       // <.>
     }
 //end::disabledAction[]
-
-
 
     @Action
     @ActionLayout(
@@ -181,17 +173,13 @@ public class TooltipPage implements HasAsciiDocDescription {
         return "Disabled for demonstration.";
     }
 
-
-
     @Property(editing=Editing.ENABLED)
     @PropertyLayout(describedAs="This is a property with a tooltip.")
     @Getter @Setter private String stringProperty;
 
-
     @Property
     @PropertyLayout(describedAs="This is a readonly property with a tooltip.")
     @Getter private String readonlyStringProperty = "readonly";
-
 
 //tag::disabledProperty[]
     @Property(
@@ -203,7 +191,6 @@ public class TooltipPage implements HasAsciiDocDescription {
     )
     @Getter @Setter private String editingDisabledStringProperty = "editing disabled";
 //end::disabledProperty[]
-
 
     // -- COLLECTION
 
@@ -241,6 +228,5 @@ public class TooltipPage implements HasAsciiDocDescription {
     }
 
     // ---
-
 
 }

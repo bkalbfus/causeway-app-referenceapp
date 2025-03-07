@@ -17,15 +17,14 @@
 	<parent>
         <groupId>org.apache.causeway.app</groupId>
         <artifactId>causeway-app-starter-parent</artifactId>
-        <version>2.1.0</version>
-		<relativePath></relativePath>
+        <version>3.2.0</version>
     </parent>
 
 	<groupId>org.apache.causeway.examples.apps</groupId>
 	<artifactId>reference-app-parent</artifactId>
-	<version>2.1.0</version> <!-- seems superfluous, but is required for the maven set plugin to work -->
+	<version>3.2.0</version> <!-- seems superfluous, but is required for the maven set plugin to work -->
 
-	<name>Reference App</name>
+	<name>Reference App - Parent</name>
 
 	<packaging>pom</packaging>
 
@@ -69,8 +68,6 @@
 			<plugin>
 				<groupId>org.apache.rat</groupId>
 				<artifactId>apache-rat-plugin</artifactId>
-				<version>0.15</version>
-
 				<configuration>
 					<addDefaultLicenseMatchers>true</addDefaultLicenseMatchers>
 					<excludeSubProjects>true</excludeSubProjects>
@@ -157,6 +154,26 @@
 
 	<dependencyManagement>
 		<dependencies>
+		<dependency>
+			<groupId>org.jspecify</groupId>
+			<artifactId>jspecify</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+			<dependency>
+				<groupId>org.apache.causeway.extensions</groupId>
+				<artifactId>causeway-extensions</artifactId>
+				<version>${project.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.causeway.valuetypes</groupId>
+				<artifactId>causeway-valuetypes</artifactId>
+				<version>${project.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 
 			<dependency>
 				<groupId>org.apache.causeway.examples.apps</groupId>
@@ -206,10 +223,10 @@
 
 	<profiles>
 		<profile>
-			<id>testing</id>
+			<id>module-examples-demo-testing</id>
 			<activation>
 				<property>
-					<name>testing</name>
+					<name>module-examples-demo-testing</name>
 				</property>
 			</activation>
 			<modules>
@@ -220,10 +237,10 @@
 			</modules>
 		</profile>
 		<profile>
-			<id>wicket</id>
+			<id>module-examples-demo-wicket</id>
 			<activation>
 				<property>
-					<name>wicket</name>
+					<name>module-examples-demo-wicket</name>
 				</property>
 			</activation>
 			<modules>

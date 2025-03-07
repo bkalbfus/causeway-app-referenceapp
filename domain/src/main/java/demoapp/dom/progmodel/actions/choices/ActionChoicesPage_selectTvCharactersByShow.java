@@ -27,13 +27,12 @@ import org.apache.causeway.applib.annotation.Optionality;
 import org.apache.causeway.applib.annotation.Parameter;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
+import demoapp.dom.progmodel.actions.TvCharacter;
+import demoapp.dom.progmodel.actions.TvShow;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
 import lombok.val;
 import lombok.experimental.Accessors;
-
-import demoapp.dom.progmodel.actions.TvCharacter;
-import demoapp.dom.progmodel.actions.TvShow;
 
 //tag::class[]
 @Action(semantics = SemanticsOf.SAFE)

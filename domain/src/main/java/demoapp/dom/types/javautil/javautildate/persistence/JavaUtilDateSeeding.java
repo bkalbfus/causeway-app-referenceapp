@@ -20,7 +20,7 @@ package demoapp.dom.types.javautil.javautildate.persistence;
 
 import java.util.Date;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.springframework.stereotype.Service;
 

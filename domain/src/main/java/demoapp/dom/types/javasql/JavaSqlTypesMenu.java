@@ -19,7 +19,7 @@
  */
 package demoapp.dom.types.javasql;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -36,7 +36,7 @@ import demoapp.dom.types.javasql.javasqltimestamp.JavaSqlTimestamps;
 @DomainObjectLayout(
         named="JavaSqlTypes"
 )
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class JavaSqlTypesMenu {
 
     @Action(semantics = SemanticsOf.SAFE)
@@ -50,7 +50,5 @@ public class JavaSqlTypesMenu {
     public JavaSqlTimestamps timestamps(){
         return new JavaSqlTimestamps();
     }
-
-
 
 }

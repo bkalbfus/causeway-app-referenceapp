@@ -18,7 +18,7 @@
  */
 package demoapp.dom.progmodel.uihints;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.ActionLayout;
@@ -27,7 +27,7 @@ import org.apache.causeway.applib.annotation.PriorityPrecedence;
 
 @Named("demo.UiHintsMenu")
 @DomainService
-@javax.annotation.Priority(PriorityPrecedence.EARLY)
+@jakarta.annotation.Priority(PriorityPrecedence.EARLY)
 public class UiHintsMenu {
 
     @Action
@@ -56,6 +56,5 @@ public class UiHintsMenu {
     public String disableLayoutSupportingMethod(){
         return "Not yet implemented";
     }
-
 
 }

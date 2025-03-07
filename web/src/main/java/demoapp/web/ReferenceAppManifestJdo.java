@@ -18,7 +18,6 @@
  */
 package demoapp.web;
 
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
@@ -46,7 +45,6 @@ import demoapp.dom.ReferenceModuleJdo;
     CausewayModuleExtExecutionLogPersistenceJdo.class,
     CausewayModuleExtExecutionOutboxPersistenceJdo.class,
     CausewayModuleExtAuditTrailPersistenceJdo.class,
-
 
 })
 public class ReferenceAppManifestJdo {

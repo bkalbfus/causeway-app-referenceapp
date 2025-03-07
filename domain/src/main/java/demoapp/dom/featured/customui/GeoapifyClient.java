@@ -26,7 +26,7 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -35,13 +35,12 @@ import org.springframework.stereotype.Service;
 
 import org.apache.causeway.commons.internal.base._Bytes;
 
+import demoapp.dom.AppConfiguration;
 import lombok.Builder;
 import lombok.Data;
 import lombok.SneakyThrows;
 import lombok.Value;
 import lombok.val;
-
-import demoapp.dom.AppConfiguration;
 
 //tag::class[]
 @Service
@@ -58,7 +57,6 @@ public class GeoapifyClient implements Serializable {
     public GeoapifyClient(final AppConfiguration appConfiguration) {
         this.apiKey = appConfiguration.getGeoapify().getApiKey();
     }
-
 
 //tag::class[]
     @Value

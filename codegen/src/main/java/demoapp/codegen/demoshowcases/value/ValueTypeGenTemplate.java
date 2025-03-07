@@ -81,7 +81,6 @@ public class ValueTypeGenTemplate {
                     " the `" + getShowcaseValueSimpleType() + "` data type.";
         }
 
-
         /**
          * If present, is used within the first sentence (unless preamble specified, in which case that overrides
          */
@@ -336,7 +335,6 @@ public class ValueTypeGenTemplate {
             templateVars.put("jdo-type-support-notice", config.getJdoTypeSupportNotice());
             templateVars.put("jpa-type-support-notice", config.getJpaTypeSupportNotice());
             templateVars.put("jaxb-type-support-notice", config.getJaxbTypeSupportNotice());
-
 
             // allow for ADOC IDE tools, to properly resolve include statements,
             // that is referenced (template) files should exist

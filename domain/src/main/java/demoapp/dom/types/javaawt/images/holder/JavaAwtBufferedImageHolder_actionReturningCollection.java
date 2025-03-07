@@ -22,15 +22,13 @@ import java.awt.image.BufferedImage;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.apache.causeway.applib.annotation.Action;
 import org.apache.causeway.applib.annotation.SemanticsOf;
 
-import lombok.RequiredArgsConstructor;
-
 import demoapp.dom.types.Samples;
-
+import lombok.RequiredArgsConstructor;
 
 //tag::class[]
 @Action(
