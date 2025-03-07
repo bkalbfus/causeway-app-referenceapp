@@ -12,9 +12,9 @@ import org.apache.causeway.applib.services.repository.RepositoryService;
 import domainapp.modules.hive.api.GetContentJson;
 import domainapp.modules.simple.SimpleModule;
 import domainapp.modules.simple.types.Name;
-import javax.annotation.Priority;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.annotation.Priority;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import lombok.RequiredArgsConstructor;
 
 @Named(SimpleModule.NAMESPACE + ".ReferenceDiscussions")
