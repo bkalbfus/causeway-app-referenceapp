@@ -1,7 +1,9 @@
 package domainapp.modules.simple.dom.so;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -93,8 +95,27 @@ public class ReferenceDiscussion {
 	@Property
 	@XmlTransient
 	public List<String> getKeywords() {
-		// TODO: parse post body for keywords
-		return null;
+		String endTag = "**Search Links:**";
+		//TODO:  have keywords be a member that can be added to.  Populate that when null.
+		// stop looking when you get to the Search Links
+		String postBody = getPostBody();
+		String keywordsText = postBody.substring(0,postBody.indexOf(endTag));
+		
+		// Define a regex pattern to match hashtags
+		String hashtagPattern = "#\\w+";
+		Pattern pattern = Pattern.compile(hashtagPattern);
+		Matcher matcher = pattern.matcher(keywordsText);
+
+		// Use a set to avoid duplicate hashtags
+		Set<String> hashtags = new LinkedHashSet<>();
+
+		// Find all hashtags in the post body
+		while (matcher.find()) {
+			hashtags.add(matcher.group());
+		}
+
+		// Return the hashtags as a list
+		return new ArrayList<>(hashtags);
 	}
 
 	@Property
@@ -106,10 +127,32 @@ public class ReferenceDiscussion {
 
 	@Property
 	@XmlTransient
-	public String getNotes() {
-		// parse body to get notes
-		return null;
+	public Markdown getNotesFormatted() {
+		return Markdown.valueOf(getNotes());
 	}
+	
+	
+	@Property
+	@XmlTransient
+	public String getNotes() {
+		return extractCommentary(getPostBody());
+	}
+	
+    public static String extractCommentary(String postBody) {
+        String startMarker = "**Commentary on this Post:**";
+
+        int startIndex = postBody.indexOf(startMarker);
+        if (startIndex == -1) {
+            return "Commentary section not found.";
+        }
+        
+        // Adjust startIndex to the end of the start marker
+        startIndex += startMarker.length();
+        
+        // Will read until the end.
+        return postBody.substring(startIndex).trim();
+    }
+	
 
 	@Property
 	@XmlTransient

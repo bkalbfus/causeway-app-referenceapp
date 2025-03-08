@@ -43,13 +43,6 @@ public class HiveService {
                     "id": 1
                 }
                 """.formatted(account, permlink);
-
-//        String payload = "{\n" +
-//                "    \"jsonrpc\": \"2.0\",\n" +
-//                "    \"method\": \"condenser_api.get_content\",\n" +
-//                "    \"params\": [\"" + account + "\", \"" + permlink + "\"],\n" +
-//                "    \"id\": 1\n" +
-//                "}";        
         
         
         // Create an HTTP client
