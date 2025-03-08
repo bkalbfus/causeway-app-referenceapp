@@ -35,21 +35,14 @@ public class HiveService {
         String apiUrl = "https://api.hive.blog";
 
         // JSON payload using Text Blocks (heredoc-like syntax)
-//        String payload = """
-//                {
-//                    "jsonrpc": "2.0",
-//                    "method": "condenser_api.get_content",
-//                    "params": ["%s", "%s"],
-//                    "id": 1
-//                }
-//                """.formatted(account, permlink);
-
-        String payload = "{\n" +
-                "    \"jsonrpc\": \"2.0\",\n" +
-                "    \"method\": \"condenser_api.get_content\",\n" +
-                "    \"params\": [\"" + account + "\", \"" + permlink + "\"],\n" +
-                "    \"id\": 1\n" +
-                "}";        
+        String payload = """
+                {
+                    "jsonrpc": "2.0",
+                    "method": "condenser_api.get_content",
+                    "params": ["%s", "%s"],
+                    "id": 1
+                }
+                """.formatted(account, permlink);
         
         
         // Create an HTTP client
