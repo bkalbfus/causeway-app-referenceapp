@@ -12,10 +12,11 @@ import org.apache.causeway.applib.annotation.Editing;
 import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
-import org.apache.causeway.commons.internal.base._Tuples.Tuple2;
+import org.apache.causeway.applib.graph.tree.TreeNode;
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import domainapp.modules.hive.api.GetContentJson;
+import domainapp.modules.hive.api.HivePostJson;
 import domainapp.modules.hive.api.LinkPair;
 import domainapp.modules.simple.SimpleModule;
 import jakarta.inject.Inject;
@@ -36,7 +37,8 @@ import lombok.Setter;
 @Named(SimpleModule.NAMESPACE + ".ReferenceDiscussion")
 @XmlAccessorType(XmlAccessType.FIELD)
 @NoArgsConstructor
-public class ReferenceDiscussion {
+//public class ReferenceDiscussion implements IHivePost {
+public class ReferenceDiscussion implements IHivePost {
 	@Inject
 	@XmlTransient
 	private HiveService hiveService;
@@ -57,15 +59,29 @@ public class ReferenceDiscussion {
 	// permlink param fields.
 	// but, don't want to have to call hiveService.fetchPost() twice.
 	@XmlTransient
-	private GetContentJson postJson;
+	private HivePostJson postJson;
+	
+	
+//	private IHivePost fileNodeVm;
 
-	public ReferenceDiscussion(GetContentJson postJson) {
+	@Property
+	@XmlTransient
+    public TreeNode<IHivePost> getComments(){
+        return hiveNodeTreeService.sessionTree(this);
+    }
+
+    @Inject
+    @XmlTransient
+    HiveNodeTreeService hiveNodeTreeService;
+    
+
+	public ReferenceDiscussion(HivePostJson postJson) {
 		this.postJson = postJson;
-		this.account = postJson.getResult().getAuthor();
-		this.permLink = postJson.getResult().getPermlink();
+		this.account = postJson.getAuthor();
+		this.permLink = postJson.getPermlink();
 	}
 
-	public GetContentJson getPostJson() {
+	public HivePostJson getPostJson() {
 		if (postJson == null) {
 			postJson = hiveService.fetchPost(getAccount(), getPermLink());
 		}
@@ -75,7 +91,7 @@ public class ReferenceDiscussion {
 	@Property
 	@XmlTransient
 	public String getPostBody() {
-		return   getPostJson().getResult().getBody();
+		return   getPostJson().getBody();
 	}
 	
 	@Property(editing = Editing.ENABLED)
@@ -118,12 +134,6 @@ public class ReferenceDiscussion {
 		return new ArrayList<>(hashtags);
 	}
 
-	@Property
-	@XmlTransient
-	public List<Tuple2<String, String>> getComments() {
-		// call get_comments api?
-		return null;
-	}
 
 	@Property
 	@XmlTransient
@@ -135,10 +145,10 @@ public class ReferenceDiscussion {
 	@Property
 	@XmlTransient
 	public String getNotes() {
-		return extractCommentary(getPostBody());
+		return extractNotes(getPostBody());
 	}
 	
-    public static String extractCommentary(String postBody) {
+    public static String extractNotes(String postBody) {
         String startMarker = "**Commentary on this Post:**";
 
         int startIndex = postBody.indexOf(startMarker);

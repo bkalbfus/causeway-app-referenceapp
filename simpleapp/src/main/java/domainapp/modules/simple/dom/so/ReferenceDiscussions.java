@@ -9,9 +9,8 @@ import org.apache.causeway.applib.annotation.SemanticsOf;
 import org.apache.causeway.applib.services.inject.ServiceInjector;
 import org.apache.causeway.applib.services.repository.RepositoryService;
 
-import domainapp.modules.hive.api.GetContentJson;
+import domainapp.modules.hive.api.HivePostJson;
 import domainapp.modules.simple.SimpleModule;
-import domainapp.modules.simple.types.Name;
 import jakarta.annotation.Priority;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
@@ -27,13 +26,6 @@ public class ReferenceDiscussions {
     @Inject RepositoryService repositoryService;
 
 
-    @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
-    @ActionLayout(promptStyle = PromptStyle.DIALOG_SIDEBAR)
-    public TestMarkdown createTestMarkdown(
-            @Name final String name) {
-
-        return repositoryService.persist(TestMarkdown.withName(name));
-    }
 
 
 //    @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
@@ -67,7 +59,7 @@ public class ReferenceDiscussions {
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(promptStyle = PromptStyle.DIALOG_SIDEBAR)
     public ReferenceDiscussion findById(final String account, final String permlink) {
-         GetContentJson postJson = hiveService.fetchPost(account, permlink);
+         HivePostJson postJson = hiveService.fetchPost(account, permlink);
          ReferenceDiscussion result = new ReferenceDiscussion(postJson);
          return serviceInjector.injectServicesInto(result);
     }
