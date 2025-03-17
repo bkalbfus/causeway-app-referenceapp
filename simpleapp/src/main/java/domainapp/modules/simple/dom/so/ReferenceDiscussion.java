@@ -32,7 +32,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @XmlRootElement(name = "referenceDiscussion")
-@XmlType(propOrder = { "account", "permLink", "preview" })
+@XmlType(propOrder = { "account", "permLink", "preview", "replyAccount", "replyPermLink", "replyPreview" })
 @DomainObject(nature = Nature.VIEW_MODEL)
 @Named(SimpleModule.NAMESPACE + ".ReferenceDiscussion")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -55,12 +55,26 @@ public class ReferenceDiscussion implements IHivePost {
 	@Setter
 	String permLink;
 
+	@Property
+	@XmlElement(required = true)
+	@Getter
+	@Setter
+	String replyAccount;
+
+	@Property
+	@XmlElement(required = true)
+	@Getter
+	@Setter
+	String replyPermLink;
+
 	// TODO: postJson cannot be anything but transient. need to keep account and
 	// permlink param fields.
 	// but, don't want to have to call hiveService.fetchPost() twice.
 	@XmlTransient
 	private HivePostJson postJson;
 	
+	@XmlTransient
+	private HivePostJson replyJson;
 	
 //	private IHivePost fileNodeVm;
 
@@ -81,11 +95,30 @@ public class ReferenceDiscussion implements IHivePost {
 		this.permLink = postJson.getPermlink();
 	}
 
+	public ReferenceDiscussion(IHivePost rootPost, HivePostJson postJson) {
+		this.postJson = rootPost.getPostJson();
+		this.account = rootPost.getAccount();
+		this.permLink = rootPost.getPermLink();
+
+		this.replyJson = postJson;
+		this.replyAccount = postJson.getAuthor();
+		this.replyPermLink = postJson.getPermlink();
+	}
+
 	public HivePostJson getPostJson() {
 		if (postJson == null) {
 			postJson = hiveService.fetchPost(getAccount(), getPermLink());
 		}
 		return postJson;
+	}
+
+	public HivePostJson getReplyJson() {
+		if (replyAccount == null || replyPermLink == null) {
+			replyJson = null;
+		} else if (replyJson == null) {
+			replyJson = hiveService.fetchPost(getReplyAccount(), getReplyPermLink());
+		}
+		return replyJson;
 	}
 
 	@Property
@@ -106,6 +139,22 @@ public class ReferenceDiscussion implements IHivePost {
 			preview = Markdown.valueOf(getPostBody());
 		}
 		return preview;
+	}
+
+	@Property(editing = Editing.ENABLED)
+	@PropertyLayout
+//	@XmlTransient
+	@XmlElement
+	@Setter
+	private Markdown replyPreview = null;
+	
+	public Markdown getReplyPreview() {
+		if(replyAccount == null || replyPermLink == null) {
+			replyPreview = null;
+		} else if(replyPreview == null) {
+			replyPreview = Markdown.valueOf(getReplyJson().getBody());
+		}
+		return replyPreview;
 	}
 
 	@Property

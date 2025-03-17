@@ -23,7 +23,7 @@ public class HivePostTreeAdapter implements TreeAdapter<IHivePost> {
     @Override
     public Stream<IHivePost> childrenOf(IHivePost value) {
         return streamComments(value)
-                .map(HivePost::new);
+        		.map((c)->new ReferenceDiscussion(value, c));
     }
 
     private Stream<HivePostJson> streamComments(IHivePost hivePostNode){
