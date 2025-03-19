@@ -22,4 +22,10 @@ public interface IHivePost {
 
 	Markdown getPreview();
 
+	boolean isReply();
+
+	String getReplyAccount();
+
+	String getReplyPermLink();
+
 }

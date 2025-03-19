@@ -24,7 +24,7 @@ public class HiveNodeTreeService {
 
     public TreeNode<IHivePost> sessionTree(ReferenceDiscussion rd) {
         val session = httpSessionProvider.get();
-        val cacheKey = TreeNode.class.getName() + "|" + System.identityHashCode(rd);
+        val cacheKey = TreeNode.class.getName() + "|" + rd.getAccount() + "|" + rd.getPermLink();
         TreeNode<IHivePost> tree = (TreeNode<IHivePost>) session.getAttribute(cacheKey);
         if(tree == null) {
             tree = newTree(rd, factoryService);

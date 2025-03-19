@@ -90,4 +90,22 @@ public class HivePost implements IHivePost {
 		}
 		return preview;
 	}
+
+	@Override
+	public boolean isReply() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String getReplyAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getReplyPermLink() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

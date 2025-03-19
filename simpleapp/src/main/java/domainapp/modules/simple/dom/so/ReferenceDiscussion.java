@@ -44,29 +44,41 @@ public class ReferenceDiscussion implements IHivePost {
 	private HiveService hiveService;
 
 	@Property
+	@PropertyLayout(fieldSetId = "identity")
 	@XmlElement(required = true)
 	@Getter
 	@Setter
 	String account;
 
 	@Property
+	@PropertyLayout(fieldSetId = "identity")
 	@XmlElement(required = true)
 	@Getter
 	@Setter
 	String permLink;
 
 	@Property
+	@PropertyLayout(fieldSetId = "navigation")
 	@XmlElement(required = true)
 	@Getter
 	@Setter
 	String replyAccount;
 
 	@Property
+	@PropertyLayout(fieldSetId = "navigation")
 	@XmlElement(required = true)
 	@Getter
 	@Setter
 	String replyPermLink;
 
+	public String title() {
+		if(!isReply()) {
+			return postJson.getTitle();
+		} else {
+			return getReplyAccount() + " - " + getReplyJson().getCreated();
+		}
+	}
+	
 	// TODO: postJson cannot be anything but transient. need to keep account and
 	// permlink param fields.
 	// but, don't want to have to call hiveService.fetchPost() twice.
@@ -79,6 +91,7 @@ public class ReferenceDiscussion implements IHivePost {
 //	private IHivePost fileNodeVm;
 
 	@Property
+	@PropertyLayout(fieldSetId = "navigation")
 	@XmlTransient
     public TreeNode<IHivePost> getComments(){
         return hiveNodeTreeService.sessionTree(this);
@@ -105,6 +118,17 @@ public class ReferenceDiscussion implements IHivePost {
 		this.replyPermLink = postJson.getPermlink();
 	}
 
+	@XmlTransient
+	@Property(editing = Editing.DISABLED)
+	@PropertyLayout(fieldSetId = "metadata")
+	public boolean isReply() {
+		if(replyAccount == null && replyPermLink == null) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 	public HivePostJson getPostJson() {
 		if (postJson == null) {
 			postJson = hiveService.fetchPost(getAccount(), getPermLink());
@@ -113,7 +137,7 @@ public class ReferenceDiscussion implements IHivePost {
 	}
 
 	public HivePostJson getReplyJson() {
-		if (replyAccount == null || replyPermLink == null) {
+		if (!isReply()) {
 			replyJson = null;
 		} else if (replyJson == null) {
 			replyJson = hiveService.fetchPost(getReplyAccount(), getReplyPermLink());
@@ -122,13 +146,19 @@ public class ReferenceDiscussion implements IHivePost {
 	}
 
 	@Property
+	@PropertyLayout(fieldSetId = "other")
 	@XmlTransient
 	public String getPostBody() {
 		return   getPostJson().getBody();
 	}
 	
+//	public boolean hidePostBody() {
+//		return isReply();
+//	}
+
+	
 	@Property(editing = Editing.ENABLED)
-	@PropertyLayout
+	@PropertyLayout(fieldSetId = "content")
 //	@XmlTransient
 	@XmlElement
 	@Setter
@@ -140,13 +170,18 @@ public class ReferenceDiscussion implements IHivePost {
 		}
 		return preview;
 	}
+	
+	public boolean hidePreview() {
+		return isReply();
+	}
 
 	@Property(editing = Editing.ENABLED)
-	@PropertyLayout
+	@PropertyLayout(fieldSetId = "content")
 //	@XmlTransient
 	@XmlElement
 	@Setter
 	private Markdown replyPreview = null;
+	
 	
 	public Markdown getReplyPreview() {
 		if(replyAccount == null || replyPermLink == null) {
@@ -155,6 +190,10 @@ public class ReferenceDiscussion implements IHivePost {
 			replyPreview = Markdown.valueOf(getReplyJson().getBody());
 		}
 		return replyPreview;
+	}
+	
+	public boolean hideReplyPreview() {
+		return !isReply();
 	}
 
 	@Property
@@ -190,11 +229,19 @@ public class ReferenceDiscussion implements IHivePost {
 		return Markdown.valueOf(getNotes());
 	}
 	
+	public boolean hideNotesFormatted() {
+		return isReply();
+	}
+	
 	
 	@Property
 	@XmlTransient
 	public String getNotes() {
 		return extractNotes(getPostBody());
+	}
+	
+	public boolean hideNotes() {
+		return isReply();
 	}
 	
     public static String extractNotes(String postBody) {
@@ -211,7 +258,6 @@ public class ReferenceDiscussion implements IHivePost {
         // Will read until the end.
         return postBody.substring(startIndex).trim();
     }
-	
 
 	@Property
 	@XmlTransient
