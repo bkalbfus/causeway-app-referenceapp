@@ -73,7 +73,7 @@ public class ReferenceDiscussion implements IHivePost {
 
 	public String title() {
 		if(!isReply()) {
-			return postJson.getTitle();
+			return getPostJson().getTitle();
 		} else {
 			return getReplyAccount() + " - " + getReplyJson().getCreated();
 		}
