@@ -7,6 +7,7 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.annotation.Title;
+import org.apache.causeway.applib.services.wrapper.WrapperFactory;
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
 import domainapp.modules.hive.api.HivePostJson;
@@ -35,6 +36,10 @@ public class HivePost implements IHivePost {
 	@XmlTransient
 	private HiveService hiveService;
 
+	@Inject
+	@XmlTransient
+	private WrapperFactory wrapper;
+	
 	@Property
 	@XmlElement(required = true)
 	@Getter
@@ -63,7 +68,7 @@ public class HivePost implements IHivePost {
 	@Override
 	public HivePostJson getPostJson() {
 		if (postJson == null) {
-			postJson = hiveService.fetchPost(getAccount(), getPermLink());
+			postJson = wrapper.wrap(hiveService).fetchPost(getAccount(), getPermLink());
 		}
 		return postJson;
 	}

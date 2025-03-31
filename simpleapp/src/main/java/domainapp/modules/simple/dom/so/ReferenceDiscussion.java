@@ -13,9 +13,9 @@ import org.apache.causeway.applib.annotation.Nature;
 import org.apache.causeway.applib.annotation.Property;
 import org.apache.causeway.applib.annotation.PropertyLayout;
 import org.apache.causeway.applib.graph.tree.TreeNode;
+import org.apache.causeway.applib.services.wrapper.WrapperFactory;
 import org.apache.causeway.valuetypes.markdown.applib.value.Markdown;
 
-import domainapp.modules.hive.api.GetContentJson;
 import domainapp.modules.hive.api.HivePostJson;
 import domainapp.modules.hive.api.LinkPair;
 import domainapp.modules.simple.SimpleModule;
@@ -43,6 +43,10 @@ public class ReferenceDiscussion implements IHivePost {
 	@XmlTransient
 	private HiveService hiveService;
 
+	@Inject
+	@XmlTransient
+	private WrapperFactory wrapper;
+	
 	@Property
 	@PropertyLayout(fieldSetId = "identity")
 	@XmlElement(required = true)
@@ -75,7 +79,8 @@ public class ReferenceDiscussion implements IHivePost {
 		if(!isReply()) {
 			return getPostJson().getTitle();
 		} else {
-			return getReplyAccount() + " - " + getReplyJson().getCreated();
+//			return getReplyAccount() + " - " + getReplyJson().getCreated();
+			return getReplyAccount();
 		}
 	}
 	
@@ -131,16 +136,20 @@ public class ReferenceDiscussion implements IHivePost {
 
 	public HivePostJson getPostJson() {
 		if (postJson == null) {
-			postJson = hiveService.fetchPost(getAccount(), getPermLink());
+			postJson = getHiveService().fetchPost(getAccount(), getPermLink());
 		}
 		return postJson;
+	}
+
+	private HiveService getHiveService() {
+		return wrapper.wrap(hiveService);
 	}
 
 	public HivePostJson getReplyJson() {
 		if (!isReply()) {
 			replyJson = null;
 		} else if (replyJson == null) {
-			replyJson = hiveService.fetchPost(getReplyAccount(), getReplyPermLink());
+			replyJson = getHiveService().fetchPost(getReplyAccount(), getReplyPermLink());
 		}
 		return replyJson;
 	}

@@ -29,9 +29,9 @@ public class HivePostTreeAdapter implements TreeAdapter<IHivePost> {
     private Stream<HivePostJson> streamComments(IHivePost hivePostNode){
        HivePostJson[] comments = null;
        if(hivePostNode.isReply()) {
-		   comments = hiveService.getComments(hivePostNode.getReplyAccount(),hivePostNode.getReplyPermLink());
+		   comments = hiveService.fetchComments(hivePostNode.getReplyAccount(),hivePostNode.getReplyPermLink());
        } else {
-		   comments = hiveService.getComments(hivePostNode.getAccount(),hivePostNode.getPermLink());
+		   comments = hiveService.fetchComments(hivePostNode.getAccount(),hivePostNode.getPermLink());
        }
        
        return Arrays.stream(comments);
